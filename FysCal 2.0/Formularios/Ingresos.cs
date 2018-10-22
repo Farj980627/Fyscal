@@ -19,6 +19,7 @@ namespace FysCal_2._0.Formularios
 
         private void Ingresos_Load(object sender, EventArgs e)
         {
+            
 
            
 
@@ -46,7 +47,7 @@ namespace FysCal_2._0.Formularios
 
         private void txtEneIMes_TextChanged(object sender, EventArgs e)
         {
-            txtEneAcu.Text =( Double.Parse(txtEne16.Text) + Double.Parse(txtEne0.Text) + Double.Parse(txtEneNoo.Text) + Double.Parse(txtEneExe.Text) + Double.Parse(txtEneIMes.Text)).ToString(); 
+           
         }
     }
 }

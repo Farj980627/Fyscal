@@ -30,8 +30,7 @@ namespace FysCal_2._0.Formularios
             
             lblCliente.Text = Formularios.Inicio.cliente;
             Clases.conexiones.obtenerIdcliente(Formularios.Inicio.cliente);
-            MessageBox.Show(Formularios.Inicio.cliente);
-            MessageBox.Show(Formularios.Control.idCliente);
+           
            
             
         }
