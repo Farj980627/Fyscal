@@ -196,6 +196,54 @@ namespace FysCal_2._0.Clases
                 con1.Close();
             }
         }
+        public static void retencionesIVA(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
+           String pseptiembre, String pocctubre, String pnoviembre, String pdiciembre, String ptotal)
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from retencionesiva where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE retencionesiva SET enero='{0}',febrero='{1}',marzo='{2}',abril='{3}',mayo='{4}',junio='{5}',julio='{6}',agosto='{7}',septiembre='{8}',octubre='{9}',noviembre='{10}',diciembre='{11}',total='{12}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+
+                MySqlConnection con1 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("INSERT INTO retencionesiva(id_cliente,enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,total) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", pcliente, penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con1);
+                comando.ExecuteNonQuery();
+                con1.Close();
+            }
+        }
+        public static void retencionesISR(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
+           String pseptiembre, String pocctubre, String pnoviembre, String pdiciembre, String ptotal)
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from retencionesisr where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE retencionesisr SET enero='{0}',febrero='{1}',marzo='{2}',abril='{3}',mayo='{4}',junio='{5}',julio='{6}',agosto='{7}',septiembre='{8}',octubre='{9}',noviembre='{10}',diciembre='{11}',total='{12}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+
+                MySqlConnection con1 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("INSERT INTO retencionesisr(id_cliente,enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,total) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", pcliente, penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con1);
+                comando.ExecuteNonQuery();
+                con1.Close();
+            }
+        }
 
         public static void obtenerIdcliente(String pnombre)
         {
