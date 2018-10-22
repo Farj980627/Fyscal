@@ -130,16 +130,16 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtTotISR = new System.Windows.Forms.TextBox();
+            this.txtTotRetISR = new System.Windows.Forms.TextBox();
             this.txtTotRetIVA = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.txtEneRetISR = new System.Windows.Forms.TextBox();
             this.txtFebRetISR = new System.Windows.Forms.TextBox();
-            this.txtRetMarISR = new System.Windows.Forms.TextBox();
+            this.txtMarRetISR = new System.Windows.Forms.TextBox();
             this.txtAbrRetISR = new System.Windows.Forms.TextBox();
             this.txtMayRetISR = new System.Windows.Forms.TextBox();
-            this.txtRetJunISR = new System.Windows.Forms.TextBox();
+            this.txtJunRetISR = new System.Windows.Forms.TextBox();
             this.txtJulRetISR = new System.Windows.Forms.TextBox();
             this.txtAgoRetISR = new System.Windows.Forms.TextBox();
             this.txtSepRetISR = new System.Windows.Forms.TextBox();
@@ -1454,16 +1454,16 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.txtTotISR, 0, 13);
+            this.tableLayoutPanel3.Controls.Add(this.txtTotRetISR, 0, 13);
             this.tableLayoutPanel3.Controls.Add(this.txtTotRetIVA, 0, 13);
             this.tableLayoutPanel3.Controls.Add(this.label18, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label19, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtEneRetISR, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.txtFebRetISR, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.txtRetMarISR, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.txtMarRetISR, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtAbrRetISR, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.txtMayRetISR, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.txtRetJunISR, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.txtJunRetISR, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.txtJulRetISR, 0, 7);
             this.tableLayoutPanel3.Controls.Add(this.txtAgoRetISR, 0, 8);
             this.tableLayoutPanel3.Controls.Add(this.txtSepRetISR, 0, 9);
@@ -1503,16 +1503,16 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(297, 620);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // txtTotISR
+            // txtTotRetISR
             // 
-            this.txtTotISR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTotISR.BackColor = System.Drawing.Color.SlateBlue;
-            this.txtTotISR.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotISR.ForeColor = System.Drawing.Color.White;
-            this.txtTotISR.Location = new System.Drawing.Point(7, 575);
-            this.txtTotISR.Name = "txtTotISR";
-            this.txtTotISR.Size = new System.Drawing.Size(133, 30);
-            this.txtTotISR.TabIndex = 51;
+            this.txtTotRetISR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTotRetISR.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtTotRetISR.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotRetISR.ForeColor = System.Drawing.Color.White;
+            this.txtTotRetISR.Location = new System.Drawing.Point(7, 575);
+            this.txtTotRetISR.Name = "txtTotRetISR";
+            this.txtTotRetISR.Size = new System.Drawing.Size(133, 30);
+            this.txtTotRetISR.TabIndex = 51;
             // 
             // txtTotRetIVA
             // 
@@ -1571,16 +1571,16 @@
             this.txtFebRetISR.Size = new System.Drawing.Size(133, 30);
             this.txtFebRetISR.TabIndex = 26;
             // 
-            // txtRetMarISR
+            // txtMarRetISR
             // 
-            this.txtRetMarISR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtRetMarISR.BackColor = System.Drawing.Color.SlateBlue;
-            this.txtRetMarISR.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRetMarISR.ForeColor = System.Drawing.Color.White;
-            this.txtRetMarISR.Location = new System.Drawing.Point(7, 135);
-            this.txtRetMarISR.Name = "txtRetMarISR";
-            this.txtRetMarISR.Size = new System.Drawing.Size(133, 30);
-            this.txtRetMarISR.TabIndex = 27;
+            this.txtMarRetISR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMarRetISR.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtMarRetISR.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarRetISR.ForeColor = System.Drawing.Color.White;
+            this.txtMarRetISR.Location = new System.Drawing.Point(7, 135);
+            this.txtMarRetISR.Name = "txtMarRetISR";
+            this.txtMarRetISR.Size = new System.Drawing.Size(133, 30);
+            this.txtMarRetISR.TabIndex = 27;
             // 
             // txtAbrRetISR
             // 
@@ -1604,16 +1604,16 @@
             this.txtMayRetISR.Size = new System.Drawing.Size(133, 30);
             this.txtMayRetISR.TabIndex = 29;
             // 
-            // txtRetJunISR
+            // txtJunRetISR
             // 
-            this.txtRetJunISR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtRetJunISR.BackColor = System.Drawing.Color.SlateBlue;
-            this.txtRetJunISR.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRetJunISR.ForeColor = System.Drawing.Color.White;
-            this.txtRetJunISR.Location = new System.Drawing.Point(7, 267);
-            this.txtRetJunISR.Name = "txtRetJunISR";
-            this.txtRetJunISR.Size = new System.Drawing.Size(133, 30);
-            this.txtRetJunISR.TabIndex = 30;
+            this.txtJunRetISR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJunRetISR.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtJunRetISR.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJunRetISR.ForeColor = System.Drawing.Color.White;
+            this.txtJunRetISR.Location = new System.Drawing.Point(7, 267);
+            this.txtJunRetISR.Name = "txtJunRetISR";
+            this.txtJunRetISR.Size = new System.Drawing.Size(133, 30);
+            this.txtJunRetISR.TabIndex = 30;
             // 
             // txtJulRetISR
             // 
@@ -1846,16 +1846,16 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TextBox txtTotISR;
+        private System.Windows.Forms.TextBox txtTotRetISR;
         private System.Windows.Forms.TextBox txtTotRetIVA;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtEneRetISR;
         private System.Windows.Forms.TextBox txtFebRetISR;
-        private System.Windows.Forms.TextBox txtRetMarISR;
+        private System.Windows.Forms.TextBox txtMarRetISR;
         private System.Windows.Forms.TextBox txtAbrRetISR;
         private System.Windows.Forms.TextBox txtMayRetISR;
-        private System.Windows.Forms.TextBox txtRetJunISR;
+        private System.Windows.Forms.TextBox txtJunRetISR;
         private System.Windows.Forms.TextBox txtJulRetISR;
         private System.Windows.Forms.TextBox txtAgoRetISR;
         private System.Windows.Forms.TextBox txtSepRetISR;

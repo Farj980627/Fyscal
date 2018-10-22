@@ -36,6 +36,8 @@ namespace FysCal_2._0.Formularios
                 txtJulNoo.Text, txtAgoNoo.Text, txtSepNoo.Text, txtOctNoo.Text, txtNovNoo.Text, txtDicNoo.Text, txtTotNoo.Text);
             Clases.conexiones.ingresosMes(Formularios.Control.idCliente, txtEneIMes.Text, txtFebIMes.Text, txtMarIMes.Text, txtAbrIMes.Text, txtMayIMes.Text, txtJunIMes.Text,
                txtJulIMes.Text, txtAgoIMes.Text, txtSepIMes.Text, txtOctIMes.Text, txtNovIMes.Text, txtDicIMes.Text, txtTotIMes.Text);
+            Clases.conexiones.retencionesISR(Formularios.Control.idCliente, txtEneRetISR.Text, txtFebRetISR.Text, txtMarRetISR.Text, txtAbrRetISR.Text, txtMayRetISR.Text, txtJunRetISR.Text,
+               txtJulRetISR.Text, txtAgoRetISR.Text, txtSepRetISR.Text, txtOctRetISR.Text, txtNovRetISR.Text, txtDicRetISR.Text, txtTotRetISR.Text);
 
 
             MessageBox.Show("Everything will be alright");
