@@ -151,7 +151,7 @@
             this.txtMarRetIVA = new System.Windows.Forms.TextBox();
             this.txtAbrRetIVA = new System.Windows.Forms.TextBox();
             this.txtMayRetIVA = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txtJunRetIVA = new System.Windows.Forms.TextBox();
             this.txtJulRetIVA = new System.Windows.Forms.TextBox();
             this.txtAgoRetIVA = new System.Windows.Forms.TextBox();
             this.txtSepRetIVA = new System.Windows.Forms.TextBox();
@@ -1475,7 +1475,7 @@
             this.tableLayoutPanel3.Controls.Add(this.txtMarRetIVA, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtAbrRetIVA, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.txtMayRetIVA, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.textBox19, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.txtJunRetIVA, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.txtJulRetIVA, 1, 7);
             this.tableLayoutPanel3.Controls.Add(this.txtAgoRetIVA, 1, 8);
             this.tableLayoutPanel3.Controls.Add(this.txtSepRetIVA, 1, 9);
@@ -1736,16 +1736,16 @@
             this.txtMayRetIVA.Size = new System.Drawing.Size(133, 30);
             this.txtMayRetIVA.TabIndex = 42;
             // 
-            // textBox19
+            // txtJunRetIVA
             // 
-            this.textBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox19.BackColor = System.Drawing.Color.SlateBlue;
-            this.textBox19.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.ForeColor = System.Drawing.Color.White;
-            this.textBox19.Location = new System.Drawing.Point(156, 267);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(133, 30);
-            this.textBox19.TabIndex = 43;
+            this.txtJunRetIVA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJunRetIVA.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtJunRetIVA.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJunRetIVA.ForeColor = System.Drawing.Color.White;
+            this.txtJunRetIVA.Location = new System.Drawing.Point(156, 267);
+            this.txtJunRetIVA.Name = "txtJunRetIVA";
+            this.txtJunRetIVA.Size = new System.Drawing.Size(133, 30);
+            this.txtJunRetIVA.TabIndex = 43;
             // 
             // txtJulRetIVA
             // 
@@ -1867,7 +1867,7 @@
         private System.Windows.Forms.TextBox txtMarRetIVA;
         private System.Windows.Forms.TextBox txtAbrRetIVA;
         private System.Windows.Forms.TextBox txtMayRetIVA;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txtJunRetIVA;
         private System.Windows.Forms.TextBox txtJulRetIVA;
         private System.Windows.Forms.TextBox txtAgoRetIVA;
         private System.Windows.Forms.TextBox txtSepRetIVA;

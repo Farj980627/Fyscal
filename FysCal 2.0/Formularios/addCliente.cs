@@ -20,6 +20,7 @@ namespace FysCal_2._0.Formularios
         private void btnDatos_Click(object sender, EventArgs e)
         {
             Clases.conexiones.addCliente(txtNombre.Text, txtCurp.Text, txtRfc.Text, txtDomicilioFiscal.Text, cbRegimen.Text);
+            new Formularios.Inicio().Show();
             this.Hide();
         }
     }

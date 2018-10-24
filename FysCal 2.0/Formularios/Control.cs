@@ -16,13 +16,19 @@ namespace FysCal_2._0.Formularios
         public Control()
         {
             InitializeComponent();
-           // lblCliente.Text = cliente.ToString();
+          
         }
-        public static string idCliente;
+        public static string idCliente, ene16, feb16, mar16, abr16, may16, jun16, jul16, ago16, sep16, oct16, nov16, dic16, tot16,
+            ene0, feb0, mar0, abr0,may0, jun0, jul0, ago0, sep0, oct0, nov0, dic0, tot0,
+            eneExe, febExe, marExe, abrExe, mayExe, junExe, julExe, agoExe, sepExe, octExe, novExe, dicExe, totExe,
+            eneNoo, febNoo, marNoo, abrNoo, mayNoo, junNoo, julNoo, agoNoo, sepNoo, octNoo, novNoo, dicNoo, totNoo,
+            eneMes, febMes, marMes, abrMes, mayMes, junMes, julMes, agoMes, sepMes, octMes, novMes, dicMes, totMes,
+            eneRISR, febRISR, marRISR, abrRISR, mayRISR, junRISR, julRISR, agoRISR, sepRISR, octRISR, novRISR, dicRISR, totRISR,
+            eneRIVA, febRIVA, marRIVA, abrRIVA, mayRIVA, junRIVA, julRIVA, agoRIVA, sepRIVA, octRIVA, novRIVA, dicRIVA, totRIVA;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //cargarForm(new Formularios.Deducciones());
+            
         }
 
         private void Control_Load(object sender, EventArgs e)

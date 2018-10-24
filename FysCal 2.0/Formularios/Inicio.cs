@@ -36,6 +36,7 @@ namespace FysCal_2._0.Formularios
         private void button2_Click(object sender, EventArgs e)
         {
             new Formularios.addCliente().Show();
+            this.Hide();
         }
 
         private void Inicio_Load(object sender, EventArgs e)
