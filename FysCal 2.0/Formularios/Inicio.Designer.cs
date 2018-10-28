@@ -97,6 +97,7 @@
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(500, 38);
             this.cbCliente.TabIndex = 6;
+            this.cbCliente.SelectedIndexChanged += new System.EventHandler(this.cbCliente_SelectedIndexChanged);
             // 
             // btnSiguiente
             // 

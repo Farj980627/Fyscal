@@ -24,7 +24,13 @@ namespace FysCal_2._0.Formularios
             eneNoo, febNoo, marNoo, abrNoo, mayNoo, junNoo, julNoo, agoNoo, sepNoo, octNoo, novNoo, dicNoo, totNoo,
             eneMes, febMes, marMes, abrMes, mayMes, junMes, julMes, agoMes, sepMes, octMes, novMes, dicMes, totMes,
             eneRISR, febRISR, marRISR, abrRISR, mayRISR, junRISR, julRISR, agoRISR, sepRISR, octRISR, novRISR, dicRISR, totRISR,
-            eneRIVA, febRIVA, marRIVA, abrRIVA, mayRIVA, junRIVA, julRIVA, agoRIVA, sepRIVA, octRIVA, novRIVA, dicRIVA, totRIVA;
+            eneRIVA, febRIVA, marRIVA, abrRIVA, mayRIVA, junRIVA, julRIVA, agoRIVA, sepRIVA, octRIVA, novRIVA, dicRIVA, totRIVA,
+            dene16, dfeb16, dmar16, dabr16, dmay16, djun16, djul16, dago16, dsep16, doct16, dnov16, ddic16, dtot16,
+            dene0, dfeb0, dmar0, dabr0, dmay0, djun0, djul0, dago0, dsep0, doct0, dnov0, ddic0, dtot0,
+            deneexe, dfebexe, dmarexe, dabrexe, dmayexe, djunexe, djulexe, dagoexe, dsepexe, doctexe, dnovexe, ddicexe, dtotexe,
+            deneNoo, dfebNoo, dmarNoo, dabrNoo, dmayNoo, djunNoo, djulNoo, dagoNoo, dsepNoo, doctNoo, dnovNoo, ddicNoo, dtotNoo,
+            deneest, dfebest, dmarest, dabrest, dmayest, djunest, djulest, dagoest, dsepest, doctest, dnovest, ddicest, dtotest,
+            denemes, dfebmes, dmarmes, dabrmes, dmaymes, djunmes, djulmes, dagomes, dsepmes, doctmes, dnovmes, ddicmes, dtotmes;
 
         private void button1_Click(object sender, EventArgs e)
         {

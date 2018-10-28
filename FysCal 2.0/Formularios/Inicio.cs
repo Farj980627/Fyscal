@@ -44,5 +44,10 @@ namespace FysCal_2._0.Formularios
             cbCliente.DataSource = Clases.conexiones.obtenerCliente();
             cbCliente.DisplayMember = "nombre";
         }
+
+        private void cbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

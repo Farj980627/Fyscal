@@ -79,7 +79,7 @@
             this.txtAbrExe = new System.Windows.Forms.TextBox();
             this.txtMayExe = new System.Windows.Forms.TextBox();
             this.txtJunExe = new System.Windows.Forms.TextBox();
-            this.txtJul = new System.Windows.Forms.TextBox();
+            this.txtJulExe = new System.Windows.Forms.TextBox();
             this.txtAgoExe = new System.Windows.Forms.TextBox();
             this.txtSepExe = new System.Windows.Forms.TextBox();
             this.txtOctExe = new System.Windows.Forms.TextBox();
@@ -216,7 +216,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtAbrExe, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtMayExe, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.txtJunExe, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.txtJul, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtJulExe, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.txtAgoExe, 3, 8);
             this.tableLayoutPanel1.Controls.Add(this.txtSepExe, 3, 9);
             this.tableLayoutPanel1.Controls.Add(this.txtOctExe, 3, 10);
@@ -536,6 +536,8 @@
             this.txtEne16.Name = "txtEne16";
             this.txtEne16.Size = new System.Drawing.Size(120, 30);
             this.txtEne16.TabIndex = 27;
+            this.txtEne16.Text = "0";
+            this.txtEne16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFeb16
             // 
@@ -547,6 +549,8 @@
             this.txtFeb16.Name = "txtFeb16";
             this.txtFeb16.Size = new System.Drawing.Size(120, 30);
             this.txtFeb16.TabIndex = 29;
+            this.txtFeb16.Text = "0";
+            this.txtFeb16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMar16
             // 
@@ -558,6 +562,8 @@
             this.txtMar16.Name = "txtMar16";
             this.txtMar16.Size = new System.Drawing.Size(120, 30);
             this.txtMar16.TabIndex = 28;
+            this.txtMar16.Text = "0";
+            this.txtMar16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAbr16
             // 
@@ -569,6 +575,8 @@
             this.txtAbr16.Name = "txtAbr16";
             this.txtAbr16.Size = new System.Drawing.Size(120, 30);
             this.txtAbr16.TabIndex = 30;
+            this.txtAbr16.Text = "0";
+            this.txtAbr16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMay16
             // 
@@ -580,6 +588,8 @@
             this.txtMay16.Name = "txtMay16";
             this.txtMay16.Size = new System.Drawing.Size(120, 30);
             this.txtMay16.TabIndex = 26;
+            this.txtMay16.Text = "0";
+            this.txtMay16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJun16
             // 
@@ -591,6 +601,8 @@
             this.txtJun16.Name = "txtJun16";
             this.txtJun16.Size = new System.Drawing.Size(120, 30);
             this.txtJun16.TabIndex = 24;
+            this.txtJun16.Text = "0";
+            this.txtJun16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJul16
             // 
@@ -602,6 +614,8 @@
             this.txtJul16.Name = "txtJul16";
             this.txtJul16.Size = new System.Drawing.Size(120, 30);
             this.txtJul16.TabIndex = 33;
+            this.txtJul16.Text = "0";
+            this.txtJul16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAgo16
             // 
@@ -613,6 +627,8 @@
             this.txtAgo16.Name = "txtAgo16";
             this.txtAgo16.Size = new System.Drawing.Size(120, 30);
             this.txtAgo16.TabIndex = 32;
+            this.txtAgo16.Text = "0";
+            this.txtAgo16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSep16
             // 
@@ -624,6 +640,8 @@
             this.txtSep16.Name = "txtSep16";
             this.txtSep16.Size = new System.Drawing.Size(120, 30);
             this.txtSep16.TabIndex = 31;
+            this.txtSep16.Text = "0";
+            this.txtSep16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtOct16
             // 
@@ -635,6 +653,8 @@
             this.txtOct16.Name = "txtOct16";
             this.txtOct16.Size = new System.Drawing.Size(120, 30);
             this.txtOct16.TabIndex = 34;
+            this.txtOct16.Text = "0";
+            this.txtOct16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNov16
             // 
@@ -646,6 +666,8 @@
             this.txtNov16.Name = "txtNov16";
             this.txtNov16.Size = new System.Drawing.Size(120, 30);
             this.txtNov16.TabIndex = 25;
+            this.txtNov16.Text = "0";
+            this.txtNov16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDic16
             // 
@@ -657,6 +679,8 @@
             this.txtDic16.Name = "txtDic16";
             this.txtDic16.Size = new System.Drawing.Size(120, 30);
             this.txtDic16.TabIndex = 35;
+            this.txtDic16.Text = "0";
+            this.txtDic16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtEne0
             // 
@@ -668,6 +692,8 @@
             this.txtEne0.Name = "txtEne0";
             this.txtEne0.Size = new System.Drawing.Size(120, 30);
             this.txtEne0.TabIndex = 36;
+            this.txtEne0.Text = "0";
+            this.txtEne0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFeb0
             // 
@@ -679,6 +705,8 @@
             this.txtFeb0.Name = "txtFeb0";
             this.txtFeb0.Size = new System.Drawing.Size(120, 30);
             this.txtFeb0.TabIndex = 37;
+            this.txtFeb0.Text = "0";
+            this.txtFeb0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMar0
             // 
@@ -690,6 +718,8 @@
             this.txtMar0.Name = "txtMar0";
             this.txtMar0.Size = new System.Drawing.Size(120, 30);
             this.txtMar0.TabIndex = 38;
+            this.txtMar0.Text = "0";
+            this.txtMar0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAbr0
             // 
@@ -701,6 +731,8 @@
             this.txtAbr0.Name = "txtAbr0";
             this.txtAbr0.Size = new System.Drawing.Size(120, 30);
             this.txtAbr0.TabIndex = 39;
+            this.txtAbr0.Text = "0";
+            this.txtAbr0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMay0
             // 
@@ -712,6 +744,8 @@
             this.txtMay0.Name = "txtMay0";
             this.txtMay0.Size = new System.Drawing.Size(120, 30);
             this.txtMay0.TabIndex = 40;
+            this.txtMay0.Text = "0";
+            this.txtMay0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJun0
             // 
@@ -723,6 +757,8 @@
             this.txtJun0.Name = "txtJun0";
             this.txtJun0.Size = new System.Drawing.Size(120, 30);
             this.txtJun0.TabIndex = 41;
+            this.txtJun0.Text = "0";
+            this.txtJun0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJul0
             // 
@@ -734,6 +770,8 @@
             this.txtJul0.Name = "txtJul0";
             this.txtJul0.Size = new System.Drawing.Size(120, 30);
             this.txtJul0.TabIndex = 42;
+            this.txtJul0.Text = "0";
+            this.txtJul0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAgo0
             // 
@@ -745,6 +783,8 @@
             this.txtAgo0.Name = "txtAgo0";
             this.txtAgo0.Size = new System.Drawing.Size(120, 30);
             this.txtAgo0.TabIndex = 43;
+            this.txtAgo0.Text = "0";
+            this.txtAgo0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSep0
             // 
@@ -756,6 +796,8 @@
             this.txtSep0.Name = "txtSep0";
             this.txtSep0.Size = new System.Drawing.Size(120, 30);
             this.txtSep0.TabIndex = 44;
+            this.txtSep0.Text = "0";
+            this.txtSep0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtOct0
             // 
@@ -767,6 +809,8 @@
             this.txtOct0.Name = "txtOct0";
             this.txtOct0.Size = new System.Drawing.Size(120, 30);
             this.txtOct0.TabIndex = 45;
+            this.txtOct0.Text = "0";
+            this.txtOct0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNov0
             // 
@@ -778,6 +822,8 @@
             this.txtNov0.Name = "txtNov0";
             this.txtNov0.Size = new System.Drawing.Size(120, 30);
             this.txtNov0.TabIndex = 46;
+            this.txtNov0.Text = "0";
+            this.txtNov0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDic0
             // 
@@ -789,6 +835,8 @@
             this.txtDic0.Name = "txtDic0";
             this.txtDic0.Size = new System.Drawing.Size(120, 30);
             this.txtDic0.TabIndex = 47;
+            this.txtDic0.Text = "0";
+            this.txtDic0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtEneExe
             // 
@@ -800,6 +848,8 @@
             this.txtEneExe.Name = "txtEneExe";
             this.txtEneExe.Size = new System.Drawing.Size(120, 30);
             this.txtEneExe.TabIndex = 48;
+            this.txtEneExe.Text = "0";
+            this.txtEneExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFebExe
             // 
@@ -811,6 +861,8 @@
             this.txtFebExe.Name = "txtFebExe";
             this.txtFebExe.Size = new System.Drawing.Size(120, 30);
             this.txtFebExe.TabIndex = 49;
+            this.txtFebExe.Text = "0";
+            this.txtFebExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMarExe
             // 
@@ -822,6 +874,8 @@
             this.txtMarExe.Name = "txtMarExe";
             this.txtMarExe.Size = new System.Drawing.Size(120, 30);
             this.txtMarExe.TabIndex = 50;
+            this.txtMarExe.Text = "0";
+            this.txtMarExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAbrExe
             // 
@@ -833,6 +887,8 @@
             this.txtAbrExe.Name = "txtAbrExe";
             this.txtAbrExe.Size = new System.Drawing.Size(120, 30);
             this.txtAbrExe.TabIndex = 51;
+            this.txtAbrExe.Text = "0";
+            this.txtAbrExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMayExe
             // 
@@ -844,6 +900,8 @@
             this.txtMayExe.Name = "txtMayExe";
             this.txtMayExe.Size = new System.Drawing.Size(120, 30);
             this.txtMayExe.TabIndex = 52;
+            this.txtMayExe.Text = "0";
+            this.txtMayExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJunExe
             // 
@@ -855,17 +913,21 @@
             this.txtJunExe.Name = "txtJunExe";
             this.txtJunExe.Size = new System.Drawing.Size(120, 30);
             this.txtJunExe.TabIndex = 53;
+            this.txtJunExe.Text = "0";
+            this.txtJunExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtJul
+            // txtJulExe
             // 
-            this.txtJul.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtJul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtJul.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJul.ForeColor = System.Drawing.Color.White;
-            this.txtJul.Location = new System.Drawing.Point(381, 304);
-            this.txtJul.Name = "txtJul";
-            this.txtJul.Size = new System.Drawing.Size(120, 30);
-            this.txtJul.TabIndex = 54;
+            this.txtJulExe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJulExe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtJulExe.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJulExe.ForeColor = System.Drawing.Color.White;
+            this.txtJulExe.Location = new System.Drawing.Point(381, 304);
+            this.txtJulExe.Name = "txtJulExe";
+            this.txtJulExe.Size = new System.Drawing.Size(120, 30);
+            this.txtJulExe.TabIndex = 54;
+            this.txtJulExe.Text = "0";
+            this.txtJulExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAgoExe
             // 
@@ -877,6 +939,8 @@
             this.txtAgoExe.Name = "txtAgoExe";
             this.txtAgoExe.Size = new System.Drawing.Size(120, 30);
             this.txtAgoExe.TabIndex = 55;
+            this.txtAgoExe.Text = "0";
+            this.txtAgoExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSepExe
             // 
@@ -888,6 +952,8 @@
             this.txtSepExe.Name = "txtSepExe";
             this.txtSepExe.Size = new System.Drawing.Size(120, 30);
             this.txtSepExe.TabIndex = 56;
+            this.txtSepExe.Text = "0";
+            this.txtSepExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtOctExe
             // 
@@ -899,6 +965,8 @@
             this.txtOctExe.Name = "txtOctExe";
             this.txtOctExe.Size = new System.Drawing.Size(120, 30);
             this.txtOctExe.TabIndex = 57;
+            this.txtOctExe.Text = "0";
+            this.txtOctExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNovExe
             // 
@@ -910,6 +978,8 @@
             this.txtNovExe.Name = "txtNovExe";
             this.txtNovExe.Size = new System.Drawing.Size(120, 30);
             this.txtNovExe.TabIndex = 58;
+            this.txtNovExe.Text = "0";
+            this.txtNovExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDicExe
             // 
@@ -921,6 +991,8 @@
             this.txtDicExe.Name = "txtDicExe";
             this.txtDicExe.Size = new System.Drawing.Size(120, 30);
             this.txtDicExe.TabIndex = 59;
+            this.txtDicExe.Text = "0";
+            this.txtDicExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtEneNoo
             // 
@@ -932,6 +1004,8 @@
             this.txtEneNoo.Name = "txtEneNoo";
             this.txtEneNoo.Size = new System.Drawing.Size(120, 30);
             this.txtEneNoo.TabIndex = 60;
+            this.txtEneNoo.Text = "0";
+            this.txtEneNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFebNoo
             // 
@@ -943,6 +1017,8 @@
             this.txtFebNoo.Name = "txtFebNoo";
             this.txtFebNoo.Size = new System.Drawing.Size(120, 30);
             this.txtFebNoo.TabIndex = 61;
+            this.txtFebNoo.Text = "0";
+            this.txtFebNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMarNoo
             // 
@@ -954,6 +1030,8 @@
             this.txtMarNoo.Name = "txtMarNoo";
             this.txtMarNoo.Size = new System.Drawing.Size(120, 30);
             this.txtMarNoo.TabIndex = 62;
+            this.txtMarNoo.Text = "0";
+            this.txtMarNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAbrNoo
             // 
@@ -965,6 +1043,8 @@
             this.txtAbrNoo.Name = "txtAbrNoo";
             this.txtAbrNoo.Size = new System.Drawing.Size(120, 30);
             this.txtAbrNoo.TabIndex = 63;
+            this.txtAbrNoo.Text = "0";
+            this.txtAbrNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMayNoo
             // 
@@ -976,6 +1056,8 @@
             this.txtMayNoo.Name = "txtMayNoo";
             this.txtMayNoo.Size = new System.Drawing.Size(120, 30);
             this.txtMayNoo.TabIndex = 64;
+            this.txtMayNoo.Text = "0";
+            this.txtMayNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJunNoo
             // 
@@ -987,6 +1069,8 @@
             this.txtJunNoo.Name = "txtJunNoo";
             this.txtJunNoo.Size = new System.Drawing.Size(120, 30);
             this.txtJunNoo.TabIndex = 65;
+            this.txtJunNoo.Text = "0";
+            this.txtJunNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJulNoo
             // 
@@ -998,6 +1082,8 @@
             this.txtJulNoo.Name = "txtJulNoo";
             this.txtJulNoo.Size = new System.Drawing.Size(120, 30);
             this.txtJulNoo.TabIndex = 66;
+            this.txtJulNoo.Text = "0";
+            this.txtJulNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAgoNoo
             // 
@@ -1009,6 +1095,8 @@
             this.txtAgoNoo.Name = "txtAgoNoo";
             this.txtAgoNoo.Size = new System.Drawing.Size(120, 30);
             this.txtAgoNoo.TabIndex = 67;
+            this.txtAgoNoo.Text = "0";
+            this.txtAgoNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSepNoo
             // 
@@ -1020,6 +1108,8 @@
             this.txtSepNoo.Name = "txtSepNoo";
             this.txtSepNoo.Size = new System.Drawing.Size(120, 30);
             this.txtSepNoo.TabIndex = 68;
+            this.txtSepNoo.Text = "0";
+            this.txtSepNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtOctNoo
             // 
@@ -1031,6 +1121,8 @@
             this.txtOctNoo.Name = "txtOctNoo";
             this.txtOctNoo.Size = new System.Drawing.Size(120, 30);
             this.txtOctNoo.TabIndex = 69;
+            this.txtOctNoo.Text = "0";
+            this.txtOctNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNovNoo
             // 
@@ -1042,6 +1134,8 @@
             this.txtNovNoo.Name = "txtNovNoo";
             this.txtNovNoo.Size = new System.Drawing.Size(120, 30);
             this.txtNovNoo.TabIndex = 70;
+            this.txtNovNoo.Text = "0";
+            this.txtNovNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDicNoo
             // 
@@ -1053,6 +1147,8 @@
             this.txtDicNoo.Name = "txtDicNoo";
             this.txtDicNoo.Size = new System.Drawing.Size(120, 30);
             this.txtDicNoo.TabIndex = 71;
+            this.txtDicNoo.Text = "0";
+            this.txtDicNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtEneEst
             // 
@@ -1064,6 +1160,8 @@
             this.txtEneEst.Name = "txtEneEst";
             this.txtEneEst.Size = new System.Drawing.Size(120, 30);
             this.txtEneEst.TabIndex = 72;
+            this.txtEneEst.Text = "0";
+            this.txtEneEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFebEst
             // 
@@ -1075,6 +1173,8 @@
             this.txtFebEst.Name = "txtFebEst";
             this.txtFebEst.Size = new System.Drawing.Size(120, 30);
             this.txtFebEst.TabIndex = 73;
+            this.txtFebEst.Text = "0";
+            this.txtFebEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMarEst
             // 
@@ -1086,6 +1186,8 @@
             this.txtMarEst.Name = "txtMarEst";
             this.txtMarEst.Size = new System.Drawing.Size(120, 30);
             this.txtMarEst.TabIndex = 74;
+            this.txtMarEst.Text = "0";
+            this.txtMarEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAbrEst
             // 
@@ -1097,6 +1199,8 @@
             this.txtAbrEst.Name = "txtAbrEst";
             this.txtAbrEst.Size = new System.Drawing.Size(120, 30);
             this.txtAbrEst.TabIndex = 75;
+            this.txtAbrEst.Text = "0";
+            this.txtAbrEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMayEst
             // 
@@ -1108,6 +1212,8 @@
             this.txtMayEst.Name = "txtMayEst";
             this.txtMayEst.Size = new System.Drawing.Size(120, 30);
             this.txtMayEst.TabIndex = 76;
+            this.txtMayEst.Text = "0";
+            this.txtMayEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJunEst
             // 
@@ -1119,6 +1225,8 @@
             this.txtJunEst.Name = "txtJunEst";
             this.txtJunEst.Size = new System.Drawing.Size(120, 30);
             this.txtJunEst.TabIndex = 77;
+            this.txtJunEst.Text = "0";
+            this.txtJunEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJulEst
             // 
@@ -1130,6 +1238,8 @@
             this.txtJulEst.Name = "txtJulEst";
             this.txtJulEst.Size = new System.Drawing.Size(120, 30);
             this.txtJulEst.TabIndex = 78;
+            this.txtJulEst.Text = "0";
+            this.txtJulEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAgoEst
             // 
@@ -1141,6 +1251,8 @@
             this.txtAgoEst.Name = "txtAgoEst";
             this.txtAgoEst.Size = new System.Drawing.Size(120, 30);
             this.txtAgoEst.TabIndex = 79;
+            this.txtAgoEst.Text = "0";
+            this.txtAgoEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSepEst
             // 
@@ -1152,6 +1264,8 @@
             this.txtSepEst.Name = "txtSepEst";
             this.txtSepEst.Size = new System.Drawing.Size(120, 30);
             this.txtSepEst.TabIndex = 80;
+            this.txtSepEst.Text = "0";
+            this.txtSepEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtOctEst
             // 
@@ -1163,6 +1277,8 @@
             this.txtOctEst.Name = "txtOctEst";
             this.txtOctEst.Size = new System.Drawing.Size(120, 30);
             this.txtOctEst.TabIndex = 81;
+            this.txtOctEst.Text = "0";
+            this.txtOctEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNovEst
             // 
@@ -1174,6 +1290,8 @@
             this.txtNovEst.Name = "txtNovEst";
             this.txtNovEst.Size = new System.Drawing.Size(120, 30);
             this.txtNovEst.TabIndex = 82;
+            this.txtNovEst.Text = "0";
+            this.txtNovEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDicEst
             // 
@@ -1185,6 +1303,8 @@
             this.txtDicEst.Name = "txtDicEst";
             this.txtDicEst.Size = new System.Drawing.Size(120, 30);
             this.txtDicEst.TabIndex = 83;
+            this.txtDicEst.Text = "0";
+            this.txtDicEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtEneMes
             // 
@@ -1196,6 +1316,8 @@
             this.txtEneMes.Name = "txtEneMes";
             this.txtEneMes.Size = new System.Drawing.Size(120, 30);
             this.txtEneMes.TabIndex = 84;
+            this.txtEneMes.Text = "0";
+            this.txtEneMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFebMes
             // 
@@ -1207,6 +1329,8 @@
             this.txtFebMes.Name = "txtFebMes";
             this.txtFebMes.Size = new System.Drawing.Size(120, 30);
             this.txtFebMes.TabIndex = 85;
+            this.txtFebMes.Text = "0";
+            this.txtFebMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMarMes
             // 
@@ -1218,6 +1342,8 @@
             this.txtMarMes.Name = "txtMarMes";
             this.txtMarMes.Size = new System.Drawing.Size(120, 30);
             this.txtMarMes.TabIndex = 86;
+            this.txtMarMes.Text = "0";
+            this.txtMarMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAbrMes
             // 
@@ -1229,6 +1355,8 @@
             this.txtAbrMes.Name = "txtAbrMes";
             this.txtAbrMes.Size = new System.Drawing.Size(120, 30);
             this.txtAbrMes.TabIndex = 87;
+            this.txtAbrMes.Text = "0";
+            this.txtAbrMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMayMes
             // 
@@ -1240,6 +1368,8 @@
             this.txtMayMes.Name = "txtMayMes";
             this.txtMayMes.Size = new System.Drawing.Size(120, 30);
             this.txtMayMes.TabIndex = 88;
+            this.txtMayMes.Text = "0";
+            this.txtMayMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJunMes
             // 
@@ -1251,6 +1381,8 @@
             this.txtJunMes.Name = "txtJunMes";
             this.txtJunMes.Size = new System.Drawing.Size(120, 30);
             this.txtJunMes.TabIndex = 89;
+            this.txtJunMes.Text = "0";
+            this.txtJunMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJulMes
             // 
@@ -1262,6 +1394,8 @@
             this.txtJulMes.Name = "txtJulMes";
             this.txtJulMes.Size = new System.Drawing.Size(120, 30);
             this.txtJulMes.TabIndex = 90;
+            this.txtJulMes.Text = "0";
+            this.txtJulMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAgoMes
             // 
@@ -1273,6 +1407,8 @@
             this.txtAgoMes.Name = "txtAgoMes";
             this.txtAgoMes.Size = new System.Drawing.Size(120, 30);
             this.txtAgoMes.TabIndex = 91;
+            this.txtAgoMes.Text = "0";
+            this.txtAgoMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSepMes
             // 
@@ -1284,6 +1420,8 @@
             this.txtSepMes.Name = "txtSepMes";
             this.txtSepMes.Size = new System.Drawing.Size(120, 30);
             this.txtSepMes.TabIndex = 92;
+            this.txtSepMes.Text = "0";
+            this.txtSepMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtOctMes
             // 
@@ -1295,6 +1433,8 @@
             this.txtOctMes.Name = "txtOctMes";
             this.txtOctMes.Size = new System.Drawing.Size(120, 30);
             this.txtOctMes.TabIndex = 93;
+            this.txtOctMes.Text = "0";
+            this.txtOctMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNovMes
             // 
@@ -1306,6 +1446,8 @@
             this.txtNovMes.Name = "txtNovMes";
             this.txtNovMes.Size = new System.Drawing.Size(120, 30);
             this.txtNovMes.TabIndex = 94;
+            this.txtNovMes.Text = "0";
+            this.txtNovMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDicMes
             // 
@@ -1317,6 +1459,8 @@
             this.txtDicMes.Name = "txtDicMes";
             this.txtDicMes.Size = new System.Drawing.Size(120, 30);
             this.txtDicMes.TabIndex = 95;
+            this.txtDicMes.Text = "0";
+            this.txtDicMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtEneAcu
             // 
@@ -1328,6 +1472,8 @@
             this.txtEneAcu.Name = "txtEneAcu";
             this.txtEneAcu.Size = new System.Drawing.Size(126, 30);
             this.txtEneAcu.TabIndex = 96;
+            this.txtEneAcu.Text = "0";
+            this.txtEneAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFebAcu
             // 
@@ -1339,6 +1485,8 @@
             this.txtFebAcu.Name = "txtFebAcu";
             this.txtFebAcu.Size = new System.Drawing.Size(126, 30);
             this.txtFebAcu.TabIndex = 97;
+            this.txtFebAcu.Text = "0";
+            this.txtFebAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMarAcu
             // 
@@ -1350,6 +1498,8 @@
             this.txtMarAcu.Name = "txtMarAcu";
             this.txtMarAcu.Size = new System.Drawing.Size(126, 30);
             this.txtMarAcu.TabIndex = 98;
+            this.txtMarAcu.Text = "0";
+            this.txtMarAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAbrAcu
             // 
@@ -1361,6 +1511,8 @@
             this.txtAbrAcu.Name = "txtAbrAcu";
             this.txtAbrAcu.Size = new System.Drawing.Size(126, 30);
             this.txtAbrAcu.TabIndex = 99;
+            this.txtAbrAcu.Text = "0";
+            this.txtAbrAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtMayAcu
             // 
@@ -1372,6 +1524,8 @@
             this.txtMayAcu.Name = "txtMayAcu";
             this.txtMayAcu.Size = new System.Drawing.Size(126, 30);
             this.txtMayAcu.TabIndex = 100;
+            this.txtMayAcu.Text = "0";
+            this.txtMayAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJunAcu
             // 
@@ -1383,6 +1537,8 @@
             this.txtJunAcu.Name = "txtJunAcu";
             this.txtJunAcu.Size = new System.Drawing.Size(126, 30);
             this.txtJunAcu.TabIndex = 101;
+            this.txtJunAcu.Text = "0";
+            this.txtJunAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtJulAcu
             // 
@@ -1394,6 +1550,8 @@
             this.txtJulAcu.Name = "txtJulAcu";
             this.txtJulAcu.Size = new System.Drawing.Size(126, 30);
             this.txtJulAcu.TabIndex = 102;
+            this.txtJulAcu.Text = "0";
+            this.txtJulAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAgoAcu
             // 
@@ -1405,6 +1563,8 @@
             this.txtAgoAcu.Name = "txtAgoAcu";
             this.txtAgoAcu.Size = new System.Drawing.Size(126, 30);
             this.txtAgoAcu.TabIndex = 103;
+            this.txtAgoAcu.Text = "0";
+            this.txtAgoAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSepAcu
             // 
@@ -1416,6 +1576,8 @@
             this.txtSepAcu.Name = "txtSepAcu";
             this.txtSepAcu.Size = new System.Drawing.Size(126, 30);
             this.txtSepAcu.TabIndex = 104;
+            this.txtSepAcu.Text = "0";
+            this.txtSepAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtOctAcu
             // 
@@ -1427,6 +1589,8 @@
             this.txtOctAcu.Name = "txtOctAcu";
             this.txtOctAcu.Size = new System.Drawing.Size(126, 30);
             this.txtOctAcu.TabIndex = 105;
+            this.txtOctAcu.Text = "0";
+            this.txtOctAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNovAcu
             // 
@@ -1438,6 +1602,8 @@
             this.txtNovAcu.Name = "txtNovAcu";
             this.txtNovAcu.Size = new System.Drawing.Size(126, 30);
             this.txtNovAcu.TabIndex = 106;
+            this.txtNovAcu.Text = "0";
+            this.txtNovAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDicAcu
             // 
@@ -1449,6 +1615,8 @@
             this.txtDicAcu.Name = "txtDicAcu";
             this.txtDicAcu.Size = new System.Drawing.Size(126, 30);
             this.txtDicAcu.TabIndex = 107;
+            this.txtDicAcu.Text = "0";
+            this.txtDicAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotAcu
             // 
@@ -1460,6 +1628,8 @@
             this.txtTotAcu.Name = "txtTotAcu";
             this.txtTotAcu.Size = new System.Drawing.Size(126, 30);
             this.txtTotAcu.TabIndex = 112;
+            this.txtTotAcu.Text = "0";
+            this.txtTotAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotMes
             // 
@@ -1471,6 +1641,8 @@
             this.txtTotMes.Name = "txtTotMes";
             this.txtTotMes.Size = new System.Drawing.Size(120, 30);
             this.txtTotMes.TabIndex = 109;
+            this.txtTotMes.Text = "0";
+            this.txtTotMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotEst
             // 
@@ -1482,6 +1654,8 @@
             this.txtTotEst.Name = "txtTotEst";
             this.txtTotEst.Size = new System.Drawing.Size(120, 30);
             this.txtTotEst.TabIndex = 108;
+            this.txtTotEst.Text = "0";
+            this.txtTotEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotNoo
             // 
@@ -1493,6 +1667,8 @@
             this.txtTotNoo.Name = "txtTotNoo";
             this.txtTotNoo.Size = new System.Drawing.Size(120, 30);
             this.txtTotNoo.TabIndex = 110;
+            this.txtTotNoo.Text = "0";
+            this.txtTotNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotExe
             // 
@@ -1504,6 +1680,8 @@
             this.txtTotExe.Name = "txtTotExe";
             this.txtTotExe.Size = new System.Drawing.Size(120, 30);
             this.txtTotExe.TabIndex = 114;
+            this.txtTotExe.Text = "0";
+            this.txtTotExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTot0
             // 
@@ -1515,6 +1693,8 @@
             this.txtTot0.Name = "txtTot0";
             this.txtTot0.Size = new System.Drawing.Size(120, 30);
             this.txtTot0.TabIndex = 113;
+            this.txtTot0.Text = "0";
+            this.txtTot0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTot16
             // 
@@ -1526,6 +1706,8 @@
             this.txtTot16.Name = "txtTot16";
             this.txtTot16.Size = new System.Drawing.Size(120, 30);
             this.txtTot16.TabIndex = 111;
+            this.txtTot16.Text = "0";
+            this.txtTot16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tableLayoutPanel2
             // 
@@ -1557,6 +1739,7 @@
             this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
@@ -1586,6 +1769,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Deducciones";
             this.Text = "Deducciones";
+            this.Load += new System.EventHandler(this.Deducciones_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -1646,7 +1830,7 @@
         private System.Windows.Forms.TextBox txtAbrExe;
         private System.Windows.Forms.TextBox txtMayExe;
         private System.Windows.Forms.TextBox txtJunExe;
-        private System.Windows.Forms.TextBox txtJul;
+        private System.Windows.Forms.TextBox txtJulExe;
         private System.Windows.Forms.TextBox txtAgoExe;
         private System.Windows.Forms.TextBox txtSepExe;
         private System.Windows.Forms.TextBox txtOctExe;
