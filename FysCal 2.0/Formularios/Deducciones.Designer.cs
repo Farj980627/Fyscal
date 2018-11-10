@@ -133,7 +133,6 @@
             this.txtOctAcu = new System.Windows.Forms.TextBox();
             this.txtNovAcu = new System.Windows.Forms.TextBox();
             this.txtDicAcu = new System.Windows.Forms.TextBox();
-            this.txtTotAcu = new System.Windows.Forms.TextBox();
             this.txtTotMes = new System.Windows.Forms.TextBox();
             this.txtTotEst = new System.Windows.Forms.TextBox();
             this.txtTotNoo = new System.Windows.Forms.TextBox();
@@ -143,9 +142,55 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtTotIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtTotPTU = new System.Windows.Forms.TextBox();
+            this.txtTotPerdidas = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtEneIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtFebIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtMarIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtAbrIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtMayIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtJunIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtJulIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtAgoIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtSepIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtOctIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtNovIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtDicIVAAcr = new System.Windows.Forms.TextBox();
+            this.txtEnePTU = new System.Windows.Forms.TextBox();
+            this.txtFebPTU = new System.Windows.Forms.TextBox();
+            this.txtMarPTU = new System.Windows.Forms.TextBox();
+            this.txtAbrPTU = new System.Windows.Forms.TextBox();
+            this.txtMayPTU = new System.Windows.Forms.TextBox();
+            this.txtJunPTU = new System.Windows.Forms.TextBox();
+            this.txtJulPTU = new System.Windows.Forms.TextBox();
+            this.txtAgoPTU = new System.Windows.Forms.TextBox();
+            this.txtSepPTU = new System.Windows.Forms.TextBox();
+            this.txtOctPTU = new System.Windows.Forms.TextBox();
+            this.txtNovPTU = new System.Windows.Forms.TextBox();
+            this.txtDicPTU = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtEnePerdidas = new System.Windows.Forms.TextBox();
+            this.txtFebPerdidas = new System.Windows.Forms.TextBox();
+            this.txtMarPerdidas = new System.Windows.Forms.TextBox();
+            this.txtAbrPerdidas = new System.Windows.Forms.TextBox();
+            this.txtMayPerdidas = new System.Windows.Forms.TextBox();
+            this.txtJunPerdidas = new System.Windows.Forms.TextBox();
+            this.txtJulPerdidas = new System.Windows.Forms.TextBox();
+            this.txtAgoPerdidas = new System.Windows.Forms.TextBox();
+            this.txtSepPerdidas = new System.Windows.Forms.TextBox();
+            this.txtOctPerdidas = new System.Windows.Forms.TextBox();
+            this.txtNovPerdidas = new System.Windows.Forms.TextBox();
+            this.txtDicPerdidas = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -270,7 +315,6 @@
             this.tableLayoutPanel1.Controls.Add(this.txtOctAcu, 7, 10);
             this.tableLayoutPanel1.Controls.Add(this.txtNovAcu, 7, 11);
             this.tableLayoutPanel1.Controls.Add(this.txtDicAcu, 7, 12);
-            this.tableLayoutPanel1.Controls.Add(this.txtTotAcu, 7, 13);
             this.tableLayoutPanel1.Controls.Add(this.txtTotMes, 6, 13);
             this.tableLayoutPanel1.Controls.Add(this.txtTotEst, 5, 13);
             this.tableLayoutPanel1.Controls.Add(this.txtTotNoo, 4, 13);
@@ -538,6 +582,8 @@
             this.txtEne16.TabIndex = 27;
             this.txtEne16.Text = "0";
             this.txtEne16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEne16.TextChanged += new System.EventHandler(this.txtEne16_TextChanged);
+            this.txtEne16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtFeb16
             // 
@@ -551,6 +597,8 @@
             this.txtFeb16.TabIndex = 29;
             this.txtFeb16.Text = "0";
             this.txtFeb16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFeb16.TextChanged += new System.EventHandler(this.txtFeb16_TextChanged);
+            this.txtFeb16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtMar16
             // 
@@ -564,6 +612,8 @@
             this.txtMar16.TabIndex = 28;
             this.txtMar16.Text = "0";
             this.txtMar16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMar16.TextChanged += new System.EventHandler(this.txtMar16_TextChanged);
+            this.txtMar16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtAbr16
             // 
@@ -577,6 +627,8 @@
             this.txtAbr16.TabIndex = 30;
             this.txtAbr16.Text = "0";
             this.txtAbr16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbr16.TextChanged += new System.EventHandler(this.txtAbr16_TextChanged);
+            this.txtAbr16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtMay16
             // 
@@ -590,6 +642,8 @@
             this.txtMay16.TabIndex = 26;
             this.txtMay16.Text = "0";
             this.txtMay16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMay16.TextChanged += new System.EventHandler(this.txtMay16_TextChanged);
+            this.txtMay16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtJun16
             // 
@@ -603,6 +657,8 @@
             this.txtJun16.TabIndex = 24;
             this.txtJun16.Text = "0";
             this.txtJun16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJun16.TextChanged += new System.EventHandler(this.txtJun16_TextChanged);
+            this.txtJun16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtJul16
             // 
@@ -616,6 +672,8 @@
             this.txtJul16.TabIndex = 33;
             this.txtJul16.Text = "0";
             this.txtJul16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJul16.TextChanged += new System.EventHandler(this.txtJul16_TextChanged);
+            this.txtJul16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtAgo16
             // 
@@ -629,6 +687,8 @@
             this.txtAgo16.TabIndex = 32;
             this.txtAgo16.Text = "0";
             this.txtAgo16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgo16.TextChanged += new System.EventHandler(this.txtAgo16_TextChanged);
+            this.txtAgo16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtSep16
             // 
@@ -642,6 +702,8 @@
             this.txtSep16.TabIndex = 31;
             this.txtSep16.Text = "0";
             this.txtSep16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSep16.TextChanged += new System.EventHandler(this.txtSep16_TextChanged);
+            this.txtSep16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtOct16
             // 
@@ -655,6 +717,8 @@
             this.txtOct16.TabIndex = 34;
             this.txtOct16.Text = "0";
             this.txtOct16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOct16.TextChanged += new System.EventHandler(this.txtOct16_TextChanged);
+            this.txtOct16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtNov16
             // 
@@ -668,6 +732,8 @@
             this.txtNov16.TabIndex = 25;
             this.txtNov16.Text = "0";
             this.txtNov16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNov16.TextChanged += new System.EventHandler(this.txtNov16_TextChanged);
+            this.txtNov16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtDic16
             // 
@@ -681,6 +747,8 @@
             this.txtDic16.TabIndex = 35;
             this.txtDic16.Text = "0";
             this.txtDic16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDic16.TextChanged += new System.EventHandler(this.txtDic16_TextChanged);
+            this.txtDic16.Leave += new System.EventHandler(this.txtDic16_Leave);
             // 
             // txtEne0
             // 
@@ -694,6 +762,8 @@
             this.txtEne0.TabIndex = 36;
             this.txtEne0.Text = "0";
             this.txtEne0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEne0.TextChanged += new System.EventHandler(this.txtEne16_TextChanged);
+            this.txtEne0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtFeb0
             // 
@@ -707,6 +777,8 @@
             this.txtFeb0.TabIndex = 37;
             this.txtFeb0.Text = "0";
             this.txtFeb0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFeb0.TextChanged += new System.EventHandler(this.txtFeb16_TextChanged);
+            this.txtFeb0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtMar0
             // 
@@ -720,6 +792,8 @@
             this.txtMar0.TabIndex = 38;
             this.txtMar0.Text = "0";
             this.txtMar0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMar0.TextChanged += new System.EventHandler(this.txtMar16_TextChanged);
+            this.txtMar0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtAbr0
             // 
@@ -733,6 +807,8 @@
             this.txtAbr0.TabIndex = 39;
             this.txtAbr0.Text = "0";
             this.txtAbr0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbr0.TextChanged += new System.EventHandler(this.txtAbr16_TextChanged);
+            this.txtAbr0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtMay0
             // 
@@ -746,6 +822,8 @@
             this.txtMay0.TabIndex = 40;
             this.txtMay0.Text = "0";
             this.txtMay0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMay0.TextChanged += new System.EventHandler(this.txtMay16_TextChanged);
+            this.txtMay0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtJun0
             // 
@@ -759,6 +837,8 @@
             this.txtJun0.TabIndex = 41;
             this.txtJun0.Text = "0";
             this.txtJun0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJun0.TextChanged += new System.EventHandler(this.txtJun16_TextChanged);
+            this.txtJun0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtJul0
             // 
@@ -772,6 +852,8 @@
             this.txtJul0.TabIndex = 42;
             this.txtJul0.Text = "0";
             this.txtJul0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJul0.TextChanged += new System.EventHandler(this.txtJul16_TextChanged);
+            this.txtJul0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtAgo0
             // 
@@ -785,6 +867,8 @@
             this.txtAgo0.TabIndex = 43;
             this.txtAgo0.Text = "0";
             this.txtAgo0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgo0.TextChanged += new System.EventHandler(this.txtAgo16_TextChanged);
+            this.txtAgo0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtSep0
             // 
@@ -798,6 +882,8 @@
             this.txtSep0.TabIndex = 44;
             this.txtSep0.Text = "0";
             this.txtSep0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSep0.TextChanged += new System.EventHandler(this.txtSep16_TextChanged);
+            this.txtSep0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtOct0
             // 
@@ -811,6 +897,8 @@
             this.txtOct0.TabIndex = 45;
             this.txtOct0.Text = "0";
             this.txtOct0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOct0.TextChanged += new System.EventHandler(this.txtOct16_TextChanged);
+            this.txtOct0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtNov0
             // 
@@ -824,6 +912,8 @@
             this.txtNov0.TabIndex = 46;
             this.txtNov0.Text = "0";
             this.txtNov0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNov0.TextChanged += new System.EventHandler(this.txtNov16_TextChanged);
+            this.txtNov0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtDic0
             // 
@@ -837,6 +927,8 @@
             this.txtDic0.TabIndex = 47;
             this.txtDic0.Text = "0";
             this.txtDic0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDic0.TextChanged += new System.EventHandler(this.txtDic16_TextChanged);
+            this.txtDic0.Leave += new System.EventHandler(this.txtDic0_Leave);
             // 
             // txtEneExe
             // 
@@ -850,6 +942,8 @@
             this.txtEneExe.TabIndex = 48;
             this.txtEneExe.Text = "0";
             this.txtEneExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEneExe.TextChanged += new System.EventHandler(this.txtEne16_TextChanged);
+            this.txtEneExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtFebExe
             // 
@@ -863,6 +957,8 @@
             this.txtFebExe.TabIndex = 49;
             this.txtFebExe.Text = "0";
             this.txtFebExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebExe.TextChanged += new System.EventHandler(this.txtFeb16_TextChanged);
+            this.txtFebExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtMarExe
             // 
@@ -876,6 +972,8 @@
             this.txtMarExe.TabIndex = 50;
             this.txtMarExe.Text = "0";
             this.txtMarExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarExe.TextChanged += new System.EventHandler(this.txtMar16_TextChanged);
+            this.txtMarExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtAbrExe
             // 
@@ -889,6 +987,8 @@
             this.txtAbrExe.TabIndex = 51;
             this.txtAbrExe.Text = "0";
             this.txtAbrExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrExe.TextChanged += new System.EventHandler(this.txtAbr16_TextChanged);
+            this.txtAbrExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtMayExe
             // 
@@ -902,6 +1002,8 @@
             this.txtMayExe.TabIndex = 52;
             this.txtMayExe.Text = "0";
             this.txtMayExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayExe.TextChanged += new System.EventHandler(this.txtMay16_TextChanged);
+            this.txtMayExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtJunExe
             // 
@@ -915,6 +1017,8 @@
             this.txtJunExe.TabIndex = 53;
             this.txtJunExe.Text = "0";
             this.txtJunExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunExe.TextChanged += new System.EventHandler(this.txtJun16_TextChanged);
+            this.txtJunExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtJulExe
             // 
@@ -928,6 +1032,8 @@
             this.txtJulExe.TabIndex = 54;
             this.txtJulExe.Text = "0";
             this.txtJulExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulExe.TextChanged += new System.EventHandler(this.txtJul16_TextChanged);
+            this.txtJulExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtAgoExe
             // 
@@ -941,6 +1047,8 @@
             this.txtAgoExe.TabIndex = 55;
             this.txtAgoExe.Text = "0";
             this.txtAgoExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoExe.TextChanged += new System.EventHandler(this.txtAgo16_TextChanged);
+            this.txtAgoExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtSepExe
             // 
@@ -954,6 +1062,8 @@
             this.txtSepExe.TabIndex = 56;
             this.txtSepExe.Text = "0";
             this.txtSepExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepExe.TextChanged += new System.EventHandler(this.txtSep16_TextChanged);
+            this.txtSepExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtOctExe
             // 
@@ -967,6 +1077,8 @@
             this.txtOctExe.TabIndex = 57;
             this.txtOctExe.Text = "0";
             this.txtOctExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctExe.TextChanged += new System.EventHandler(this.txtOct16_TextChanged);
+            this.txtOctExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtNovExe
             // 
@@ -980,6 +1092,8 @@
             this.txtNovExe.TabIndex = 58;
             this.txtNovExe.Text = "0";
             this.txtNovExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovExe.TextChanged += new System.EventHandler(this.txtNov16_TextChanged);
+            this.txtNovExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtDicExe
             // 
@@ -993,6 +1107,8 @@
             this.txtDicExe.TabIndex = 59;
             this.txtDicExe.Text = "0";
             this.txtDicExe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicExe.TextChanged += new System.EventHandler(this.txtDic16_TextChanged);
+            this.txtDicExe.Leave += new System.EventHandler(this.txtDicExe_Leave);
             // 
             // txtEneNoo
             // 
@@ -1006,6 +1122,8 @@
             this.txtEneNoo.TabIndex = 60;
             this.txtEneNoo.Text = "0";
             this.txtEneNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEneNoo.TextChanged += new System.EventHandler(this.txtEne16_TextChanged);
+            this.txtEneNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtFebNoo
             // 
@@ -1019,6 +1137,8 @@
             this.txtFebNoo.TabIndex = 61;
             this.txtFebNoo.Text = "0";
             this.txtFebNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebNoo.TextChanged += new System.EventHandler(this.txtFeb16_TextChanged);
+            this.txtFebNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtMarNoo
             // 
@@ -1032,6 +1152,8 @@
             this.txtMarNoo.TabIndex = 62;
             this.txtMarNoo.Text = "0";
             this.txtMarNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarNoo.TextChanged += new System.EventHandler(this.txtMar16_TextChanged);
+            this.txtMarNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtAbrNoo
             // 
@@ -1045,6 +1167,8 @@
             this.txtAbrNoo.TabIndex = 63;
             this.txtAbrNoo.Text = "0";
             this.txtAbrNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrNoo.TextChanged += new System.EventHandler(this.txtAbr16_TextChanged);
+            this.txtAbrNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtMayNoo
             // 
@@ -1058,6 +1182,8 @@
             this.txtMayNoo.TabIndex = 64;
             this.txtMayNoo.Text = "0";
             this.txtMayNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayNoo.TextChanged += new System.EventHandler(this.txtMay16_TextChanged);
+            this.txtMayNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtJunNoo
             // 
@@ -1071,6 +1197,8 @@
             this.txtJunNoo.TabIndex = 65;
             this.txtJunNoo.Text = "0";
             this.txtJunNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunNoo.TextChanged += new System.EventHandler(this.txtJun16_TextChanged);
+            this.txtJunNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtJulNoo
             // 
@@ -1084,6 +1212,8 @@
             this.txtJulNoo.TabIndex = 66;
             this.txtJulNoo.Text = "0";
             this.txtJulNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulNoo.TextChanged += new System.EventHandler(this.txtJul16_TextChanged);
+            this.txtJulNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtAgoNoo
             // 
@@ -1097,6 +1227,8 @@
             this.txtAgoNoo.TabIndex = 67;
             this.txtAgoNoo.Text = "0";
             this.txtAgoNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoNoo.TextChanged += new System.EventHandler(this.txtAgo16_TextChanged);
+            this.txtAgoNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtSepNoo
             // 
@@ -1110,6 +1242,8 @@
             this.txtSepNoo.TabIndex = 68;
             this.txtSepNoo.Text = "0";
             this.txtSepNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepNoo.TextChanged += new System.EventHandler(this.txtSep16_TextChanged);
+            this.txtSepNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtOctNoo
             // 
@@ -1123,6 +1257,8 @@
             this.txtOctNoo.TabIndex = 69;
             this.txtOctNoo.Text = "0";
             this.txtOctNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctNoo.TextChanged += new System.EventHandler(this.txtOct16_TextChanged);
+            this.txtOctNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtNovNoo
             // 
@@ -1136,6 +1272,8 @@
             this.txtNovNoo.TabIndex = 70;
             this.txtNovNoo.Text = "0";
             this.txtNovNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovNoo.TextChanged += new System.EventHandler(this.txtNov16_TextChanged);
+            this.txtNovNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtDicNoo
             // 
@@ -1149,6 +1287,8 @@
             this.txtDicNoo.TabIndex = 71;
             this.txtDicNoo.Text = "0";
             this.txtDicNoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicNoo.TextChanged += new System.EventHandler(this.txtDic16_TextChanged);
+            this.txtDicNoo.Leave += new System.EventHandler(this.txtDicNoo_Leave);
             // 
             // txtEneEst
             // 
@@ -1162,6 +1302,7 @@
             this.txtEneEst.TabIndex = 72;
             this.txtEneEst.Text = "0";
             this.txtEneEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEneEst.TextChanged += new System.EventHandler(this.txtEne16_TextChanged);
             // 
             // txtFebEst
             // 
@@ -1175,6 +1316,7 @@
             this.txtFebEst.TabIndex = 73;
             this.txtFebEst.Text = "0";
             this.txtFebEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebEst.TextChanged += new System.EventHandler(this.txtFeb16_TextChanged);
             // 
             // txtMarEst
             // 
@@ -1188,6 +1330,7 @@
             this.txtMarEst.TabIndex = 74;
             this.txtMarEst.Text = "0";
             this.txtMarEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarEst.TextChanged += new System.EventHandler(this.txtMar16_TextChanged);
             // 
             // txtAbrEst
             // 
@@ -1201,6 +1344,7 @@
             this.txtAbrEst.TabIndex = 75;
             this.txtAbrEst.Text = "0";
             this.txtAbrEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrEst.TextChanged += new System.EventHandler(this.txtAbr16_TextChanged);
             // 
             // txtMayEst
             // 
@@ -1214,6 +1358,7 @@
             this.txtMayEst.TabIndex = 76;
             this.txtMayEst.Text = "0";
             this.txtMayEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayEst.TextChanged += new System.EventHandler(this.txtMay16_TextChanged);
             // 
             // txtJunEst
             // 
@@ -1227,6 +1372,7 @@
             this.txtJunEst.TabIndex = 77;
             this.txtJunEst.Text = "0";
             this.txtJunEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunEst.TextChanged += new System.EventHandler(this.txtJun16_TextChanged);
             // 
             // txtJulEst
             // 
@@ -1240,6 +1386,7 @@
             this.txtJulEst.TabIndex = 78;
             this.txtJulEst.Text = "0";
             this.txtJulEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulEst.TextChanged += new System.EventHandler(this.txtJul16_TextChanged);
             // 
             // txtAgoEst
             // 
@@ -1253,6 +1400,7 @@
             this.txtAgoEst.TabIndex = 79;
             this.txtAgoEst.Text = "0";
             this.txtAgoEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoEst.TextChanged += new System.EventHandler(this.txtAgo16_TextChanged);
             // 
             // txtSepEst
             // 
@@ -1266,6 +1414,7 @@
             this.txtSepEst.TabIndex = 80;
             this.txtSepEst.Text = "0";
             this.txtSepEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepEst.TextChanged += new System.EventHandler(this.txtSep16_TextChanged);
             // 
             // txtOctEst
             // 
@@ -1279,6 +1428,7 @@
             this.txtOctEst.TabIndex = 81;
             this.txtOctEst.Text = "0";
             this.txtOctEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctEst.TextChanged += new System.EventHandler(this.txtOct16_TextChanged);
             // 
             // txtNovEst
             // 
@@ -1292,6 +1442,7 @@
             this.txtNovEst.TabIndex = 82;
             this.txtNovEst.Text = "0";
             this.txtNovEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovEst.TextChanged += new System.EventHandler(this.txtNov16_TextChanged);
             // 
             // txtDicEst
             // 
@@ -1305,6 +1456,7 @@
             this.txtDicEst.TabIndex = 83;
             this.txtDicEst.Text = "0";
             this.txtDicEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicEst.TextChanged += new System.EventHandler(this.txtDic16_TextChanged);
             // 
             // txtEneMes
             // 
@@ -1314,10 +1466,12 @@
             this.txtEneMes.ForeColor = System.Drawing.Color.White;
             this.txtEneMes.Location = new System.Drawing.Point(759, 46);
             this.txtEneMes.Name = "txtEneMes";
+            this.txtEneMes.ReadOnly = true;
             this.txtEneMes.Size = new System.Drawing.Size(120, 30);
             this.txtEneMes.TabIndex = 84;
             this.txtEneMes.Text = "0";
             this.txtEneMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEneMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtFebMes
             // 
@@ -1327,10 +1481,12 @@
             this.txtFebMes.ForeColor = System.Drawing.Color.White;
             this.txtFebMes.Location = new System.Drawing.Point(759, 89);
             this.txtFebMes.Name = "txtFebMes";
+            this.txtFebMes.ReadOnly = true;
             this.txtFebMes.Size = new System.Drawing.Size(120, 30);
             this.txtFebMes.TabIndex = 85;
             this.txtFebMes.Text = "0";
             this.txtFebMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtMarMes
             // 
@@ -1340,10 +1496,12 @@
             this.txtMarMes.ForeColor = System.Drawing.Color.White;
             this.txtMarMes.Location = new System.Drawing.Point(759, 132);
             this.txtMarMes.Name = "txtMarMes";
+            this.txtMarMes.ReadOnly = true;
             this.txtMarMes.Size = new System.Drawing.Size(120, 30);
             this.txtMarMes.TabIndex = 86;
             this.txtMarMes.Text = "0";
             this.txtMarMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtAbrMes
             // 
@@ -1353,10 +1511,12 @@
             this.txtAbrMes.ForeColor = System.Drawing.Color.White;
             this.txtAbrMes.Location = new System.Drawing.Point(759, 175);
             this.txtAbrMes.Name = "txtAbrMes";
+            this.txtAbrMes.ReadOnly = true;
             this.txtAbrMes.Size = new System.Drawing.Size(120, 30);
             this.txtAbrMes.TabIndex = 87;
             this.txtAbrMes.Text = "0";
             this.txtAbrMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtMayMes
             // 
@@ -1366,10 +1526,12 @@
             this.txtMayMes.ForeColor = System.Drawing.Color.White;
             this.txtMayMes.Location = new System.Drawing.Point(759, 218);
             this.txtMayMes.Name = "txtMayMes";
+            this.txtMayMes.ReadOnly = true;
             this.txtMayMes.Size = new System.Drawing.Size(120, 30);
             this.txtMayMes.TabIndex = 88;
             this.txtMayMes.Text = "0";
             this.txtMayMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtJunMes
             // 
@@ -1379,10 +1541,12 @@
             this.txtJunMes.ForeColor = System.Drawing.Color.White;
             this.txtJunMes.Location = new System.Drawing.Point(759, 261);
             this.txtJunMes.Name = "txtJunMes";
+            this.txtJunMes.ReadOnly = true;
             this.txtJunMes.Size = new System.Drawing.Size(120, 30);
             this.txtJunMes.TabIndex = 89;
             this.txtJunMes.Text = "0";
             this.txtJunMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtJulMes
             // 
@@ -1392,10 +1556,12 @@
             this.txtJulMes.ForeColor = System.Drawing.Color.White;
             this.txtJulMes.Location = new System.Drawing.Point(759, 304);
             this.txtJulMes.Name = "txtJulMes";
+            this.txtJulMes.ReadOnly = true;
             this.txtJulMes.Size = new System.Drawing.Size(120, 30);
             this.txtJulMes.TabIndex = 90;
             this.txtJulMes.Text = "0";
             this.txtJulMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtAgoMes
             // 
@@ -1405,10 +1571,12 @@
             this.txtAgoMes.ForeColor = System.Drawing.Color.White;
             this.txtAgoMes.Location = new System.Drawing.Point(759, 347);
             this.txtAgoMes.Name = "txtAgoMes";
+            this.txtAgoMes.ReadOnly = true;
             this.txtAgoMes.Size = new System.Drawing.Size(120, 30);
             this.txtAgoMes.TabIndex = 91;
             this.txtAgoMes.Text = "0";
             this.txtAgoMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtSepMes
             // 
@@ -1418,10 +1586,12 @@
             this.txtSepMes.ForeColor = System.Drawing.Color.White;
             this.txtSepMes.Location = new System.Drawing.Point(759, 390);
             this.txtSepMes.Name = "txtSepMes";
+            this.txtSepMes.ReadOnly = true;
             this.txtSepMes.Size = new System.Drawing.Size(120, 30);
             this.txtSepMes.TabIndex = 92;
             this.txtSepMes.Text = "0";
             this.txtSepMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtOctMes
             // 
@@ -1431,10 +1601,12 @@
             this.txtOctMes.ForeColor = System.Drawing.Color.White;
             this.txtOctMes.Location = new System.Drawing.Point(759, 433);
             this.txtOctMes.Name = "txtOctMes";
+            this.txtOctMes.ReadOnly = true;
             this.txtOctMes.Size = new System.Drawing.Size(120, 30);
             this.txtOctMes.TabIndex = 93;
             this.txtOctMes.Text = "0";
             this.txtOctMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtNovMes
             // 
@@ -1444,10 +1616,12 @@
             this.txtNovMes.ForeColor = System.Drawing.Color.White;
             this.txtNovMes.Location = new System.Drawing.Point(759, 476);
             this.txtNovMes.Name = "txtNovMes";
+            this.txtNovMes.ReadOnly = true;
             this.txtNovMes.Size = new System.Drawing.Size(120, 30);
             this.txtNovMes.TabIndex = 94;
             this.txtNovMes.Text = "0";
             this.txtNovMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtDicMes
             // 
@@ -1457,10 +1631,12 @@
             this.txtDicMes.ForeColor = System.Drawing.Color.White;
             this.txtDicMes.Location = new System.Drawing.Point(759, 519);
             this.txtDicMes.Name = "txtDicMes";
+            this.txtDicMes.ReadOnly = true;
             this.txtDicMes.Size = new System.Drawing.Size(120, 30);
             this.txtDicMes.TabIndex = 95;
             this.txtDicMes.Text = "0";
             this.txtDicMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicMes.TextChanged += new System.EventHandler(this.txtDicMes_TextChanged);
             // 
             // txtEneAcu
             // 
@@ -1470,6 +1646,7 @@
             this.txtEneAcu.ForeColor = System.Drawing.Color.White;
             this.txtEneAcu.Location = new System.Drawing.Point(885, 46);
             this.txtEneAcu.Name = "txtEneAcu";
+            this.txtEneAcu.ReadOnly = true;
             this.txtEneAcu.Size = new System.Drawing.Size(126, 30);
             this.txtEneAcu.TabIndex = 96;
             this.txtEneAcu.Text = "0";
@@ -1483,6 +1660,7 @@
             this.txtFebAcu.ForeColor = System.Drawing.Color.White;
             this.txtFebAcu.Location = new System.Drawing.Point(885, 89);
             this.txtFebAcu.Name = "txtFebAcu";
+            this.txtFebAcu.ReadOnly = true;
             this.txtFebAcu.Size = new System.Drawing.Size(126, 30);
             this.txtFebAcu.TabIndex = 97;
             this.txtFebAcu.Text = "0";
@@ -1496,6 +1674,7 @@
             this.txtMarAcu.ForeColor = System.Drawing.Color.White;
             this.txtMarAcu.Location = new System.Drawing.Point(885, 132);
             this.txtMarAcu.Name = "txtMarAcu";
+            this.txtMarAcu.ReadOnly = true;
             this.txtMarAcu.Size = new System.Drawing.Size(126, 30);
             this.txtMarAcu.TabIndex = 98;
             this.txtMarAcu.Text = "0";
@@ -1509,6 +1688,7 @@
             this.txtAbrAcu.ForeColor = System.Drawing.Color.White;
             this.txtAbrAcu.Location = new System.Drawing.Point(885, 175);
             this.txtAbrAcu.Name = "txtAbrAcu";
+            this.txtAbrAcu.ReadOnly = true;
             this.txtAbrAcu.Size = new System.Drawing.Size(126, 30);
             this.txtAbrAcu.TabIndex = 99;
             this.txtAbrAcu.Text = "0";
@@ -1522,6 +1702,7 @@
             this.txtMayAcu.ForeColor = System.Drawing.Color.White;
             this.txtMayAcu.Location = new System.Drawing.Point(885, 218);
             this.txtMayAcu.Name = "txtMayAcu";
+            this.txtMayAcu.ReadOnly = true;
             this.txtMayAcu.Size = new System.Drawing.Size(126, 30);
             this.txtMayAcu.TabIndex = 100;
             this.txtMayAcu.Text = "0";
@@ -1535,6 +1716,7 @@
             this.txtJunAcu.ForeColor = System.Drawing.Color.White;
             this.txtJunAcu.Location = new System.Drawing.Point(885, 261);
             this.txtJunAcu.Name = "txtJunAcu";
+            this.txtJunAcu.ReadOnly = true;
             this.txtJunAcu.Size = new System.Drawing.Size(126, 30);
             this.txtJunAcu.TabIndex = 101;
             this.txtJunAcu.Text = "0";
@@ -1548,6 +1730,7 @@
             this.txtJulAcu.ForeColor = System.Drawing.Color.White;
             this.txtJulAcu.Location = new System.Drawing.Point(885, 304);
             this.txtJulAcu.Name = "txtJulAcu";
+            this.txtJulAcu.ReadOnly = true;
             this.txtJulAcu.Size = new System.Drawing.Size(126, 30);
             this.txtJulAcu.TabIndex = 102;
             this.txtJulAcu.Text = "0";
@@ -1561,6 +1744,7 @@
             this.txtAgoAcu.ForeColor = System.Drawing.Color.White;
             this.txtAgoAcu.Location = new System.Drawing.Point(885, 347);
             this.txtAgoAcu.Name = "txtAgoAcu";
+            this.txtAgoAcu.ReadOnly = true;
             this.txtAgoAcu.Size = new System.Drawing.Size(126, 30);
             this.txtAgoAcu.TabIndex = 103;
             this.txtAgoAcu.Text = "0";
@@ -1574,6 +1758,7 @@
             this.txtSepAcu.ForeColor = System.Drawing.Color.White;
             this.txtSepAcu.Location = new System.Drawing.Point(885, 390);
             this.txtSepAcu.Name = "txtSepAcu";
+            this.txtSepAcu.ReadOnly = true;
             this.txtSepAcu.Size = new System.Drawing.Size(126, 30);
             this.txtSepAcu.TabIndex = 104;
             this.txtSepAcu.Text = "0";
@@ -1587,6 +1772,7 @@
             this.txtOctAcu.ForeColor = System.Drawing.Color.White;
             this.txtOctAcu.Location = new System.Drawing.Point(885, 433);
             this.txtOctAcu.Name = "txtOctAcu";
+            this.txtOctAcu.ReadOnly = true;
             this.txtOctAcu.Size = new System.Drawing.Size(126, 30);
             this.txtOctAcu.TabIndex = 105;
             this.txtOctAcu.Text = "0";
@@ -1600,6 +1786,7 @@
             this.txtNovAcu.ForeColor = System.Drawing.Color.White;
             this.txtNovAcu.Location = new System.Drawing.Point(885, 476);
             this.txtNovAcu.Name = "txtNovAcu";
+            this.txtNovAcu.ReadOnly = true;
             this.txtNovAcu.Size = new System.Drawing.Size(126, 30);
             this.txtNovAcu.TabIndex = 106;
             this.txtNovAcu.Text = "0";
@@ -1613,23 +1800,11 @@
             this.txtDicAcu.ForeColor = System.Drawing.Color.White;
             this.txtDicAcu.Location = new System.Drawing.Point(885, 519);
             this.txtDicAcu.Name = "txtDicAcu";
+            this.txtDicAcu.ReadOnly = true;
             this.txtDicAcu.Size = new System.Drawing.Size(126, 30);
             this.txtDicAcu.TabIndex = 107;
             this.txtDicAcu.Text = "0";
             this.txtDicAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtTotAcu
-            // 
-            this.txtTotAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTotAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtTotAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotAcu.ForeColor = System.Drawing.Color.White;
-            this.txtTotAcu.Location = new System.Drawing.Point(885, 562);
-            this.txtTotAcu.Name = "txtTotAcu";
-            this.txtTotAcu.Size = new System.Drawing.Size(126, 30);
-            this.txtTotAcu.TabIndex = 112;
-            this.txtTotAcu.Text = "0";
-            this.txtTotAcu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotMes
             // 
@@ -1639,6 +1814,7 @@
             this.txtTotMes.ForeColor = System.Drawing.Color.White;
             this.txtTotMes.Location = new System.Drawing.Point(759, 562);
             this.txtTotMes.Name = "txtTotMes";
+            this.txtTotMes.ReadOnly = true;
             this.txtTotMes.Size = new System.Drawing.Size(120, 30);
             this.txtTotMes.TabIndex = 109;
             this.txtTotMes.Text = "0";
@@ -1652,6 +1828,7 @@
             this.txtTotEst.ForeColor = System.Drawing.Color.White;
             this.txtTotEst.Location = new System.Drawing.Point(633, 562);
             this.txtTotEst.Name = "txtTotEst";
+            this.txtTotEst.ReadOnly = true;
             this.txtTotEst.Size = new System.Drawing.Size(120, 30);
             this.txtTotEst.TabIndex = 108;
             this.txtTotEst.Text = "0";
@@ -1665,6 +1842,7 @@
             this.txtTotNoo.ForeColor = System.Drawing.Color.White;
             this.txtTotNoo.Location = new System.Drawing.Point(507, 562);
             this.txtTotNoo.Name = "txtTotNoo";
+            this.txtTotNoo.ReadOnly = true;
             this.txtTotNoo.Size = new System.Drawing.Size(120, 30);
             this.txtTotNoo.TabIndex = 110;
             this.txtTotNoo.Text = "0";
@@ -1678,6 +1856,7 @@
             this.txtTotExe.ForeColor = System.Drawing.Color.White;
             this.txtTotExe.Location = new System.Drawing.Point(381, 562);
             this.txtTotExe.Name = "txtTotExe";
+            this.txtTotExe.ReadOnly = true;
             this.txtTotExe.Size = new System.Drawing.Size(120, 30);
             this.txtTotExe.TabIndex = 114;
             this.txtTotExe.Text = "0";
@@ -1691,6 +1870,7 @@
             this.txtTot0.ForeColor = System.Drawing.Color.White;
             this.txtTot0.Location = new System.Drawing.Point(255, 562);
             this.txtTot0.Name = "txtTot0";
+            this.txtTot0.ReadOnly = true;
             this.txtTot0.Size = new System.Drawing.Size(120, 30);
             this.txtTot0.TabIndex = 113;
             this.txtTot0.Text = "0";
@@ -1704,6 +1884,7 @@
             this.txtTot16.ForeColor = System.Drawing.Color.White;
             this.txtTot16.Location = new System.Drawing.Point(129, 562);
             this.txtTot16.Name = "txtTot16";
+            this.txtTot16.ReadOnly = true;
             this.txtTot16.Size = new System.Drawing.Size(120, 30);
             this.txtTot16.TabIndex = 111;
             this.txtTot16.Text = "0";
@@ -1716,7 +1897,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.btnGuardar, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnCancelar, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(594, 638);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1048, 638);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1757,13 +1938,671 @@
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tableLayoutPanel3);
+            this.panel2.Location = new System.Drawing.Point(1038, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(449, 620);
+            this.panel2.TabIndex = 3;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.Controls.Add(this.txtTotIVAAcr, 0, 13);
+            this.tableLayoutPanel3.Controls.Add(this.txtTotPTU, 0, 13);
+            this.tableLayoutPanel3.Controls.Add(this.txtTotPerdidas, 0, 13);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label21, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtEneIVAAcr, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtFebIVAAcr, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.txtMarIVAAcr, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.txtAbrIVAAcr, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.txtMayIVAAcr, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.txtJunIVAAcr, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.txtJulIVAAcr, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.txtAgoIVAAcr, 0, 8);
+            this.tableLayoutPanel3.Controls.Add(this.txtSepIVAAcr, 0, 9);
+            this.tableLayoutPanel3.Controls.Add(this.txtOctIVAAcr, 0, 10);
+            this.tableLayoutPanel3.Controls.Add(this.txtNovIVAAcr, 0, 11);
+            this.tableLayoutPanel3.Controls.Add(this.txtDicIVAAcr, 0, 12);
+            this.tableLayoutPanel3.Controls.Add(this.txtEnePTU, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtFebPTU, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.txtMarPTU, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.txtAbrPTU, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.txtMayPTU, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.txtJunPTU, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.txtJulPTU, 1, 7);
+            this.tableLayoutPanel3.Controls.Add(this.txtAgoPTU, 1, 8);
+            this.tableLayoutPanel3.Controls.Add(this.txtSepPTU, 1, 9);
+            this.tableLayoutPanel3.Controls.Add(this.txtOctPTU, 1, 10);
+            this.tableLayoutPanel3.Controls.Add(this.txtNovPTU, 1, 11);
+            this.tableLayoutPanel3.Controls.Add(this.txtDicPTU, 1, 12);
+            this.tableLayoutPanel3.Controls.Add(this.label22, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtEnePerdidas, 2, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtFebPerdidas, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.txtMarPerdidas, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.txtAbrPerdidas, 2, 4);
+            this.tableLayoutPanel3.Controls.Add(this.txtMayPerdidas, 2, 5);
+            this.tableLayoutPanel3.Controls.Add(this.txtJunPerdidas, 2, 6);
+            this.tableLayoutPanel3.Controls.Add(this.txtJulPerdidas, 2, 7);
+            this.tableLayoutPanel3.Controls.Add(this.txtAgoPerdidas, 2, 8);
+            this.tableLayoutPanel3.Controls.Add(this.txtSepPerdidas, 2, 9);
+            this.tableLayoutPanel3.Controls.Add(this.txtOctPerdidas, 2, 10);
+            this.tableLayoutPanel3.Controls.Add(this.txtNovPerdidas, 2, 11);
+            this.tableLayoutPanel3.Controls.Add(this.txtDicPerdidas, 2, 12);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 14;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142856F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(443, 607);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // txtTotIVAAcr
+            // 
+            this.txtTotIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTotIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtTotIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtTotIVAAcr.Location = new System.Drawing.Point(7, 562);
+            this.txtTotIVAAcr.Name = "txtTotIVAAcr";
+            this.txtTotIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtTotIVAAcr.TabIndex = 65;
+            this.txtTotIVAAcr.Text = "0";
+            this.txtTotIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtTotPTU
+            // 
+            this.txtTotPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTotPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtTotPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotPTU.ForeColor = System.Drawing.Color.White;
+            this.txtTotPTU.Location = new System.Drawing.Point(154, 562);
+            this.txtTotPTU.Name = "txtTotPTU";
+            this.txtTotPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtTotPTU.TabIndex = 51;
+            this.txtTotPTU.Text = "0";
+            this.txtTotPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtTotPerdidas
+            // 
+            this.txtTotPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTotPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtTotPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtTotPerdidas.Location = new System.Drawing.Point(302, 562);
+            this.txtTotPerdidas.Name = "txtTotPerdidas";
+            this.txtTotPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtTotPerdidas.TabIndex = 50;
+            this.txtTotPerdidas.Text = "0";
+            this.txtTotPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Britannic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 43);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "IVA Acreditable (Manual)";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Britannic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(165, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(110, 43);
+            this.label21.TabIndex = 19;
+            this.label21.Text = "PTU Pagada";
+            // 
+            // txtEneIVAAcr
+            // 
+            this.txtEneIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEneIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtEneIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEneIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtEneIVAAcr.Location = new System.Drawing.Point(7, 46);
+            this.txtEneIVAAcr.Name = "txtEneIVAAcr";
+            this.txtEneIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtEneIVAAcr.TabIndex = 25;
+            this.txtEneIVAAcr.Text = "0";
+            this.txtEneIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEneIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtFebIVAAcr
+            // 
+            this.txtFebIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtFebIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtFebIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFebIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtFebIVAAcr.Location = new System.Drawing.Point(7, 89);
+            this.txtFebIVAAcr.Name = "txtFebIVAAcr";
+            this.txtFebIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtFebIVAAcr.TabIndex = 26;
+            this.txtFebIVAAcr.Text = "0";
+            this.txtFebIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtMarIVAAcr
+            // 
+            this.txtMarIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMarIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtMarIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtMarIVAAcr.Location = new System.Drawing.Point(7, 132);
+            this.txtMarIVAAcr.Name = "txtMarIVAAcr";
+            this.txtMarIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtMarIVAAcr.TabIndex = 27;
+            this.txtMarIVAAcr.Text = "0";
+            this.txtMarIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtAbrIVAAcr
+            // 
+            this.txtAbrIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAbrIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtAbrIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbrIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtAbrIVAAcr.Location = new System.Drawing.Point(7, 175);
+            this.txtAbrIVAAcr.Name = "txtAbrIVAAcr";
+            this.txtAbrIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtAbrIVAAcr.TabIndex = 28;
+            this.txtAbrIVAAcr.Text = "0";
+            this.txtAbrIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtMayIVAAcr
+            // 
+            this.txtMayIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMayIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtMayIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMayIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtMayIVAAcr.Location = new System.Drawing.Point(7, 218);
+            this.txtMayIVAAcr.Name = "txtMayIVAAcr";
+            this.txtMayIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtMayIVAAcr.TabIndex = 29;
+            this.txtMayIVAAcr.Text = "0";
+            this.txtMayIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtJunIVAAcr
+            // 
+            this.txtJunIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJunIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtJunIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJunIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtJunIVAAcr.Location = new System.Drawing.Point(7, 261);
+            this.txtJunIVAAcr.Name = "txtJunIVAAcr";
+            this.txtJunIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtJunIVAAcr.TabIndex = 30;
+            this.txtJunIVAAcr.Text = "0";
+            this.txtJunIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtJulIVAAcr
+            // 
+            this.txtJulIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJulIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtJulIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJulIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtJulIVAAcr.Location = new System.Drawing.Point(7, 304);
+            this.txtJulIVAAcr.Name = "txtJulIVAAcr";
+            this.txtJulIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtJulIVAAcr.TabIndex = 31;
+            this.txtJulIVAAcr.Text = "0";
+            this.txtJulIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtAgoIVAAcr
+            // 
+            this.txtAgoIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAgoIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtAgoIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAgoIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtAgoIVAAcr.Location = new System.Drawing.Point(7, 347);
+            this.txtAgoIVAAcr.Name = "txtAgoIVAAcr";
+            this.txtAgoIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtAgoIVAAcr.TabIndex = 32;
+            this.txtAgoIVAAcr.Text = "0";
+            this.txtAgoIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtSepIVAAcr
+            // 
+            this.txtSepIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSepIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtSepIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSepIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtSepIVAAcr.Location = new System.Drawing.Point(7, 390);
+            this.txtSepIVAAcr.Name = "txtSepIVAAcr";
+            this.txtSepIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtSepIVAAcr.TabIndex = 33;
+            this.txtSepIVAAcr.Text = "0";
+            this.txtSepIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtOctIVAAcr
+            // 
+            this.txtOctIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtOctIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtOctIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOctIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtOctIVAAcr.Location = new System.Drawing.Point(7, 433);
+            this.txtOctIVAAcr.Name = "txtOctIVAAcr";
+            this.txtOctIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtOctIVAAcr.TabIndex = 34;
+            this.txtOctIVAAcr.Text = "0";
+            this.txtOctIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtNovIVAAcr
+            // 
+            this.txtNovIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNovIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtNovIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNovIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtNovIVAAcr.Location = new System.Drawing.Point(7, 476);
+            this.txtNovIVAAcr.Name = "txtNovIVAAcr";
+            this.txtNovIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtNovIVAAcr.TabIndex = 35;
+            this.txtNovIVAAcr.Text = "0";
+            this.txtNovIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtDicIVAAcr
+            // 
+            this.txtDicIVAAcr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtDicIVAAcr.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtDicIVAAcr.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDicIVAAcr.ForeColor = System.Drawing.Color.White;
+            this.txtDicIVAAcr.Location = new System.Drawing.Point(7, 519);
+            this.txtDicIVAAcr.Name = "txtDicIVAAcr";
+            this.txtDicIVAAcr.Size = new System.Drawing.Size(133, 30);
+            this.txtDicIVAAcr.TabIndex = 36;
+            this.txtDicIVAAcr.Text = "0";
+            this.txtDicIVAAcr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicIVAAcr.Leave += new System.EventHandler(this.txtEneIVAAcr_Leave);
+            // 
+            // txtEnePTU
+            // 
+            this.txtEnePTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEnePTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtEnePTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnePTU.ForeColor = System.Drawing.Color.White;
+            this.txtEnePTU.Location = new System.Drawing.Point(154, 46);
+            this.txtEnePTU.Name = "txtEnePTU";
+            this.txtEnePTU.Size = new System.Drawing.Size(133, 30);
+            this.txtEnePTU.TabIndex = 38;
+            this.txtEnePTU.Text = "0";
+            this.txtEnePTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEnePTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtFebPTU
+            // 
+            this.txtFebPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtFebPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtFebPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFebPTU.ForeColor = System.Drawing.Color.White;
+            this.txtFebPTU.Location = new System.Drawing.Point(154, 89);
+            this.txtFebPTU.Name = "txtFebPTU";
+            this.txtFebPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtFebPTU.TabIndex = 39;
+            this.txtFebPTU.Text = "0";
+            this.txtFebPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtMarPTU
+            // 
+            this.txtMarPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMarPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtMarPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarPTU.ForeColor = System.Drawing.Color.White;
+            this.txtMarPTU.Location = new System.Drawing.Point(154, 132);
+            this.txtMarPTU.Name = "txtMarPTU";
+            this.txtMarPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtMarPTU.TabIndex = 40;
+            this.txtMarPTU.Text = "0";
+            this.txtMarPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtAbrPTU
+            // 
+            this.txtAbrPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAbrPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtAbrPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbrPTU.ForeColor = System.Drawing.Color.White;
+            this.txtAbrPTU.Location = new System.Drawing.Point(154, 175);
+            this.txtAbrPTU.Name = "txtAbrPTU";
+            this.txtAbrPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtAbrPTU.TabIndex = 41;
+            this.txtAbrPTU.Text = "0";
+            this.txtAbrPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtMayPTU
+            // 
+            this.txtMayPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMayPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtMayPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMayPTU.ForeColor = System.Drawing.Color.White;
+            this.txtMayPTU.Location = new System.Drawing.Point(154, 218);
+            this.txtMayPTU.Name = "txtMayPTU";
+            this.txtMayPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtMayPTU.TabIndex = 42;
+            this.txtMayPTU.Text = "0";
+            this.txtMayPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtJunPTU
+            // 
+            this.txtJunPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJunPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtJunPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJunPTU.ForeColor = System.Drawing.Color.White;
+            this.txtJunPTU.Location = new System.Drawing.Point(154, 261);
+            this.txtJunPTU.Name = "txtJunPTU";
+            this.txtJunPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtJunPTU.TabIndex = 43;
+            this.txtJunPTU.Text = "0";
+            this.txtJunPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtJulPTU
+            // 
+            this.txtJulPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJulPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtJulPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJulPTU.ForeColor = System.Drawing.Color.White;
+            this.txtJulPTU.Location = new System.Drawing.Point(154, 304);
+            this.txtJulPTU.Name = "txtJulPTU";
+            this.txtJulPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtJulPTU.TabIndex = 44;
+            this.txtJulPTU.Text = "0";
+            this.txtJulPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtAgoPTU
+            // 
+            this.txtAgoPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAgoPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtAgoPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAgoPTU.ForeColor = System.Drawing.Color.White;
+            this.txtAgoPTU.Location = new System.Drawing.Point(154, 347);
+            this.txtAgoPTU.Name = "txtAgoPTU";
+            this.txtAgoPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtAgoPTU.TabIndex = 45;
+            this.txtAgoPTU.Text = "0";
+            this.txtAgoPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtSepPTU
+            // 
+            this.txtSepPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSepPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtSepPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSepPTU.ForeColor = System.Drawing.Color.White;
+            this.txtSepPTU.Location = new System.Drawing.Point(154, 390);
+            this.txtSepPTU.Name = "txtSepPTU";
+            this.txtSepPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtSepPTU.TabIndex = 46;
+            this.txtSepPTU.Text = "0";
+            this.txtSepPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtOctPTU
+            // 
+            this.txtOctPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtOctPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtOctPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOctPTU.ForeColor = System.Drawing.Color.White;
+            this.txtOctPTU.Location = new System.Drawing.Point(154, 433);
+            this.txtOctPTU.Name = "txtOctPTU";
+            this.txtOctPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtOctPTU.TabIndex = 47;
+            this.txtOctPTU.Text = "0";
+            this.txtOctPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtNovPTU
+            // 
+            this.txtNovPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNovPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtNovPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNovPTU.ForeColor = System.Drawing.Color.White;
+            this.txtNovPTU.Location = new System.Drawing.Point(154, 476);
+            this.txtNovPTU.Name = "txtNovPTU";
+            this.txtNovPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtNovPTU.TabIndex = 48;
+            this.txtNovPTU.Text = "0";
+            this.txtNovPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // txtDicPTU
+            // 
+            this.txtDicPTU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtDicPTU.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtDicPTU.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDicPTU.ForeColor = System.Drawing.Color.White;
+            this.txtDicPTU.Location = new System.Drawing.Point(154, 519);
+            this.txtDicPTU.Name = "txtDicPTU";
+            this.txtDicPTU.Size = new System.Drawing.Size(133, 30);
+            this.txtDicPTU.TabIndex = 49;
+            this.txtDicPTU.Text = "0";
+            this.txtDicPTU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicPTU.Leave += new System.EventHandler(this.txtEnePTU_Leave);
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Britannic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(327, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(82, 43);
+            this.label22.TabIndex = 52;
+            this.label22.Text = "Pérdidas";
+            // 
+            // txtEnePerdidas
+            // 
+            this.txtEnePerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEnePerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtEnePerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnePerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtEnePerdidas.Location = new System.Drawing.Point(302, 46);
+            this.txtEnePerdidas.Name = "txtEnePerdidas";
+            this.txtEnePerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtEnePerdidas.TabIndex = 53;
+            this.txtEnePerdidas.Text = "0";
+            this.txtEnePerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEnePerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtFebPerdidas
+            // 
+            this.txtFebPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtFebPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtFebPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFebPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtFebPerdidas.Location = new System.Drawing.Point(302, 89);
+            this.txtFebPerdidas.Name = "txtFebPerdidas";
+            this.txtFebPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtFebPerdidas.TabIndex = 54;
+            this.txtFebPerdidas.Text = "0";
+            this.txtFebPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtMarPerdidas
+            // 
+            this.txtMarPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMarPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtMarPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtMarPerdidas.Location = new System.Drawing.Point(302, 132);
+            this.txtMarPerdidas.Name = "txtMarPerdidas";
+            this.txtMarPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtMarPerdidas.TabIndex = 55;
+            this.txtMarPerdidas.Text = "0";
+            this.txtMarPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtAbrPerdidas
+            // 
+            this.txtAbrPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAbrPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtAbrPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbrPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtAbrPerdidas.Location = new System.Drawing.Point(302, 175);
+            this.txtAbrPerdidas.Name = "txtAbrPerdidas";
+            this.txtAbrPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtAbrPerdidas.TabIndex = 56;
+            this.txtAbrPerdidas.Text = "0";
+            this.txtAbrPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtMayPerdidas
+            // 
+            this.txtMayPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMayPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtMayPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMayPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtMayPerdidas.Location = new System.Drawing.Point(302, 218);
+            this.txtMayPerdidas.Name = "txtMayPerdidas";
+            this.txtMayPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtMayPerdidas.TabIndex = 57;
+            this.txtMayPerdidas.Text = "0";
+            this.txtMayPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtJunPerdidas
+            // 
+            this.txtJunPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJunPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtJunPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJunPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtJunPerdidas.Location = new System.Drawing.Point(302, 261);
+            this.txtJunPerdidas.Name = "txtJunPerdidas";
+            this.txtJunPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtJunPerdidas.TabIndex = 58;
+            this.txtJunPerdidas.Text = "0";
+            this.txtJunPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtJulPerdidas
+            // 
+            this.txtJulPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJulPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtJulPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJulPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtJulPerdidas.Location = new System.Drawing.Point(302, 304);
+            this.txtJulPerdidas.Name = "txtJulPerdidas";
+            this.txtJulPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtJulPerdidas.TabIndex = 59;
+            this.txtJulPerdidas.Text = "0";
+            this.txtJulPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtAgoPerdidas
+            // 
+            this.txtAgoPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAgoPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtAgoPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAgoPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtAgoPerdidas.Location = new System.Drawing.Point(302, 347);
+            this.txtAgoPerdidas.Name = "txtAgoPerdidas";
+            this.txtAgoPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtAgoPerdidas.TabIndex = 60;
+            this.txtAgoPerdidas.Text = "0";
+            this.txtAgoPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtSepPerdidas
+            // 
+            this.txtSepPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSepPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtSepPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSepPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtSepPerdidas.Location = new System.Drawing.Point(302, 390);
+            this.txtSepPerdidas.Name = "txtSepPerdidas";
+            this.txtSepPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtSepPerdidas.TabIndex = 61;
+            this.txtSepPerdidas.Text = "0";
+            this.txtSepPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtOctPerdidas
+            // 
+            this.txtOctPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtOctPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtOctPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOctPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtOctPerdidas.Location = new System.Drawing.Point(302, 433);
+            this.txtOctPerdidas.Name = "txtOctPerdidas";
+            this.txtOctPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtOctPerdidas.TabIndex = 62;
+            this.txtOctPerdidas.Text = "0";
+            this.txtOctPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtNovPerdidas
+            // 
+            this.txtNovPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNovPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtNovPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNovPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtNovPerdidas.Location = new System.Drawing.Point(302, 476);
+            this.txtNovPerdidas.Name = "txtNovPerdidas";
+            this.txtNovPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtNovPerdidas.TabIndex = 63;
+            this.txtNovPerdidas.Text = "0";
+            this.txtNovPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
+            // txtDicPerdidas
+            // 
+            this.txtDicPerdidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtDicPerdidas.BackColor = System.Drawing.Color.SlateBlue;
+            this.txtDicPerdidas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDicPerdidas.ForeColor = System.Drawing.Color.White;
+            this.txtDicPerdidas.Location = new System.Drawing.Point(302, 519);
+            this.txtDicPerdidas.Name = "txtDicPerdidas";
+            this.txtDicPerdidas.Size = new System.Drawing.Size(133, 30);
+            this.txtDicPerdidas.TabIndex = 64;
+            this.txtDicPerdidas.Text = "0";
+            this.txtDicPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicPerdidas.Leave += new System.EventHandler(this.txtEnePerdidas_Leave);
+            // 
             // Deducciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1044, 690);
+            this.ClientSize = new System.Drawing.Size(1499, 690);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1774,6 +2613,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1885,7 +2727,6 @@
         private System.Windows.Forms.TextBox txtOctAcu;
         private System.Windows.Forms.TextBox txtNovAcu;
         private System.Windows.Forms.TextBox txtDicAcu;
-        private System.Windows.Forms.TextBox txtTotAcu;
         private System.Windows.Forms.TextBox txtTotMes;
         private System.Windows.Forms.TextBox txtTotEst;
         private System.Windows.Forms.TextBox txtTotNoo;
@@ -1895,5 +2736,49 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TextBox txtTotIVAAcr;
+        private System.Windows.Forms.TextBox txtTotPTU;
+        private System.Windows.Forms.TextBox txtTotPerdidas;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtEneIVAAcr;
+        private System.Windows.Forms.TextBox txtFebIVAAcr;
+        private System.Windows.Forms.TextBox txtMarIVAAcr;
+        private System.Windows.Forms.TextBox txtAbrIVAAcr;
+        private System.Windows.Forms.TextBox txtMayIVAAcr;
+        private System.Windows.Forms.TextBox txtJunIVAAcr;
+        private System.Windows.Forms.TextBox txtJulIVAAcr;
+        private System.Windows.Forms.TextBox txtAgoIVAAcr;
+        private System.Windows.Forms.TextBox txtSepIVAAcr;
+        private System.Windows.Forms.TextBox txtOctIVAAcr;
+        private System.Windows.Forms.TextBox txtNovIVAAcr;
+        private System.Windows.Forms.TextBox txtDicIVAAcr;
+        private System.Windows.Forms.TextBox txtEnePTU;
+        private System.Windows.Forms.TextBox txtFebPTU;
+        private System.Windows.Forms.TextBox txtMarPTU;
+        private System.Windows.Forms.TextBox txtAbrPTU;
+        private System.Windows.Forms.TextBox txtMayPTU;
+        private System.Windows.Forms.TextBox txtJunPTU;
+        private System.Windows.Forms.TextBox txtJulPTU;
+        private System.Windows.Forms.TextBox txtAgoPTU;
+        private System.Windows.Forms.TextBox txtSepPTU;
+        private System.Windows.Forms.TextBox txtOctPTU;
+        private System.Windows.Forms.TextBox txtNovPTU;
+        private System.Windows.Forms.TextBox txtDicPTU;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtEnePerdidas;
+        private System.Windows.Forms.TextBox txtFebPerdidas;
+        private System.Windows.Forms.TextBox txtMarPerdidas;
+        private System.Windows.Forms.TextBox txtAbrPerdidas;
+        private System.Windows.Forms.TextBox txtMayPerdidas;
+        private System.Windows.Forms.TextBox txtJunPerdidas;
+        private System.Windows.Forms.TextBox txtJulPerdidas;
+        private System.Windows.Forms.TextBox txtAgoPerdidas;
+        private System.Windows.Forms.TextBox txtSepPerdidas;
+        private System.Windows.Forms.TextBox txtOctPerdidas;
+        private System.Windows.Forms.TextBox txtNovPerdidas;
+        private System.Windows.Forms.TextBox txtDicPerdidas;
     }
 }

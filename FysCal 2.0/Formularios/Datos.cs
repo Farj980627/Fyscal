@@ -17,6 +17,7 @@ namespace FysCal_2._0.Formularios
         {
             InitializeComponent();
         }
+        public static Datos dat = new Datos();
         public static string curpDatos, rfcDatos, domFiscalDatos, regFiscalDatos;
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

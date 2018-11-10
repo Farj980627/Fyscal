@@ -33,61 +33,49 @@
             this.txtTotExe = new System.Windows.Forms.TextBox();
             this.txtTot0 = new System.Windows.Forms.TextBox();
             this.txtTot16 = new System.Windows.Forms.TextBox();
-            this.txtDicAcu = new System.Windows.Forms.TextBox();
             this.txtDicNoo = new System.Windows.Forms.TextBox();
             this.txtDicExe = new System.Windows.Forms.TextBox();
             this.txtDic0 = new System.Windows.Forms.TextBox();
             this.txtDic16 = new System.Windows.Forms.TextBox();
-            this.txtNovAcu = new System.Windows.Forms.TextBox();
             this.txtNovNoo = new System.Windows.Forms.TextBox();
             this.txtNovExe = new System.Windows.Forms.TextBox();
             this.txtNov0 = new System.Windows.Forms.TextBox();
             this.txtNov16 = new System.Windows.Forms.TextBox();
-            this.txtOctAcu = new System.Windows.Forms.TextBox();
             this.txtOctNoo = new System.Windows.Forms.TextBox();
             this.txtOctExe = new System.Windows.Forms.TextBox();
             this.txtOct0 = new System.Windows.Forms.TextBox();
             this.txtOct16 = new System.Windows.Forms.TextBox();
-            this.txtSepAcu = new System.Windows.Forms.TextBox();
             this.txtSepNoo = new System.Windows.Forms.TextBox();
             this.txtSepExe = new System.Windows.Forms.TextBox();
             this.txtSep0 = new System.Windows.Forms.TextBox();
             this.txtSep16 = new System.Windows.Forms.TextBox();
-            this.txtAgoAcu = new System.Windows.Forms.TextBox();
             this.txtAgoNoo = new System.Windows.Forms.TextBox();
             this.txtAgoExe = new System.Windows.Forms.TextBox();
             this.txtAgo0 = new System.Windows.Forms.TextBox();
             this.txtAgo16 = new System.Windows.Forms.TextBox();
-            this.txtJulAcu = new System.Windows.Forms.TextBox();
             this.txtJulNoo = new System.Windows.Forms.TextBox();
             this.txtJulExe = new System.Windows.Forms.TextBox();
             this.txtJul0 = new System.Windows.Forms.TextBox();
             this.txtJul16 = new System.Windows.Forms.TextBox();
-            this.txtJunAcu = new System.Windows.Forms.TextBox();
             this.txtJunNoo = new System.Windows.Forms.TextBox();
             this.txtJunExe = new System.Windows.Forms.TextBox();
             this.txtJun0 = new System.Windows.Forms.TextBox();
             this.txt = new System.Windows.Forms.TextBox();
-            this.txtMayAcu = new System.Windows.Forms.TextBox();
             this.txtMayNoo = new System.Windows.Forms.TextBox();
             this.txtMayExe = new System.Windows.Forms.TextBox();
             this.txtMay0 = new System.Windows.Forms.TextBox();
             this.txtMay16 = new System.Windows.Forms.TextBox();
-            this.txtAbrAcu = new System.Windows.Forms.TextBox();
             this.txtAbrNoo = new System.Windows.Forms.TextBox();
             this.txtAbrExe = new System.Windows.Forms.TextBox();
             this.txtAbr0 = new System.Windows.Forms.TextBox();
             this.txtAbr16 = new System.Windows.Forms.TextBox();
-            this.txtMarAcu = new System.Windows.Forms.TextBox();
             this.txtMarNoo = new System.Windows.Forms.TextBox();
             this.txtMarExe = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.txtMar16 = new System.Windows.Forms.TextBox();
-            this.txtFebAcu = new System.Windows.Forms.TextBox();
             this.txtFebNoo = new System.Windows.Forms.TextBox();
             this.txtFebExe = new System.Windows.Forms.TextBox();
             this.txtFeb0 = new System.Windows.Forms.TextBox();
-            this.txtEneAcu = new System.Windows.Forms.TextBox();
             this.txtEneNoo = new System.Windows.Forms.TextBox();
             this.txtEneExe = new System.Windows.Forms.TextBox();
             this.txtEne0 = new System.Windows.Forms.TextBox();
@@ -107,9 +95,21 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.txtEne16 = new System.Windows.Forms.TextBox();
             this.txtFeb16 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtEneAcu = new System.Windows.Forms.TextBox();
+            this.txtFebAcu = new System.Windows.Forms.TextBox();
+            this.txtMarAcu = new System.Windows.Forms.TextBox();
+            this.txtAbrAcu = new System.Windows.Forms.TextBox();
+            this.txtMayAcu = new System.Windows.Forms.TextBox();
+            this.txtJunAcu = new System.Windows.Forms.TextBox();
+            this.txtJulAcu = new System.Windows.Forms.TextBox();
+            this.txtAgoAcu = new System.Windows.Forms.TextBox();
+            this.txtSepAcu = new System.Windows.Forms.TextBox();
+            this.txtOctAcu = new System.Windows.Forms.TextBox();
+            this.txtNovAcu = new System.Windows.Forms.TextBox();
+            this.txtDicAcu = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txtEneIMes = new System.Windows.Forms.TextBox();
             this.txtFebIMes = new System.Windows.Forms.TextBox();
@@ -296,17 +296,6 @@
             this.txtTot16.Size = new System.Drawing.Size(125, 30);
             this.txtTot16.TabIndex = 80;
             // 
-            // txtDicAcu
-            // 
-            this.txtDicAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtDicAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtDicAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDicAcu.ForeColor = System.Drawing.Color.White;
-            this.txtDicAcu.Location = new System.Drawing.Point(789, 531);
-            this.txtDicAcu.Name = "txtDicAcu";
-            this.txtDicAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtDicAcu.TabIndex = 78;
-            // 
             // txtDicNoo
             // 
             this.txtDicNoo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -350,17 +339,6 @@
             this.txtDic16.Name = "txtDic16";
             this.txtDic16.Size = new System.Drawing.Size(125, 30);
             this.txtDic16.TabIndex = 74;
-            // 
-            // txtNovAcu
-            // 
-            this.txtNovAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNovAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtNovAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNovAcu.ForeColor = System.Drawing.Color.White;
-            this.txtNovAcu.Location = new System.Drawing.Point(789, 487);
-            this.txtNovAcu.Name = "txtNovAcu";
-            this.txtNovAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtNovAcu.TabIndex = 73;
             // 
             // txtNovNoo
             // 
@@ -406,17 +384,6 @@
             this.txtNov16.Size = new System.Drawing.Size(125, 30);
             this.txtNov16.TabIndex = 69;
             // 
-            // txtOctAcu
-            // 
-            this.txtOctAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtOctAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtOctAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOctAcu.ForeColor = System.Drawing.Color.White;
-            this.txtOctAcu.Location = new System.Drawing.Point(789, 443);
-            this.txtOctAcu.Name = "txtOctAcu";
-            this.txtOctAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtOctAcu.TabIndex = 68;
-            // 
             // txtOctNoo
             // 
             this.txtOctNoo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -460,17 +427,6 @@
             this.txtOct16.Name = "txtOct16";
             this.txtOct16.Size = new System.Drawing.Size(125, 30);
             this.txtOct16.TabIndex = 64;
-            // 
-            // txtSepAcu
-            // 
-            this.txtSepAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtSepAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtSepAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSepAcu.ForeColor = System.Drawing.Color.White;
-            this.txtSepAcu.Location = new System.Drawing.Point(789, 399);
-            this.txtSepAcu.Name = "txtSepAcu";
-            this.txtSepAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtSepAcu.TabIndex = 63;
             // 
             // txtSepNoo
             // 
@@ -516,17 +472,6 @@
             this.txtSep16.Size = new System.Drawing.Size(125, 30);
             this.txtSep16.TabIndex = 59;
             // 
-            // txtAgoAcu
-            // 
-            this.txtAgoAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtAgoAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtAgoAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgoAcu.ForeColor = System.Drawing.Color.White;
-            this.txtAgoAcu.Location = new System.Drawing.Point(789, 355);
-            this.txtAgoAcu.Name = "txtAgoAcu";
-            this.txtAgoAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtAgoAcu.TabIndex = 58;
-            // 
             // txtAgoNoo
             // 
             this.txtAgoNoo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -570,17 +515,6 @@
             this.txtAgo16.Name = "txtAgo16";
             this.txtAgo16.Size = new System.Drawing.Size(125, 30);
             this.txtAgo16.TabIndex = 54;
-            // 
-            // txtJulAcu
-            // 
-            this.txtJulAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtJulAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtJulAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJulAcu.ForeColor = System.Drawing.Color.White;
-            this.txtJulAcu.Location = new System.Drawing.Point(789, 311);
-            this.txtJulAcu.Name = "txtJulAcu";
-            this.txtJulAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtJulAcu.TabIndex = 53;
             // 
             // txtJulNoo
             // 
@@ -626,17 +560,6 @@
             this.txtJul16.Size = new System.Drawing.Size(125, 30);
             this.txtJul16.TabIndex = 49;
             // 
-            // txtJunAcu
-            // 
-            this.txtJunAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtJunAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtJunAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJunAcu.ForeColor = System.Drawing.Color.White;
-            this.txtJunAcu.Location = new System.Drawing.Point(789, 267);
-            this.txtJunAcu.Name = "txtJunAcu";
-            this.txtJunAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtJunAcu.TabIndex = 48;
-            // 
             // txtJunNoo
             // 
             this.txtJunNoo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -680,17 +603,6 @@
             this.txt.Name = "txt";
             this.txt.Size = new System.Drawing.Size(125, 30);
             this.txt.TabIndex = 44;
-            // 
-            // txtMayAcu
-            // 
-            this.txtMayAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtMayAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtMayAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMayAcu.ForeColor = System.Drawing.Color.White;
-            this.txtMayAcu.Location = new System.Drawing.Point(789, 223);
-            this.txtMayAcu.Name = "txtMayAcu";
-            this.txtMayAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtMayAcu.TabIndex = 43;
             // 
             // txtMayNoo
             // 
@@ -736,17 +648,6 @@
             this.txtMay16.Size = new System.Drawing.Size(125, 30);
             this.txtMay16.TabIndex = 39;
             // 
-            // txtAbrAcu
-            // 
-            this.txtAbrAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtAbrAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtAbrAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAbrAcu.ForeColor = System.Drawing.Color.White;
-            this.txtAbrAcu.Location = new System.Drawing.Point(789, 179);
-            this.txtAbrAcu.Name = "txtAbrAcu";
-            this.txtAbrAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtAbrAcu.TabIndex = 38;
-            // 
             // txtAbrNoo
             // 
             this.txtAbrNoo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -790,17 +691,6 @@
             this.txtAbr16.Name = "txtAbr16";
             this.txtAbr16.Size = new System.Drawing.Size(125, 30);
             this.txtAbr16.TabIndex = 34;
-            // 
-            // txtMarAcu
-            // 
-            this.txtMarAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtMarAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtMarAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMarAcu.ForeColor = System.Drawing.Color.White;
-            this.txtMarAcu.Location = new System.Drawing.Point(789, 135);
-            this.txtMarAcu.Name = "txtMarAcu";
-            this.txtMarAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtMarAcu.TabIndex = 33;
             // 
             // txtMarNoo
             // 
@@ -846,17 +736,6 @@
             this.txtMar16.Size = new System.Drawing.Size(125, 30);
             this.txtMar16.TabIndex = 29;
             // 
-            // txtFebAcu
-            // 
-            this.txtFebAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtFebAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtFebAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFebAcu.ForeColor = System.Drawing.Color.White;
-            this.txtFebAcu.Location = new System.Drawing.Point(789, 91);
-            this.txtFebAcu.Name = "txtFebAcu";
-            this.txtFebAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtFebAcu.TabIndex = 28;
-            // 
             // txtFebNoo
             // 
             this.txtFebNoo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -889,17 +768,6 @@
             this.txtFeb0.Name = "txtFeb0";
             this.txtFeb0.Size = new System.Drawing.Size(125, 30);
             this.txtFeb0.TabIndex = 25;
-            // 
-            // txtEneAcu
-            // 
-            this.txtEneAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtEneAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtEneAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEneAcu.ForeColor = System.Drawing.Color.White;
-            this.txtEneAcu.Location = new System.Drawing.Point(789, 47);
-            this.txtEneAcu.Name = "txtEneAcu";
-            this.txtEneAcu.Size = new System.Drawing.Size(127, 30);
-            this.txtEneAcu.TabIndex = 24;
             // 
             // txtEneNoo
             // 
@@ -1126,18 +994,6 @@
             this.label16.TabIndex = 16;
             this.label16.Text = "Ingresos No Objeto IVA";
             // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Britannic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(797, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 44);
-            this.label17.TabIndex = 17;
-            this.label17.Text = "Ingresos Acumulados";
-            // 
             // txtEne16
             // 
             this.txtEne16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1159,6 +1015,150 @@
             this.txtFeb16.Name = "txtFeb16";
             this.txtFeb16.Size = new System.Drawing.Size(125, 30);
             this.txtFeb16.TabIndex = 19;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Britannic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(797, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(111, 44);
+            this.label17.TabIndex = 17;
+            this.label17.Text = "Ingresos Acumulados";
+            // 
+            // txtEneAcu
+            // 
+            this.txtEneAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEneAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtEneAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEneAcu.ForeColor = System.Drawing.Color.White;
+            this.txtEneAcu.Location = new System.Drawing.Point(789, 47);
+            this.txtEneAcu.Name = "txtEneAcu";
+            this.txtEneAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtEneAcu.TabIndex = 24;
+            // 
+            // txtFebAcu
+            // 
+            this.txtFebAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtFebAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtFebAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFebAcu.ForeColor = System.Drawing.Color.White;
+            this.txtFebAcu.Location = new System.Drawing.Point(789, 91);
+            this.txtFebAcu.Name = "txtFebAcu";
+            this.txtFebAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtFebAcu.TabIndex = 28;
+            // 
+            // txtMarAcu
+            // 
+            this.txtMarAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMarAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtMarAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarAcu.ForeColor = System.Drawing.Color.White;
+            this.txtMarAcu.Location = new System.Drawing.Point(789, 135);
+            this.txtMarAcu.Name = "txtMarAcu";
+            this.txtMarAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtMarAcu.TabIndex = 33;
+            // 
+            // txtAbrAcu
+            // 
+            this.txtAbrAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAbrAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtAbrAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbrAcu.ForeColor = System.Drawing.Color.White;
+            this.txtAbrAcu.Location = new System.Drawing.Point(789, 179);
+            this.txtAbrAcu.Name = "txtAbrAcu";
+            this.txtAbrAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtAbrAcu.TabIndex = 38;
+            // 
+            // txtMayAcu
+            // 
+            this.txtMayAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMayAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtMayAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMayAcu.ForeColor = System.Drawing.Color.White;
+            this.txtMayAcu.Location = new System.Drawing.Point(789, 223);
+            this.txtMayAcu.Name = "txtMayAcu";
+            this.txtMayAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtMayAcu.TabIndex = 43;
+            // 
+            // txtJunAcu
+            // 
+            this.txtJunAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJunAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtJunAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJunAcu.ForeColor = System.Drawing.Color.White;
+            this.txtJunAcu.Location = new System.Drawing.Point(789, 267);
+            this.txtJunAcu.Name = "txtJunAcu";
+            this.txtJunAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtJunAcu.TabIndex = 48;
+            // 
+            // txtJulAcu
+            // 
+            this.txtJulAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtJulAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtJulAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJulAcu.ForeColor = System.Drawing.Color.White;
+            this.txtJulAcu.Location = new System.Drawing.Point(789, 311);
+            this.txtJulAcu.Name = "txtJulAcu";
+            this.txtJulAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtJulAcu.TabIndex = 53;
+            // 
+            // txtAgoAcu
+            // 
+            this.txtAgoAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAgoAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtAgoAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAgoAcu.ForeColor = System.Drawing.Color.White;
+            this.txtAgoAcu.Location = new System.Drawing.Point(789, 355);
+            this.txtAgoAcu.Name = "txtAgoAcu";
+            this.txtAgoAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtAgoAcu.TabIndex = 58;
+            // 
+            // txtSepAcu
+            // 
+            this.txtSepAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSepAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtSepAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSepAcu.ForeColor = System.Drawing.Color.White;
+            this.txtSepAcu.Location = new System.Drawing.Point(789, 399);
+            this.txtSepAcu.Name = "txtSepAcu";
+            this.txtSepAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtSepAcu.TabIndex = 63;
+            // 
+            // txtOctAcu
+            // 
+            this.txtOctAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtOctAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtOctAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOctAcu.ForeColor = System.Drawing.Color.White;
+            this.txtOctAcu.Location = new System.Drawing.Point(789, 443);
+            this.txtOctAcu.Name = "txtOctAcu";
+            this.txtOctAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtOctAcu.TabIndex = 68;
+            // 
+            // txtNovAcu
+            // 
+            this.txtNovAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNovAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtNovAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNovAcu.ForeColor = System.Drawing.Color.White;
+            this.txtNovAcu.Location = new System.Drawing.Point(789, 487);
+            this.txtNovAcu.Name = "txtNovAcu";
+            this.txtNovAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtNovAcu.TabIndex = 73;
+            // 
+            // txtDicAcu
+            // 
+            this.txtDicAcu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtDicAcu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtDicAcu.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDicAcu.ForeColor = System.Drawing.Color.White;
+            this.txtDicAcu.Location = new System.Drawing.Point(789, 531);
+            this.txtDicAcu.Name = "txtDicAcu";
+            this.txtDicAcu.Size = new System.Drawing.Size(127, 30);
+            this.txtDicAcu.TabIndex = 78;
             // 
             // label18
             // 

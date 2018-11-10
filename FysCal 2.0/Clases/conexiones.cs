@@ -24,6 +24,16 @@ namespace FysCal_2._0.Clases
             return con;
 
         }
+        //Verificar el Regimen fiscal
+        /*public static void regimenFiscal(String ppidCliente)
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand cmd = new MySqlCommand(String.Format("select regimenFiscal from clientes where id_cliente='"+ppidCliente+"'"), con);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            Formularios.Inicio.regimen = reader[0].ToString();       
+
+        }*/
         // Agregar un cliente
         public static void addCliente(String pnombre, String pcurp, String prfc, String pdomicilio, String pregimen)
         {
@@ -52,6 +62,7 @@ namespace FysCal_2._0.Clases
                 new Formularios.Inicio().Show();
             }
         }
+        //Obtener el id del cliente seleccionado
         public static DataTable obtenerCliente()
         {
             MySqlConnection con = conexiones.conection();
@@ -271,7 +282,6 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from ingresos16 where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -291,31 +301,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();                
-                Formularios.Control.ene16 = ene;
-                Formularios.Control.feb16 = feb;
-                Formularios.Control.mar16 = mar;
-                Formularios.Control.abr16 = abr;
-                Formularios.Control.may16 = may;
-                Formularios.Control.jun16 = jun;
-                Formularios.Control.jul16 = jul;
-                Formularios.Control.ago16 = ago;
-                Formularios.Control.sep16 = sep;
-                Formularios.Control.oct16 = oct;
-                Formularios.Control.nov16 = nov;
-                Formularios.Control.dic16 = dic;
-                
+                Formularios.Control.ene16 = reader["enero"].ToString();
+                Formularios.Control.feb16 = reader["febrero"].ToString();
+                Formularios.Control.mar16 = reader["marzo"].ToString();
+                Formularios.Control.abr16 = reader["abril"].ToString();
+                Formularios.Control.may16 = reader["mayo"].ToString();
+                Formularios.Control.jun16 = reader["junio"].ToString();
+                Formularios.Control.jul16 = reader["julio"].ToString();
+                Formularios.Control.ago16 = reader["agosto"].ToString();
+                Formularios.Control.sep16 = reader["septiembre"].ToString();
+                Formularios.Control.oct16 = reader["octubre"].ToString();
+                Formularios.Control.nov16 = reader["noviembre"].ToString();
+                Formularios.Control.dic16 = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla ingresos0
@@ -324,7 +322,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from ingresos0 where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+            
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -344,32 +342,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-                
-                Formularios.Control.ene0 = ene;
-                Formularios.Control.feb0 = feb;
-                Formularios.Control.mar0 = mar;
-                Formularios.Control.abr0 = abr;
-                Formularios.Control.may0 = may;
-                Formularios.Control.jun0 = jun;
-                Formularios.Control.jul0 = jul;
-                Formularios.Control.ago0 = ago;
-                Formularios.Control.sep0 = sep;
-                Formularios.Control.oct0 = oct;
-                Formularios.Control.nov0 = nov;
-                Formularios.Control.dic0 = dic;
-               
+                Formularios.Control.ene0 = reader["enero"].ToString();
+                Formularios.Control.feb0 = reader["febrero"].ToString();
+                Formularios.Control.mar0 = reader["marzo"].ToString();
+                Formularios.Control.abr0 = reader["abril"].ToString();
+                Formularios.Control.may0 = reader["mayo"].ToString();
+                Formularios.Control.jun0 = reader["junio"].ToString();
+                Formularios.Control.jul0 = reader["julio"].ToString();
+                Formularios.Control.ago0 = reader["agosto"].ToString();
+                Formularios.Control.sep0 = reader["septiembre"].ToString();
+                Formularios.Control.oct0 = reader["octubre"].ToString();
+                Formularios.Control.nov0 = reader["noviembre"].ToString();
+                Formularios.Control.dic0 = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla ingresosExentos
@@ -378,7 +363,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from ingresosexentos where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+            
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -398,32 +383,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-              
-                Formularios.Control.eneExe = ene;
-                Formularios.Control.febExe = feb;
-                Formularios.Control.marExe = mar;
-                Formularios.Control.abrExe = abr;
-                Formularios.Control.mayExe = may;
-                Formularios.Control.junExe = jun;
-                Formularios.Control.julExe = jul;
-                Formularios.Control.agoExe = ago;
-                Formularios.Control.sepExe = sep;
-                Formularios.Control.octExe = oct;
-                Formularios.Control.novExe = nov;
-                Formularios.Control.dicExe = dic;
-             
+                Formularios.Control.eneExe = reader["enero"].ToString();
+                Formularios.Control.febExe = reader["febrero"].ToString();
+                Formularios.Control.marExe = reader["marzo"].ToString();
+                Formularios.Control.abrExe = reader["abril"].ToString();
+                Formularios.Control.mayExe = reader["mayo"].ToString();
+                Formularios.Control.junExe = reader["junio"].ToString();
+                Formularios.Control.julExe = reader["julio"].ToString();
+                Formularios.Control.agoExe = reader["agosto"].ToString();
+                Formularios.Control.sepExe = reader["septiembre"].ToString();
+                Formularios.Control.octExe = reader["octubre"].ToString();
+                Formularios.Control.novExe = reader["noviembre"].ToString();
+                Formularios.Control.dicExe = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla ingresosNoObjeto
@@ -432,7 +404,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from ingresosnoobjeto where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+            
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -452,32 +424,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-               
-                Formularios.Control.eneNoo = ene;
-                Formularios.Control.febNoo = feb;
-                Formularios.Control.marNoo = mar;
-                Formularios.Control.abrNoo = abr;
-                Formularios.Control.mayNoo = may;
-                Formularios.Control.junNoo = jun;
-                Formularios.Control.julNoo = jul;
-                Formularios.Control.agoNoo = ago;
-                Formularios.Control.sepNoo = sep;
-                Formularios.Control.octNoo = oct;
-                Formularios.Control.novNoo = nov;
-                Formularios.Control.dicNoo = dic;
-             
+                Formularios.Control.eneNoo = reader["enero"].ToString();
+                Formularios.Control.febNoo = reader["febrero"].ToString();
+                Formularios.Control.marNoo = reader["marzo"].ToString();
+                Formularios.Control.abrNoo = reader["abril"].ToString();
+                Formularios.Control.mayNoo = reader["mayo"].ToString();
+                Formularios.Control.junNoo = reader["junio"].ToString();
+                Formularios.Control.julNoo = reader["julio"].ToString();
+                Formularios.Control.agoNoo = reader["agosto"].ToString();
+                Formularios.Control.sepNoo = reader["septiembre"].ToString();
+                Formularios.Control.octNoo = reader["octubre"].ToString();
+                Formularios.Control.novNoo = reader["noviembre"].ToString();
+                Formularios.Control.dicNoo = reader["diciembre"].ToString();
+
             }
         }
         /*Obtener la informacion de la tabla ingresosMes
@@ -540,7 +499,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from retencionesisr where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+            
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -560,32 +519,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-               
-                Formularios.Control.eneRISR = ene;
-                Formularios.Control.febRISR = feb;
-                Formularios.Control.marRISR = mar;
-                Formularios.Control.abrRISR = abr;
-                Formularios.Control.mayRISR = may;
-                Formularios.Control.junRISR = jun;
-                Formularios.Control.julRISR = jul;
-                Formularios.Control.agoRISR = ago;
-                Formularios.Control.sepRISR = sep;
-                Formularios.Control.octRISR = oct;
-                Formularios.Control.novRISR = nov;
-                Formularios.Control.dicRISR = dic;
-                
+                Formularios.Control.eneRISR = reader["enero"].ToString();
+                Formularios.Control.febRISR = reader["febrero"].ToString();
+                Formularios.Control.marRISR = reader["marzo"].ToString();
+                Formularios.Control.abrRISR = reader["abril"].ToString();
+                Formularios.Control.mayRISR = reader["mayo"].ToString();
+                Formularios.Control.junRISR = reader["junio"].ToString();
+                Formularios.Control.julRISR = reader["julio"].ToString();
+                Formularios.Control.agoRISR = reader["agosto"].ToString();
+                Formularios.Control.sepRISR = reader["septiembre"].ToString();
+                Formularios.Control.octRISR = reader["octubre"].ToString();
+                Formularios.Control.novRISR = reader["noviembre"].ToString();
+                Formularios.Control.dicRISR = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla retencionesIVA
@@ -594,7 +540,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from retencionesiva where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+          
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -614,32 +560,20 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
+                Formularios.Control.eneRIVA = reader["enero"].ToString();
+                Formularios.Control.febRIVA = reader["febrero"].ToString();
+                Formularios.Control.marRIVA = reader["marzo"].ToString();
+                Formularios.Control.abrRIVA = reader["abril"].ToString();
+                Formularios.Control.mayRIVA = reader["mayo"].ToString();
+                Formularios.Control.junRIVA = reader["junio"].ToString();
+                Formularios.Control.julRIVA = reader["julio"].ToString();
+                Formularios.Control.agoRIVA = reader["agosto"].ToString();
+                Formularios.Control.sepRIVA = reader["septiembre"].ToString();
+                Formularios.Control.octRIVA = reader["octubre"].ToString();
+                Formularios.Control.novRIVA = reader["noviembre"].ToString();
+                Formularios.Control.dicRIVA = reader["diciembre"].ToString();
                
-                Formularios.Control.eneRIVA = ene;
-                Formularios.Control.febRIVA = feb;
-                Formularios.Control.marRIVA = mar;
-                Formularios.Control.abrRIVA = abr;
-                Formularios.Control.mayRIVA = may;
-                Formularios.Control.junRIVA = jun;
-                Formularios.Control.julRIVA = jul;
-                Formularios.Control.agoRIVA = ago;
-                Formularios.Control.sepRIVA = sep;
-                Formularios.Control.octRIVA = oct;
-                Formularios.Control.novRIVA = nov;
-                Formularios.Control.dicRIVA = dic;
-                
+                              
             }
         }
         //Insertar o actualizar datos de la tabla deducciones16
@@ -798,7 +732,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from deducciones16 where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+            
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -818,32 +752,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-                tot = reader["total"].ToString();
-                Formularios.Control.dene16 = ene;
-                Formularios.Control.dfeb16 = feb;
-                Formularios.Control.dmar16 = mar;
-                Formularios.Control.dabr16 = abr;
-                Formularios.Control.dmay16 = may;
-                Formularios.Control.djun16 = jun;
-                Formularios.Control.djul16 = jul;
-                Formularios.Control.dago16 = ago;
-                Formularios.Control.dsep16 = sep;
-                Formularios.Control.doct16 = oct;
-                Formularios.Control.dnov16 = nov;
-                Formularios.Control.ddic16 = dic;
-                Formularios.Control.dtot16 = tot;
+                Formularios.Control.dene16 = reader["enero"].ToString();
+                Formularios.Control.dfeb16 = reader["febrero"].ToString();
+                Formularios.Control.dmar16 = reader["marzo"].ToString();
+                Formularios.Control.dabr16 = reader["abril"].ToString();
+                Formularios.Control.dmay16 = reader["mayo"].ToString();
+                Formularios.Control.djun16 = reader["junio"].ToString();
+                Formularios.Control.djul16 = reader["julio"].ToString();
+                Formularios.Control.dago16 = reader["agosto"].ToString();
+                Formularios.Control.dsep16 = reader["septiembre"].ToString();
+                Formularios.Control.doct16 = reader["octubre"].ToString();
+                Formularios.Control.dnov16 = reader["noviembre"].ToString();
+                Formularios.Control.ddic16 = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla deducciones0
@@ -852,7 +773,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from deducciones0 where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+            
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -872,32 +793,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-                tot = reader["total"].ToString();
-                Formularios.Control.dene0 = ene;
-                Formularios.Control.dfeb0 = feb;
-                Formularios.Control.dmar0 = mar;
-                Formularios.Control.dabr0 = abr;
-                Formularios.Control.dmay0 = may;
-                Formularios.Control.djun0 = jun;
-                Formularios.Control.djul0 = jul;
-                Formularios.Control.dago0 = ago;
-                Formularios.Control.dsep0 = sep;
-                Formularios.Control.doct0 = oct;
-                Formularios.Control.dnov0 = nov;
-                Formularios.Control.ddic0 = dic;
-                Formularios.Control.dtot0 = tot;
+                Formularios.Control.dene0 = reader["enero"].ToString();
+                Formularios.Control.dfeb0 = reader["febrero"].ToString();
+                Formularios.Control.dmar0 = reader["marzo"].ToString();
+                Formularios.Control.dabr0 = reader["abril"].ToString();
+                Formularios.Control.dmay0 = reader["mayo"].ToString();
+                Formularios.Control.djun0 = reader["junio"].ToString();
+                Formularios.Control.djul0 = reader["julio"].ToString();
+                Formularios.Control.dago0 = reader["agosto"].ToString();
+                Formularios.Control.dsep0 = reader["septiembre"].ToString();
+                Formularios.Control.doct0 = reader["octubre"].ToString();
+                Formularios.Control.dnov0 = reader["noviembre"].ToString();
+                Formularios.Control.ddic0 = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla deduccionesExentas
@@ -906,7 +814,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from deduccionesexentas where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+           
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -926,32 +834,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-                tot = reader["total"].ToString();
-                Formularios.Control.deneexe = ene;
-                Formularios.Control.dfebexe = feb;
-                Formularios.Control.dmarexe = mar;
-                Formularios.Control.dabrexe = abr;
-                Formularios.Control.dmayexe = may;
-                Formularios.Control.djunexe = jun;
-                Formularios.Control.djulexe = jul;
-                Formularios.Control.dagoexe = ago;
-                Formularios.Control.dsepexe = sep;
-                Formularios.Control.doctexe = oct;
-                Formularios.Control.dnovexe = nov;
-                Formularios.Control.ddicexe = dic;
-                Formularios.Control.dtotexe = tot;
+                Formularios.Control.deneexe = reader["enero"].ToString();
+                Formularios.Control.dfebexe = reader["febrero"].ToString();
+                Formularios.Control.dmarexe = reader["marzo"].ToString();
+                Formularios.Control.dabrexe = reader["abril"].ToString();
+                Formularios.Control.dmayexe = reader["mayo"].ToString();
+                Formularios.Control.djunexe = reader["junio"].ToString();
+                Formularios.Control.djulexe = reader["julio"].ToString();
+                Formularios.Control.dagoexe = reader["agosto"].ToString();
+                Formularios.Control.dsepexe = reader["septiembre"].ToString();
+                Formularios.Control.doctexe = reader["octubre"].ToString();
+                Formularios.Control.dnovexe = reader["noviembre"].ToString();
+                Formularios.Control.ddicexe = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla deduccionesNoObjeto
@@ -960,7 +855,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from deduccionesnoobjeto where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+            
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -980,32 +875,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-                tot = reader["total"].ToString();
-                Formularios.Control.deneNoo = ene;
-                Formularios.Control.dfebNoo = feb;
-                Formularios.Control.dmarNoo = mar;
-                Formularios.Control.dabrNoo = abr;
-                Formularios.Control.dmayNoo = may;
-                Formularios.Control.djunNoo = jun;
-                Formularios.Control.djulNoo = jul;
-                Formularios.Control.dagoNoo = ago;
-                Formularios.Control.dsepNoo = sep;
-                Formularios.Control.doctNoo = oct;
-                Formularios.Control.dnovNoo = nov;
-                Formularios.Control.ddicNoo = dic;
-                Formularios.Control.dtotNoo = tot;
+                Formularios.Control.deneNoo = reader["enero"].ToString();
+                Formularios.Control.dfebNoo = reader["febrero"].ToString();
+                Formularios.Control.dmarNoo = reader["marzo"].ToString();
+                Formularios.Control.dabrNoo = reader["abril"].ToString();
+                Formularios.Control.dmayNoo = reader["mayo"].ToString();
+                Formularios.Control.djunNoo = reader["junio"].ToString();
+                Formularios.Control.djulNoo = reader["julio"].ToString();
+                Formularios.Control.dagoNoo = reader["agosto"].ToString();
+                Formularios.Control.dsepNoo = reader["septiembre"].ToString();
+                Formularios.Control.doctNoo = reader["octubre"].ToString();
+                Formularios.Control.dnovNoo = reader["noviembre"].ToString();
+                Formularios.Control.ddicNoo = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla estimuloFiscal
@@ -1014,7 +896,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from estimulofiscal where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+        
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -1035,33 +917,19 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-                tot = reader["total"].ToString();
-                Formularios.Control.deneest = ene;
-                Formularios.Control.dfebest = feb;
-                Formularios.Control.dmarest = mar;
-                Formularios.Control.dabrest = abr;
-                Formularios.Control.dmayest = may;
-                Formularios.Control.djunest = jun;
-                Formularios.Control.djulest = jul;
-                Formularios.Control.dagoest = ago;
-                Formularios.Control.dsepest = sep;
-                Formularios.Control.doctest = oct;
-                Formularios.Control.dnovest = nov;
-                Formularios.Control.ddicest = dic;
-                Formularios.Control.dtotest = tot;
+                Formularios.Control.deneest = reader["enero"].ToString();
+                Formularios.Control.dfebest = reader["febrero"].ToString();
+                Formularios.Control.dmarest = reader["marzo"].ToString();
+                Formularios.Control.dabrest = reader["abril"].ToString();
+                Formularios.Control.dmayest = reader["mayo"].ToString();
+                Formularios.Control.djunest = reader["junio"].ToString();
+                Formularios.Control.djulest = reader["julio"].ToString();
+                Formularios.Control.dagoest = reader["agosto"].ToString();
+                Formularios.Control.dsepest = reader["septiembre"].ToString();
+                Formularios.Control.doctest = reader["octubre"].ToString();
+                Formularios.Control.dnovest = reader["noviembre"].ToString();
+                Formularios.Control.ddicest = reader["diciembre"].ToString();
+
             }
         }
         //Obtener la informacion de la tabla deduccionesMes
@@ -1070,7 +938,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = Clases.conexiones.conection();
             MySqlCommand com = new MySqlCommand(string.Format("select * from deduccionesmes where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
             MySqlDataReader reader = com.ExecuteReader();
-            string ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic, tot;
+     
             reader.Read();
             if (reader.HasRows.Equals(false))
             {
@@ -1090,34 +958,779 @@ namespace FysCal_2._0.Clases
             }
             else
             {
-                ene = reader["enero"].ToString();
-                feb = reader["febrero"].ToString();
-                mar = reader["marzo"].ToString();
-                abr = reader["abril"].ToString();
-                may = reader["mayo"].ToString();
-                jun = reader["junio"].ToString();
-                jul = reader["julio"].ToString();
-                ago = reader["agosto"].ToString();
-                sep = reader["septiembre"].ToString();
-                oct = reader["octubre"].ToString();
-                nov = reader["noviembre"].ToString();
-                dic = reader["diciembre"].ToString();
-                tot = reader["total"].ToString();
-                Formularios.Control.denemes = ene;
-                Formularios.Control.dfebmes = feb;
-                Formularios.Control.dmarmes = mar;
-                Formularios.Control.dabrmes = abr;
-                Formularios.Control.dmaymes= may;
-                Formularios.Control.djunmes= jun;
-                Formularios.Control.djulmes = jul;
-                Formularios.Control.dagomes = ago;
-                Formularios.Control.dsepmes = sep;
-                Formularios.Control.doctmes = oct;
-                Formularios.Control.dnovmes = nov;
-                Formularios.Control.ddicmes = dic;
-                Formularios.Control.dtotmes = tot;
+                Formularios.Control.denemes = reader["enero"].ToString();
+                Formularios.Control.dfebmes = reader["febrero"].ToString();
+                Formularios.Control.dmarmes = reader["marzo"].ToString();
+                Formularios.Control.dabrmes = reader["abril"].ToString();
+                Formularios.Control.dmaymes = reader["mayo"].ToString();
+                Formularios.Control.djunmes = reader["junio"].ToString();
+                Formularios.Control.djulmes = reader["julio"].ToString();
+                Formularios.Control.dagomes = reader["agosto"].ToString();
+                Formularios.Control.dsepmes = reader["septiembre"].ToString();
+                Formularios.Control.doctmes = reader["octubre"].ToString();
+                Formularios.Control.dnovmes = reader["noviembre"].ToString();
+                Formularios.Control.ddicmes = reader["diciembre"].ToString();
+
+            }   
+
+        }
+        //Obtener la informacion de la tabla iva acreditable manual
+        public static void InfoIVAAcreditable()
+        {
+            MySqlConnection con = Clases.conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select * from ivaacreditablemanual where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
+            MySqlDataReader reader = com.ExecuteReader();
+           
+            reader.Read();
+            if (reader.HasRows.Equals(false))
+            {
+                Formularios.Control.deneivaAcr = "0";
+                Formularios.Control.dfebivaAcr = "0";
+                Formularios.Control.dmarivaAcr = "0";
+                Formularios.Control.dabrivaAcr = "0";
+                Formularios.Control.dmayivaAcr = "0";
+                Formularios.Control.djunivaAcr = "0";
+                Formularios.Control.djulivaAcr = "0";
+                Formularios.Control.dagoivaAcr = "0";
+                Formularios.Control.dsepivaAcr = "0";
+                Formularios.Control.doctivaAcr = "0";
+                Formularios.Control.dnovivaAcr = "0";
+                Formularios.Control.ddicivaAcr = "0";
+                Formularios.Control.dtotivaAcr = "0";
+            }
+            else
+            {
+                Formularios.Control.deneivaAcr = reader["enero"].ToString();
+                Formularios.Control.dfebivaAcr = reader["febrero"].ToString();
+                Formularios.Control.dmarivaAcr = reader["marzo"].ToString();
+                Formularios.Control.dabrivaAcr = reader["abril"].ToString();
+                Formularios.Control.dmayivaAcr = reader["mayo"].ToString();
+                Formularios.Control.djunivaAcr = reader["junio"].ToString();
+                Formularios.Control.djulivaAcr = reader["julio"].ToString();
+                Formularios.Control.dagoivaAcr = reader["agosto"].ToString();
+                Formularios.Control.dsepivaAcr = reader["septiembre"].ToString();
+                Formularios.Control.doctivaAcr = reader["octubre"].ToString();
+                Formularios.Control.dnovivaAcr = reader["noviembre"].ToString();
+                Formularios.Control.ddicivaAcr = reader["diciembre"].ToString();
+
             }
         }
+        //Obtener la informacion de la tabla Pérdidas
+        public static void InfoPerdidas()
+        {
+            MySqlConnection con = Clases.conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select * from Perdidas where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
+            MySqlDataReader reader = com.ExecuteReader();            
+            reader.Read();
+            if (reader.HasRows.Equals(false))
+            {
+                Formularios.Control.denePerdidas = "0";
+                Formularios.Control.dfebPerdidas = "0";
+                Formularios.Control.dmarPerdidas = "0";
+                Formularios.Control.dabrPerdidas = "0";
+                Formularios.Control.dmayPerdidas = "0";
+                Formularios.Control.djunPerdidas = "0";
+                Formularios.Control.djulPerdidas = "0";
+                Formularios.Control.dagoPerdidas = "0";
+                Formularios.Control.dsepPerdidas = "0";
+                Formularios.Control.doctPerdidas = "0";
+                Formularios.Control.dnovPerdidas = "0";
+                Formularios.Control.ddicPerdidas = "0";
+                Formularios.Control.dtotPerdidas = "0";
+            }
+            else
+            {
+                Formularios.Control.denePerdidas = reader["enero"].ToString();
+                Formularios.Control.dfebPerdidas = reader["febrero"].ToString();
+                Formularios.Control.dmarPerdidas = reader["marzo"].ToString();
+                Formularios.Control.dabrPerdidas = reader["abril"].ToString();
+                Formularios.Control.dmayPerdidas = reader["mayo"].ToString();
+                Formularios.Control.djunPerdidas = reader["junio"].ToString();
+                Formularios.Control.djulPerdidas = reader["julio"].ToString();
+                Formularios.Control.dagoPerdidas = reader["agosto"].ToString();
+                Formularios.Control.dsepPerdidas = reader["septiembre"].ToString();
+                Formularios.Control.doctPerdidas = reader["octubre"].ToString();
+                Formularios.Control.dnovPerdidas = reader["noviembre"].ToString();
+                Formularios.Control.ddicPerdidas = reader["diciembre"].ToString();
+
+               
+               
+
+            }
+        }
+
+        //Obtener la informacion de la tabla PTU
+        public static void InfoPTU()
+        {
+            MySqlConnection con = Clases.conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select * from ptu where id_cliente='" + Formularios.Control.idCliente + "' ;"), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(false))
+            {
+                Formularios.Control.denePtu = "0";
+                Formularios.Control.dfebPtu = "0";
+                Formularios.Control.dmarPtu = "0";
+                Formularios.Control.dabrPtu = "0";
+                Formularios.Control.dmayPtu = "0";
+                Formularios.Control.djunPtu = "0";
+                Formularios.Control.djulPtu = "0";
+                Formularios.Control.dagoPtu = "0";
+                Formularios.Control.dsepPtu = "0";
+                Formularios.Control.doctPtu = "0";
+                Formularios.Control.dnovPtu = "0";
+                Formularios.Control.ddicPtu = "0";
+                Formularios.Control.dtotPtu = "0";
+            }
+            else
+            {
+                Formularios.Control.denePtu = reader["enero"].ToString();
+                Formularios.Control.dfebPtu = reader["febrero"].ToString();
+                Formularios.Control.dmarPtu = reader["marzo"].ToString();
+                Formularios.Control.dabrPtu = reader["abril"].ToString();
+                Formularios.Control.dmayPtu = reader["mayo"].ToString();
+                Formularios.Control.djunPtu = reader["junio"].ToString();
+                Formularios.Control.djulPtu = reader["julio"].ToString();
+                Formularios.Control.dagoPtu = reader["agosto"].ToString();
+                Formularios.Control.dsepPtu = reader["septiembre"].ToString();
+                Formularios.Control.doctPtu = reader["octubre"].ToString();
+                Formularios.Control.dnovPtu = reader["noviembre"].ToString();
+                Formularios.Control.ddicPtu = reader["diciembre"].ToString();
+
+            }
+        }
+        //Insertar la columna de ingresos totales del mes
+        public static  void ingTotalesMes(String ppcliente, String ppEnero, String ppFebrero, String ppMarzo, String ppAbril, String ppMayo, String ppJunio, String ppJulio, String ppAgosto, String ppSep, String ppOct, String ppNovi, String ppDic)
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from ingtotalesmes where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE ingtotalesmes  SET totalenero='{0}',totalfebrero='{1}',totalmarzo='{2}',totalabril='{3}',totalmayo='{4}',totaljunio='{5}',totaljulio='{6}',totalagosto='{7}',totalseptiembre='{8}',totaloctubre='{9}',totalnoviembre='{10}',totaldiciembre='{11}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", ppEnero, ppFebrero, ppMarzo, ppAbril, ppMayo, ppJunio, ppJulio, ppAgosto, ppSep, ppOct, ppNovi, ppDic), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+                MySqlConnection con3 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("insert into ingtotalesmes(id_cliente,totalEnero, totalFebrero,totalMarzo,totalAbril,totalMayo,totalJunio,totalJulio, totalAgosto, totalSeptiembre, totalOctubre, totalNoviembre, totalDiciembre) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}'  )", ppcliente, ppEnero, ppFebrero, ppMarzo, ppAbril, ppMayo, ppJunio, ppJulio, ppAgosto, ppSep, ppOct, ppNovi, ppDic), con3);
+                comando.ExecuteNonQuery();
+                con3.Close();
+            }
+          
+        }
+        //Insertar la columna de deducciones totales del mes
+        public static void dedTotalesMes(String ppcliente, String ppEnero, String ppFebrero, String ppMarzo, String ppAbril, String ppMayo, String ppJunio, String ppJulio, String ppAgosto, String ppSep, String ppOct, String ppNovi, String ppDic)
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from dedtotalesmes where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE dedtotalesmes SET totalenero='{0}',totalfebrero='{1}',totalmarzo='{2}',totalabril='{3}',totalmayo='{4}',totaljunio='{5}',totaljulio='{6}',totalagosto='{7}',totalseptiembre='{8}',totaloctubre='{9}',totalnoviembre='{10}',totaldiciembre='{11}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", ppEnero, ppFebrero, ppMarzo, ppAbril, ppMayo, ppJunio, ppJulio, ppAgosto, ppSep, ppOct, ppNovi, ppDic), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+                MySqlConnection con3 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("insert into dedtotalesmes(id_cliente,totalEnero, totalFebrero,totalMarzo,totalAbril,totalMayo,totalJunio,totalJulio, totalAgosto, totalSeptiembre, totalOctubre, totalNoviembre, totalDiciembre) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}'  )", ppcliente, ppEnero, ppFebrero, ppMarzo, ppAbril, ppMayo, ppJunio, ppJulio, ppAgosto, ppSep, ppOct, ppNovi, ppDic), con3);
+                comando.ExecuteNonQuery();
+                con3.Close();
+            }
+        }
+        //Insertar la columna de deducciones acumuladas
+        public static void dedAcumuladas(String ppcliente, String ppEnero, String ppFebrero, String ppMarzo, String ppAbril, String ppMayo, String ppJunio, String ppJulio, String ppAgosto, String ppSep, String ppOct, String ppNovi, String ppDic)
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from dedacumulados where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE dedacumulados SET acuenero='{0}',acufebrero='{1}',acumarzo='{2}',acuabril='{3}',acumayo='{4}',acujunio='{5}',acujulio='{6}',acuagosto='{7}',acuseptiembre='{8}',acuoctubre='{9}',acunoviembre='{10}',acudiciembre='{11}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", ppEnero, ppFebrero, ppMarzo, ppAbril, ppMayo, ppJunio, ppJulio, ppAgosto, ppSep, ppOct, ppNovi, ppDic), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+                MySqlConnection con3 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("insert into dedacumulados(id_cliente,acuEnero, acuFebrero,acuMarzo,acuAbril,acuMayo,acuJunio,acuJulio, acuAgosto, acuSeptiembre, acuOctubre, acuNoviembre, acuDiciembre) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}'  )", ppcliente, ppEnero, ppFebrero, ppMarzo, ppAbril, ppMayo, ppJunio, ppJulio, ppAgosto, ppSep, ppOct, ppNovi, ppDic), con3);
+                comando.ExecuteNonQuery();
+                con3.Close();
+            }
+        }
+        //Insertar la columna de ingresos acumulados
+        public static void ingAcumulados(String ppcliente, String ppEnero, String ppFebrero, String ppMarzo, String ppAbril, String ppMayo, String ppJunio, String ppJulio, String ppAgosto, String ppSep, String ppOct, String ppNovi, String ppDic)
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from ingacumulados where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE ingacumulados SET acuenero='{0}',acufebrero='{1}',acumarzo='{2}',acuabril='{3}',acumayo='{4}',acujunio='{5}',acujulio='{6}',acuagosto='{7}',acuseptiembre='{8}',acuoctubre='{9}',acunoviembre='{10}',acudiciembre='{11}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", ppEnero, ppFebrero, ppMarzo, ppAbril, ppMayo, ppJunio, ppJulio, ppAgosto, ppSep, ppOct, ppNovi, ppDic), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+                MySqlConnection con3 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("insert into ingacumulados(id_cliente,acuEnero, acuFebrero,acuMarzo,acuAbril,acuMayo,acuJunio,acuJulio, acuAgosto, acuSeptiembre, acuOctubre, acuNoviembre, acuDiciembre) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}'  )", ppcliente, ppEnero, ppFebrero, ppMarzo, ppAbril, ppMayo, ppJunio, ppJulio, ppAgosto, ppSep, ppOct, ppNovi, ppDic), con3);
+                comando.ExecuteNonQuery();
+                con3.Close();
+            }
+        }
+        //CALCULO GENERAL
+        public static void datosCalculoGeneralISR(String pMes)
+        {
+            string ingMes, dedMes, ingAcu, dedAcu;
+            MySqlConnection con = Clases.conexiones.conection();
+            if (pMes.Equals("Enero"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.totalenero, d16.totalenero from ingtotalesmes i16 join dedtotalesmes d16 where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();                
+                reader.Read();
+                ingMes = reader[0].ToString();
+                dedMes = reader[1].ToString();
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                Formularios.calculoGeneral.ingAcumulado = "0";
+                Formularios.calculoGeneral.dedAcumulada = "0";
+                con.Close();
+            }
+            if (pMes.Equals("Febrero"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuEnero, i16.totalfebrero, deda.acuEnero, d16.totalfebrero from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Marzo"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuFebrero, i16.totalmarzo, deda.acuFebrero, d16.totalmarzo from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Abril"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuMarzo, i16.totalabril, deda.acuMarzo, d16.totalabril from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Mayo"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuAbril, i16.totalmayo, deda.acuAbril, d16.totalmayo from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Junio"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuMayo, i16.totaljunio, deda.acuMayo, d16.totaljunio from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Julio"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuJunio, i16.totaljulio, deda.acuJunio, d16.totaljulio from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Agosto"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuJulio, i16.totalagosto, deda.acuJulio, d16.totalagosto from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Septiembre"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuAgosto, i16.totalseptiembre, deda.acuAgosto, d16.totalseptiembre from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Octubre"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuSeptiembre, i16.totalagosto, deda.acuSeptiembre, d16.totaloctubre from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Noviembre"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuOctubre, i16.totalnoviembre, deda.acuOctubre, d16.totalnoviembre from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+            if (pMes.Equals("Diciembre"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT inga.acuNoviembre, i16.totaldiciembre, deda.acuNoviembre, d16.totaldiciembre from ingacumulados inga join ingtotalesmes i16 join dedacumulados deda join dedtotalesmes d16 where inga.id_cliente='" + Formularios.Control.idCliente + "' and i16.id_cliente='" + Formularios.Control.idCliente + "' and deda.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "' "), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingAcu = reader[0].ToString();
+                ingMes = reader[1].ToString();
+                dedAcu = reader[2].ToString();
+                dedMes = reader[3].ToString();
+                Formularios.calculoGeneral.ingAcumulado = ingAcu;
+                Formularios.calculoGeneral.ingTotPeriodo = ingMes;
+                Formularios.calculoGeneral.dedAcumulada = dedAcu;
+                Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
+                con.Close();
+            }
+        }
+        //CALCULO GENERAL IVA
+        public static void datosCalculoGeneralIVA(String pMes)
+        {
+            string ingMes16, dedMes16, ingMes0, dedMes0, ingExe, dedExe, retencion;
+            MySqlConnection con = Clases.conexiones.conection();
+            if (pMes.Equals("Enero"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.enero, d16.enero, i0.enero, d0.enero, iexe.enero, dexe.enero, ret.enero from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Febrero"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.octubre, d16.octubre, i0.octubre, d0.octubre, iexe.octubre, dexe.octubre, ret.octubre from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Marzo"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.marzo, d16.marzo, i0.marzo, d0.marzo, iexe.marzo, dexe.marzo, ret.marzo from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Abril"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.abril, d16.abril, i0.abril, d0.abril, iexe.abril, dexe.abril, ret.abril from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Mayo"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.mayo, d16.mayo, i0.mayo, d0.mayo, iexe.mayo, dexe.mayo, ret.mayo from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Junio"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.junio, d16.junio, i0.junio, d0.junio, iexe.junio, dexe.junio, ret.junio from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Julio"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.julio, d16.julio, i0.julio, d0.julio, iexe.julio, dexe.julio, ret.julio from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Agosto"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.agosto, d16.agosto, i0.agosto, d0.agosto, iexe.agosto, dexe.agosto, ret.agosto from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Septiembre"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.septiembre, d16.septiembre, i0.septiembre, d0.septiembre, iexe.septiembre, dexe.septiembre, ret.septiembre from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Octubre"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.octubre, d16.octubre, i0.octubre, d0.octubre, iexe.octubre, dexe.octubre, ret.octubre from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Noviembre"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.noviembre, d16.noviembre, i0.noviembre, d0.noviembre, iexe.noviembre, dexe.noviembre, ret.noviembre from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+            if (pMes.Equals("Diciembre"))
+            {
+                MySqlCommand cmd = new MySqlCommand(string.Format("SELECT i16.febrero, d16.febrero, i0.febrero, d0.febrero, iexe.febrero, dexe.febrero, ret.febrero from ingresos16 i16 join deducciones16 d16 join ingresos0 i0 join deducciones0 d0 join ingresosexentos iexe join deduccionesexentas dexe join retencionesiva ret where i16.id_cliente='" + Formularios.Control.idCliente + "' and d16.id_cliente='" + Formularios.Control.idCliente + "'and i0.id_cliente='" + Formularios.Control.idCliente + "' and d0.id_cliente='" + Formularios.Control.idCliente + "' and iexe.id_cliente='" + Formularios.Control.idCliente + "' and dexe.id_cliente='" + Formularios.Control.idCliente + "' and ret.id_cliente='" + Formularios.Control.idCliente + "'"), con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                ingMes16 = reader[0].ToString();
+                dedMes16 = reader[1].ToString();
+                ingMes0 = reader[2].ToString();
+                dedMes0 = reader[3].ToString();
+                ingExe = reader[4].ToString();
+                dedExe = reader[5].ToString();
+                retencion = reader[6].ToString();
+                Formularios.calculoGeneral.ingIVA16 = ingMes16;
+                Formularios.calculoGeneral.dedIVA16 = dedMes16;
+                Formularios.calculoGeneral.ingIVA0 = ingMes0;
+                Formularios.calculoGeneral.dedIVA0 = dedMes0;
+                Formularios.calculoGeneral.ingExe = ingExe;
+                Formularios.calculoGeneral.dedExe = dedExe;
+                Formularios.calculoGeneral.retiva = retencion;
+                con.Close();
+            }
+        }
+        //Insertar o actualizar datos de la tabla deducciones IVA Acreditable Manual
+        public static void ivaAcreditable(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
+            String pseptiembre, String pocctubre, String pnoviembre, String pdiciembre, String ptotal)
+        {
+
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from ivaacreditablemanual where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE ivaacreditablemanual SET enero='{0}',febrero='{1}',marzo='{2}',abril='{3}',mayo='{4}',junio='{5}',julio='{6}',agosto='{7}',septiembre='{8}',octubre='{9}',noviembre='{10}',diciembre='{11}',total='{12}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+
+                MySqlConnection con1 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("INSERT INTO ivaacreditablemanual(id_cliente,enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,total) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", pcliente, penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con1);
+                comando.ExecuteNonQuery();
+                con1.Close();
+            }
+        }
+        //Insertar o actualizar datos de la tabla deducciones PTU
+        public static void Ptu(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
+            String pseptiembre, String pocctubre, String pnoviembre, String pdiciembre, String ptotal)
+        {
+
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from ptu where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE ptu SET enero='{0}',febrero='{1}',marzo='{2}',abril='{3}',mayo='{4}',junio='{5}',julio='{6}',agosto='{7}',septiembre='{8}',octubre='{9}',noviembre='{10}',diciembre='{11}',total='{12}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+
+                MySqlConnection con1 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("INSERT INTO ptu(id_cliente,enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,total) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", pcliente, penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con1);
+                comando.ExecuteNonQuery();
+                con1.Close();
+            }
+        }
+        //Insertar o actualizar datos de la tabla deducciones Péerdidas
+        public static void Perdidas(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
+            String pseptiembre, String pocctubre, String pnoviembre, String pdiciembre, String ptotal)
+        {
+
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand com = new MySqlCommand(string.Format("select id_cliente from perdidas where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            MySqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows.Equals(true))
+            {
+                MySqlConnection con2 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("UPDATE perdidas SET enero='{0}',febrero='{1}',marzo='{2}',abril='{3}',mayo='{4}',junio='{5}',julio='{6}',agosto='{7}',septiembre='{8}',octubre='{9}',noviembre='{10}',diciembre='{11}',total='{12}' WHERE id_cliente='" + Formularios.Control.idCliente + "'", penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con2);
+                comando.ExecuteNonQuery();
+                con2.Close();
+
+            }
+            else
+            {
+
+                MySqlConnection con1 = conexiones.conection();
+                MySqlCommand comando = new MySqlCommand(String.Format("INSERT INTO perdidas(id_cliente,enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,total) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", pcliente, penero, pfebrero, pmarzo, pabril, pmayo, pjunio, pjulio, pagosto, pseptiembre, pocctubre, pnoviembre, pdiciembre, ptotal), con1);
+                comando.ExecuteNonQuery();
+                con1.Close();
+            }
+        }
+        //Obtener el ISR Retenido
+        public static List<string> ISRRet()
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT * from retencionesisr where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            List<string> isr = new List<string>();
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            for (int i = 2; i <= 14; i++)
+            {
+                isr.Add(reader[i].ToString());
+            }
+            
+            return isr;
+
+        }
+        
+       
     }
+
 }
 

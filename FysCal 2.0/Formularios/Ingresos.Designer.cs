@@ -1048,11 +1048,11 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 44);
+            this.label2.Location = new System.Drawing.Point(34, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 44);
+            this.label2.Size = new System.Drawing.Size(62, 44);
             this.label2.TabIndex = 1;
             this.label2.Text = "Enero";
             // 
@@ -1060,11 +1060,11 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 88);
+            this.label3.Location = new System.Drawing.Point(25, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 44);
+            this.label3.Size = new System.Drawing.Size(80, 44);
             this.label3.TabIndex = 2;
             this.label3.Text = "Febrero";
             // 
@@ -1072,11 +1072,11 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(27, 132);
+            this.label4.Location = new System.Drawing.Point(33, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 44);
+            this.label4.Size = new System.Drawing.Size(65, 44);
             this.label4.TabIndex = 3;
             this.label4.Text = "Marzo";
             // 
@@ -1084,11 +1084,11 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(34, 176);
+            this.label5.Location = new System.Drawing.Point(39, 176);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 44);
+            this.label5.Size = new System.Drawing.Size(52, 44);
             this.label5.TabIndex = 4;
             this.label5.Text = "Abril";
             // 
@@ -1096,11 +1096,11 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(32, 220);
+            this.label6.Location = new System.Drawing.Point(37, 220);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 44);
+            this.label6.Size = new System.Drawing.Size(56, 44);
             this.label6.TabIndex = 5;
             this.label6.Text = "Mayo";
             // 
@@ -1108,11 +1108,11 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(30, 264);
+            this.label7.Location = new System.Drawing.Point(37, 264);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 44);
+            this.label7.Size = new System.Drawing.Size(57, 44);
             this.label7.TabIndex = 6;
             this.label7.Text = "Junio";
             // 
@@ -1120,11 +1120,11 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(34, 308);
+            this.label8.Location = new System.Drawing.Point(40, 308);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 44);
+            this.label8.Size = new System.Drawing.Size(51, 44);
             this.label8.TabIndex = 7;
             this.label8.Text = "Julio";
             // 
@@ -1132,11 +1132,11 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(24, 352);
+            this.label9.Location = new System.Drawing.Point(30, 352);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 44);
+            this.label9.Size = new System.Drawing.Size(70, 44);
             this.label9.TabIndex = 8;
             this.label9.Text = "Agosto";
             // 
@@ -1156,11 +1156,11 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(17, 440);
+            this.label11.Location = new System.Drawing.Point(25, 440);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 44);
+            this.label11.Size = new System.Drawing.Size(80, 44);
             this.label11.TabIndex = 10;
             this.label11.Text = "Octubre";
             // 
@@ -1471,7 +1471,7 @@
             this.txtEneIMes.TabIndex = 86;
             this.txtEneIMes.Text = "0";
             this.txtEneIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtEneIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtEneIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtFebIMes
             // 
@@ -1486,7 +1486,7 @@
             this.txtFebIMes.TabIndex = 87;
             this.txtFebIMes.Text = "0";
             this.txtFebIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtFebIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtFebIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtMarIMes
             // 
@@ -1501,7 +1501,7 @@
             this.txtMarIMes.TabIndex = 88;
             this.txtMarIMes.Text = "0";
             this.txtMarIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtMarIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtMarIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtAbrIMes
             // 
@@ -1516,7 +1516,7 @@
             this.txtAbrIMes.TabIndex = 89;
             this.txtAbrIMes.Text = "0";
             this.txtAbrIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtAbrIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtAbrIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtMayIMes
             // 
@@ -1531,7 +1531,7 @@
             this.txtMayIMes.TabIndex = 90;
             this.txtMayIMes.Text = "0";
             this.txtMayIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtMayIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtMayIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtJunIMes
             // 
@@ -1546,7 +1546,7 @@
             this.txtJunIMes.TabIndex = 91;
             this.txtJunIMes.Text = "0";
             this.txtJunIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtJunIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtJunIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtJulIMes
             // 
@@ -1561,7 +1561,7 @@
             this.txtJulIMes.TabIndex = 92;
             this.txtJulIMes.Text = "0";
             this.txtJulIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtJulIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtJulIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtAgoIMes
             // 
@@ -1576,7 +1576,7 @@
             this.txtAgoIMes.TabIndex = 93;
             this.txtAgoIMes.Text = "0";
             this.txtAgoIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtAgoIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtAgoIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtSepIMes
             // 
@@ -1591,7 +1591,7 @@
             this.txtSepIMes.TabIndex = 94;
             this.txtSepIMes.Text = "0";
             this.txtSepIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtSepIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtSepIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtOctIMes
             // 
@@ -1606,7 +1606,7 @@
             this.txtOctIMes.TabIndex = 95;
             this.txtOctIMes.Text = "0";
             this.txtOctIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtOctIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtOctIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtNovIMes
             // 
@@ -1621,7 +1621,7 @@
             this.txtNovIMes.TabIndex = 96;
             this.txtNovIMes.Text = "0";
             this.txtNovIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtNovIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtNovIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtDicIMes
             // 
@@ -1636,7 +1636,7 @@
             this.txtDicIMes.TabIndex = 97;
             this.txtDicIMes.Text = "0";
             this.txtDicIMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtDicIMes.Leave += new System.EventHandler(this.txtDicIMes_Leave);
+            this.txtDicIMes.TextChanged += new System.EventHandler(this.txtDicIMes_TextChanged);
             // 
             // txtTotIMes
             // 
@@ -1763,7 +1763,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(297, 620);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(297, 629);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // txtTotRetISR
@@ -1828,6 +1828,7 @@
             this.txtEneRetISR.TabIndex = 25;
             this.txtEneRetISR.Text = "0";
             this.txtEneRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEneRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtFebRetISR
             // 
@@ -1841,6 +1842,7 @@
             this.txtFebRetISR.TabIndex = 26;
             this.txtFebRetISR.Text = "0";
             this.txtFebRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtMarRetISR
             // 
@@ -1854,6 +1856,7 @@
             this.txtMarRetISR.TabIndex = 27;
             this.txtMarRetISR.Text = "0";
             this.txtMarRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtAbrRetISR
             // 
@@ -1867,6 +1870,7 @@
             this.txtAbrRetISR.TabIndex = 28;
             this.txtAbrRetISR.Text = "0";
             this.txtAbrRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtMayRetISR
             // 
@@ -1880,6 +1884,7 @@
             this.txtMayRetISR.TabIndex = 29;
             this.txtMayRetISR.Text = "0";
             this.txtMayRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtJunRetISR
             // 
@@ -1893,6 +1898,7 @@
             this.txtJunRetISR.TabIndex = 30;
             this.txtJunRetISR.Text = "0";
             this.txtJunRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtJulRetISR
             // 
@@ -1906,6 +1912,7 @@
             this.txtJulRetISR.TabIndex = 31;
             this.txtJulRetISR.Text = "0";
             this.txtJulRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtAgoRetISR
             // 
@@ -1919,6 +1926,7 @@
             this.txtAgoRetISR.TabIndex = 32;
             this.txtAgoRetISR.Text = "0";
             this.txtAgoRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtSepRetISR
             // 
@@ -1932,6 +1940,7 @@
             this.txtSepRetISR.TabIndex = 33;
             this.txtSepRetISR.Text = "0";
             this.txtSepRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtOctRetISR
             // 
@@ -1945,6 +1954,7 @@
             this.txtOctRetISR.TabIndex = 34;
             this.txtOctRetISR.Text = "0";
             this.txtOctRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtNovRetISR
             // 
@@ -1958,6 +1968,7 @@
             this.txtNovRetISR.TabIndex = 35;
             this.txtNovRetISR.Text = "0";
             this.txtNovRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtDicRetISR
             // 
@@ -1971,6 +1982,7 @@
             this.txtDicRetISR.TabIndex = 36;
             this.txtDicRetISR.Text = "0";
             this.txtDicRetISR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicRetISR.Leave += new System.EventHandler(this.txtEneRetISR_Leave);
             // 
             // txtEneRetIVA
             // 
@@ -1984,6 +1996,7 @@
             this.txtEneRetIVA.TabIndex = 38;
             this.txtEneRetIVA.Text = "0";
             this.txtEneRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEneRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtFebRetIVA
             // 
@@ -1997,6 +2010,7 @@
             this.txtFebRetIVA.TabIndex = 39;
             this.txtFebRetIVA.Text = "0";
             this.txtFebRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtFebRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtMarRetIVA
             // 
@@ -2010,6 +2024,7 @@
             this.txtMarRetIVA.TabIndex = 40;
             this.txtMarRetIVA.Text = "0";
             this.txtMarRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMarRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtAbrRetIVA
             // 
@@ -2023,6 +2038,7 @@
             this.txtAbrRetIVA.TabIndex = 41;
             this.txtAbrRetIVA.Text = "0";
             this.txtAbrRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAbrRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtMayRetIVA
             // 
@@ -2036,6 +2052,7 @@
             this.txtMayRetIVA.TabIndex = 42;
             this.txtMayRetIVA.Text = "0";
             this.txtMayRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMayRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtJunRetIVA
             // 
@@ -2049,6 +2066,7 @@
             this.txtJunRetIVA.TabIndex = 43;
             this.txtJunRetIVA.Text = "0";
             this.txtJunRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJunRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtJulRetIVA
             // 
@@ -2062,6 +2080,7 @@
             this.txtJulRetIVA.TabIndex = 44;
             this.txtJulRetIVA.Text = "0";
             this.txtJulRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtJulRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtAgoRetIVA
             // 
@@ -2075,6 +2094,7 @@
             this.txtAgoRetIVA.TabIndex = 45;
             this.txtAgoRetIVA.Text = "0";
             this.txtAgoRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAgoRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtSepRetIVA
             // 
@@ -2088,6 +2108,7 @@
             this.txtSepRetIVA.TabIndex = 46;
             this.txtSepRetIVA.Text = "0";
             this.txtSepRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSepRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtOctRetIVA
             // 
@@ -2101,6 +2122,7 @@
             this.txtOctRetIVA.TabIndex = 47;
             this.txtOctRetIVA.Text = "0";
             this.txtOctRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOctRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtNovRetIVA
             // 
@@ -2114,6 +2136,7 @@
             this.txtNovRetIVA.TabIndex = 48;
             this.txtNovRetIVA.Text = "0";
             this.txtNovRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNovRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // txtDicRetIVA
             // 
@@ -2127,6 +2150,7 @@
             this.txtDicRetIVA.TabIndex = 49;
             this.txtDicRetIVA.Text = "0";
             this.txtDicRetIVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDicRetIVA.Leave += new System.EventHandler(this.txtEneRetIVA_Leave);
             // 
             // Ingresos
             // 

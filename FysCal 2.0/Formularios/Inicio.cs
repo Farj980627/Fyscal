@@ -49,5 +49,10 @@ namespace FysCal_2._0.Formularios
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new Formularios.Tablas_yTarifas().Show();
+        }
     }
 }

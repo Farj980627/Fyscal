@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtRegFis = new System.Windows.Forms.TextBox();
             this.txtDomFis = new System.Windows.Forms.TextBox();
             this.txtCurp = new System.Windows.Forms.TextBox();
             this.txtRfc = new System.Windows.Forms.TextBox();
@@ -50,7 +51,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtRegFis = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -81,6 +81,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(825, 250);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // txtRegFis
+            // 
+            this.txtRegFis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.txtRegFis.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtRegFis.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegFis.ForeColor = System.Drawing.Color.White;
+            this.txtRegFis.Location = new System.Drawing.Point(303, 210);
+            this.txtRegFis.Name = "txtRegFis";
+            this.txtRegFis.Size = new System.Drawing.Size(519, 37);
+            this.txtRegFis.TabIndex = 19;
             // 
             // txtDomFis
             // 
@@ -320,17 +331,6 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Ingresos Totales del Ejercicio:";
             // 
-            // txtRegFis
-            // 
-            this.txtRegFis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.txtRegFis.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtRegFis.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegFis.ForeColor = System.Drawing.Color.White;
-            this.txtRegFis.Location = new System.Drawing.Point(303, 210);
-            this.txtRegFis.Name = "txtRegFis";
-            this.txtRegFis.Size = new System.Drawing.Size(519, 37);
-            this.txtRegFis.TabIndex = 19;
-            // 
             // Datos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -374,9 +374,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtRegFis;
+        public System.Windows.Forms.Label label6;
     }
 }

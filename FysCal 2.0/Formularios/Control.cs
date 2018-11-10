@@ -30,7 +30,17 @@ namespace FysCal_2._0.Formularios
             deneexe, dfebexe, dmarexe, dabrexe, dmayexe, djunexe, djulexe, dagoexe, dsepexe, doctexe, dnovexe, ddicexe, dtotexe,
             deneNoo, dfebNoo, dmarNoo, dabrNoo, dmayNoo, djunNoo, djulNoo, dagoNoo, dsepNoo, doctNoo, dnovNoo, ddicNoo, dtotNoo,
             deneest, dfebest, dmarest, dabrest, dmayest, djunest, djulest, dagoest, dsepest, doctest, dnovest, ddicest, dtotest,
-            denemes, dfebmes, dmarmes, dabrmes, dmaymes, djunmes, djulmes, dagomes, dsepmes, doctmes, dnovmes, ddicmes, dtotmes;
+            denemes, dfebmes, dmarmes, dabrmes, dmaymes, djunmes, djulmes, dagomes, dsepmes, doctmes, dnovmes, ddicmes, dtotmes,
+            deneivaAcr, dfebivaAcr, dmarivaAcr, dabrivaAcr, dmayivaAcr, djunivaAcr, djulivaAcr, dagoivaAcr, dsepivaAcr, doctivaAcr, dnovivaAcr, ddicivaAcr, dtotivaAcr,
+            denePtu, dfebPtu, dmarPtu, dabrPtu, dmayPtu, djunPtu, djulPtu, dagoPtu, dsepPtu, doctPtu, dnovPtu, ddicPtu, dtotPtu,
+            denePerdidas, dfebPerdidas, dmarPerdidas, dabrPerdidas, dmayPerdidas, djunPerdidas, djulPerdidas, dagoPerdidas, dsepPerdidas, doctPerdidas, dnovPerdidas, ddicPerdidas, dtotPerdidas;
+
+
+
+        private void btnCalcGeneral_Click(object sender, EventArgs e)
+        {
+            cargarForm(new Formularios.calculoGeneral());
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -42,9 +52,10 @@ namespace FysCal_2._0.Formularios
             
             lblCliente.Text = Formularios.Inicio.cliente;
             Clases.conexiones.obtenerIdcliente(Formularios.Inicio.cliente);
-           
-           
-            
+            //Clases.conexiones.regimenFiscal(Formularios.Control.idCliente);
+
+
+
         }
 
       
@@ -66,6 +77,8 @@ namespace FysCal_2._0.Formularios
         private void btnDatos_Click(object sender, EventArgs e)
         {
             cargarForm(new Formularios.Datos());
+            
+
         }
 
         private void btnDeducciones_Click(object sender, EventArgs e)
