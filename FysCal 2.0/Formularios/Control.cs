@@ -35,7 +35,10 @@ namespace FysCal_2._0.Formularios
             denePtu, dfebPtu, dmarPtu, dabrPtu, dmayPtu, djunPtu, djulPtu, dagoPtu, dsepPtu, doctPtu, dnovPtu, ddicPtu, dtotPtu,
             denePerdidas, dfebPerdidas, dmarPerdidas, dabrPerdidas, dmayPerdidas, djunPerdidas, djulPerdidas, dagoPerdidas, dsepPerdidas, doctPerdidas, dnovPerdidas, ddicPerdidas, dtotPerdidas;
 
-
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            cargarForm(new Formularios.deduccionesPerso());
+        }
 
         private void btnCalcGeneral_Click(object sender, EventArgs e)
         {

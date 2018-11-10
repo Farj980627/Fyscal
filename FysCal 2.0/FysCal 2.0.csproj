@@ -84,6 +84,12 @@
     <Compile Include="Formularios\Deducciones.Designer.cs">
       <DependentUpon>Deducciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\deduccionesPerso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\deduccionesPerso.Designer.cs">
+      <DependentUpon>deduccionesPerso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\deduccionesPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Deducciones.resx">
       <DependentUpon>Deducciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\deduccionesPerso.resx">
+      <DependentUpon>deduccionesPerso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\deduccionesPersonales.resx">
       <DependentUpon>deduccionesPersonales.cs</DependentUpon>
