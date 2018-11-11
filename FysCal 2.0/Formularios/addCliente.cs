@@ -20,6 +20,9 @@ namespace FysCal_2._0.Formularios
         private void btnDatos_Click(object sender, EventArgs e)
         {
             Clases.conexiones.addCliente(txtNombre.Text, txtCurp.Text, txtRfc.Text, txtDomicilioFiscal.Text, cbRegimen.Text);
+            Clases.conexiones.pagoProvisional(Clases.conexiones.max_id(), "0","0","0","0","0","0","0","0","0","0","0","0");
+            Clases.conexiones.ISR106Dif(Clases.conexiones.max_id(), "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0");
+
             new Formularios.Inicio().Show();
             this.Hide();
         }

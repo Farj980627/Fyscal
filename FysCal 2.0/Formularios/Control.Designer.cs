@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.Container = new System.Windows.Forms.Panel();
-            this.lblCliente = new System.Windows.Forms.Label();
             this.btnDatos = new System.Windows.Forms.Button();
             this.btnIngresos = new System.Windows.Forms.Button();
             this.btnDeducciones = new System.Windows.Forms.Button();
             this.btnCalcGeneral = new System.Windows.Forms.Button();
+            this.Container = new System.Windows.Forms.Panel();
+            this.lblCliente = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -58,26 +59,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1060, 45);
             this.tableLayoutPanel1.TabIndex = 9;
-            // 
-            // Container
-            // 
-            this.Container.AutoScroll = true;
-            this.Container.Location = new System.Drawing.Point(202, 106);
-            this.Container.Margin = new System.Windows.Forms.Padding(4);
-            this.Container.Name = "Container";
-            this.Container.Size = new System.Drawing.Size(1296, 669);
-            this.Container.TabIndex = 10;
-            // 
-            // lblCliente
-            // 
-            this.lblCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.ForeColor = System.Drawing.Color.White;
-            this.lblCliente.Location = new System.Drawing.Point(830, 75);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(0, 27);
-            this.lblCliente.TabIndex = 11;
             // 
             // btnDatos
             // 
@@ -149,6 +130,26 @@
             this.btnCalcGeneral.UseVisualStyleBackColor = false;
             this.btnCalcGeneral.Click += new System.EventHandler(this.btnCalcGeneral_Click);
             // 
+            // Container
+            // 
+            this.Container.AutoScroll = true;
+            this.Container.Location = new System.Drawing.Point(202, 106);
+            this.Container.Margin = new System.Windows.Forms.Padding(4);
+            this.Container.Name = "Container";
+            this.Container.Size = new System.Drawing.Size(1296, 669);
+            this.Container.TabIndex = 10;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.ForeColor = System.Drawing.Color.White;
+            this.lblCliente.Location = new System.Drawing.Point(830, 75);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(0, 27);
+            this.lblCliente.TabIndex = 11;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::FysCal_2._0.Properties.Resources.LOGO;
@@ -176,12 +177,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Image = global::FysCal_2._0.Properties.Resources.calcGen;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(17, 342);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(158, 145);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "RESUMEN ISR";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1503, 788);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.Container);
@@ -207,5 +226,6 @@
         private System.Windows.Forms.Button btnDeducciones;
         private System.Windows.Forms.Button btnCalcGeneral;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.cbMes = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtIngAcumulado = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cbMes = new System.Windows.Forms.ComboBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,6 +54,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1320, 701);
             this.panel1.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.Black;
+            this.dataGridView1.Location = new System.Drawing.Point(40, 257);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1222, 426);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar.Image = global::FysCal_2._0.Properties.Resources.Guardar;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.Location = new System.Drawing.Point(1020, 154);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(210, 40);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel1
             // 
@@ -77,6 +106,56 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1222, 96);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // cbMes
+            // 
+            this.cbMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.cbMes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbMes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbMes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbMes.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMes.ForeColor = System.Drawing.Color.White;
+            this.cbMes.FormattingEnabled = true;
+            this.cbMes.Items.AddRange(new object[] {
+            "Honorarios méedicos, dentales y gastos hospitalarios",
+            "Gastos funerales",
+            "Donativos",
+            "Intereses reales efectivamente pagados por créeditos hipótecarios",
+            "aportaciones voluntarias al SAR",
+            "Primas por seguros de gastos médicos",
+            "Gastos de transportación obligatoria",
+            "depósitos en cuentas para el ahorro, primas que tengan como base planes de pensio" +
+                "nes",
+            "Estimulos: Pagos por servicios educativos (colegiaturas)"});
+            this.cbMes.Location = new System.Drawing.Point(369, 50);
+            this.cbMes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbMes.Name = "cbMes";
+            this.cbMes.Size = new System.Drawing.Size(605, 38);
+            this.cbMes.TabIndex = 31;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(91, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 48);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Fecha";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(282, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 48);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "RFC";
             // 
             // label3
             // 
@@ -139,85 +218,6 @@
             this.txtIngAcumulado.Text = "0";
             this.txtIngAcumulado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(282, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 48);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "RFC";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(91, 48);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 48);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Fecha";
-            // 
-            // cbMes
-            // 
-            this.cbMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.cbMes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbMes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbMes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMes.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMes.ForeColor = System.Drawing.Color.White;
-            this.cbMes.FormattingEnabled = true;
-            this.cbMes.Items.AddRange(new object[] {
-            "Honorarios méedicos, dentales y gastos hospitalarios",
-            "Gastos funerales",
-            "Donativos",
-            "Intereses reales efectivamente pagados por créeditos hipótecarios",
-            "aportaciones voluntarias al SAR",
-            "Primas por seguros de gastos médicos",
-            "Gastos de transportación obligatoria",
-            "depósitos en cuentas para el ahorro, primas que tengan como base planes de pensio" +
-                "nes",
-            "Estimulos: Pagos por servicios educativos (colegiaturas)"});
-            this.cbMes.Location = new System.Drawing.Point(369, 50);
-            this.cbMes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbMes.Name = "cbMes";
-            this.cbMes.Size = new System.Drawing.Size(605, 38);
-            this.cbMes.TabIndex = 31;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.White;
-            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardar.Image = global::FysCal_2._0.Properties.Resources.Guardar;
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.Location = new System.Drawing.Point(1020, 154);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(210, 40);
-            this.btnGuardar.TabIndex = 10;
-            this.btnGuardar.Text = "GUARDAR";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.Black;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 257);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1222, 426);
-            this.dataGridView1.TabIndex = 11;
-            // 
             // deduccionesPerso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -229,9 +229,9 @@
             this.Name = "deduccionesPerso";
             this.Text = "deduccionesPerso";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

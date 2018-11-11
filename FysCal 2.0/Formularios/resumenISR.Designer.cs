@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,7 +38,29 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtIngAcumulado = new System.Windows.Forms.TextBox();
+            this.txtIngPeriodo = new System.Windows.Forms.TextBox();
+            this.txtDedAcumuladas = new System.Windows.Forms.TextBox();
+            this.txtDedPeriodo = new System.Windows.Forms.TextBox();
+            this.txtTotalIng = new System.Windows.Forms.TextBox();
+            this.txtTotalDed = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtBaseGravable = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cbMes = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtISRCARGO = new System.Windows.Forms.TextBox();
+            this.txtISRRetenido = new System.Windows.Forms.TextBox();
+            this.txtDiferencia = new System.Windows.Forms.TextBox();
+            this.txtPagoProvisional = new System.Windows.Forms.TextBox();
+            this.txtISRCausado = new System.Windows.Forms.TextBox();
+            this.txtCuota = new System.Windows.Forms.TextBox();
+            this.txtMarginal = new System.Windows.Forms.TextBox();
+            this.txtPorcentaje = new System.Windows.Forms.TextBox();
+            this.txtExedente = new System.Windows.Forms.TextBox();
+            this.txtLimiteInf = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -49,27 +70,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtIngAcumulado = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.cbMes = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -90,14 +90,14 @@
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.txtIngAcumulado, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txtIngPeriodo, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtDedAcumuladas, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtDedPeriodo, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtTotalIng, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtTotalDed, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox6, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.textBox7, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.textBox8, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.txtBaseGravable, 1, 8);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(19, 50);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
@@ -113,16 +113,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(609, 676);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.cbMes);
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1254, 729);
-            this.panel1.TabIndex = 1;
             // 
             // label3
             // 
@@ -232,21 +222,176 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "BASE GRAVABLE DEL PAGO PROVISIONAL";
             // 
+            // txtIngAcumulado
+            // 
+            this.txtIngAcumulado.BackColor = System.Drawing.Color.White;
+            this.txtIngAcumulado.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngAcumulado.ForeColor = System.Drawing.Color.Black;
+            this.txtIngAcumulado.Location = new System.Drawing.Point(307, 2);
+            this.txtIngAcumulado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtIngAcumulado.Name = "txtIngAcumulado";
+            this.txtIngAcumulado.Size = new System.Drawing.Size(189, 30);
+            this.txtIngAcumulado.TabIndex = 27;
+            this.txtIngAcumulado.Text = "0";
+            this.txtIngAcumulado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtIngPeriodo
+            // 
+            this.txtIngPeriodo.BackColor = System.Drawing.Color.White;
+            this.txtIngPeriodo.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngPeriodo.ForeColor = System.Drawing.Color.Black;
+            this.txtIngPeriodo.Location = new System.Drawing.Point(307, 69);
+            this.txtIngPeriodo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtIngPeriodo.Name = "txtIngPeriodo";
+            this.txtIngPeriodo.Size = new System.Drawing.Size(189, 30);
+            this.txtIngPeriodo.TabIndex = 28;
+            this.txtIngPeriodo.Text = "0";
+            this.txtIngPeriodo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtDedAcumuladas
+            // 
+            this.txtDedAcumuladas.BackColor = System.Drawing.Color.White;
+            this.txtDedAcumuladas.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDedAcumuladas.ForeColor = System.Drawing.Color.Black;
+            this.txtDedAcumuladas.Location = new System.Drawing.Point(307, 136);
+            this.txtDedAcumuladas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDedAcumuladas.Name = "txtDedAcumuladas";
+            this.txtDedAcumuladas.Size = new System.Drawing.Size(189, 30);
+            this.txtDedAcumuladas.TabIndex = 29;
+            this.txtDedAcumuladas.Text = "0";
+            this.txtDedAcumuladas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtDedPeriodo
+            // 
+            this.txtDedPeriodo.BackColor = System.Drawing.Color.White;
+            this.txtDedPeriodo.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDedPeriodo.ForeColor = System.Drawing.Color.Black;
+            this.txtDedPeriodo.Location = new System.Drawing.Point(307, 203);
+            this.txtDedPeriodo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDedPeriodo.Name = "txtDedPeriodo";
+            this.txtDedPeriodo.Size = new System.Drawing.Size(189, 30);
+            this.txtDedPeriodo.TabIndex = 30;
+            this.txtDedPeriodo.Text = "0";
+            this.txtDedPeriodo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtTotalIng
+            // 
+            this.txtTotalIng.BackColor = System.Drawing.Color.White;
+            this.txtTotalIng.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalIng.ForeColor = System.Drawing.Color.Black;
+            this.txtTotalIng.Location = new System.Drawing.Point(307, 270);
+            this.txtTotalIng.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTotalIng.Name = "txtTotalIng";
+            this.txtTotalIng.Size = new System.Drawing.Size(189, 30);
+            this.txtTotalIng.TabIndex = 31;
+            this.txtTotalIng.Text = "0";
+            this.txtTotalIng.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtTotalDed
+            // 
+            this.txtTotalDed.BackColor = System.Drawing.Color.White;
+            this.txtTotalDed.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalDed.ForeColor = System.Drawing.Color.Black;
+            this.txtTotalDed.Location = new System.Drawing.Point(307, 337);
+            this.txtTotalDed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTotalDed.Name = "txtTotalDed";
+            this.txtTotalDed.Size = new System.Drawing.Size(189, 30);
+            this.txtTotalDed.TabIndex = 32;
+            this.txtTotalDed.Text = "0";
+            this.txtTotalDed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.White;
+            this.textBox6.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.Color.Black;
+            this.textBox6.Location = new System.Drawing.Point(307, 404);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(189, 30);
+            this.textBox6.TabIndex = 33;
+            this.textBox6.Text = "0";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.White;
+            this.textBox7.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.Color.Black;
+            this.textBox7.Location = new System.Drawing.Point(307, 471);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(189, 30);
+            this.textBox7.TabIndex = 34;
+            this.textBox7.Text = "0";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtBaseGravable
+            // 
+            this.txtBaseGravable.BackColor = System.Drawing.Color.White;
+            this.txtBaseGravable.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBaseGravable.ForeColor = System.Drawing.Color.Black;
+            this.txtBaseGravable.Location = new System.Drawing.Point(307, 538);
+            this.txtBaseGravable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBaseGravable.Name = "txtBaseGravable";
+            this.txtBaseGravable.Size = new System.Drawing.Size(189, 30);
+            this.txtBaseGravable.TabIndex = 35;
+            this.txtBaseGravable.Text = "0";
+            this.txtBaseGravable.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.cbMes);
+            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1254, 729);
+            this.panel1.TabIndex = 1;
+            // 
+            // cbMes
+            // 
+            this.cbMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.cbMes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbMes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbMes.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMes.ForeColor = System.Drawing.Color.White;
+            this.cbMes.FormattingEnabled = true;
+            this.cbMes.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.cbMes.Location = new System.Drawing.Point(382, 7);
+            this.cbMes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbMes.Name = "cbMes";
+            this.cbMes.Size = new System.Drawing.Size(500, 38);
+            this.cbMes.TabIndex = 8;
+            this.cbMes.SelectedIndexChanged += new System.EventHandler(this.cbMes_SelectedIndexChanged);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.textBox18, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.textBox17, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.textBox16, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.textBox15, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.textBox14, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.textBox13, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.textBox12, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.textBox11, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox10, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox9, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtISRCARGO, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.txtISRRetenido, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.txtDiferencia, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.txtPagoProvisional, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.txtISRCausado, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.txtCuota, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.txtMarginal, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtPorcentaje, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtExedente, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtLimiteInf, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label19, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label11, 0, 1);
@@ -272,6 +417,148 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(609, 676);
             this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // txtISRCARGO
+            // 
+            this.txtISRCARGO.BackColor = System.Drawing.Color.White;
+            this.txtISRCARGO.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISRCARGO.ForeColor = System.Drawing.Color.Black;
+            this.txtISRCARGO.Location = new System.Drawing.Point(307, 605);
+            this.txtISRCARGO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtISRCARGO.Name = "txtISRCARGO";
+            this.txtISRCARGO.Size = new System.Drawing.Size(189, 30);
+            this.txtISRCARGO.TabIndex = 45;
+            this.txtISRCARGO.Text = "0";
+            this.txtISRCARGO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtISRRetenido
+            // 
+            this.txtISRRetenido.BackColor = System.Drawing.Color.White;
+            this.txtISRRetenido.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISRRetenido.ForeColor = System.Drawing.Color.Black;
+            this.txtISRRetenido.Location = new System.Drawing.Point(307, 538);
+            this.txtISRRetenido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtISRRetenido.Name = "txtISRRetenido";
+            this.txtISRRetenido.Size = new System.Drawing.Size(189, 30);
+            this.txtISRRetenido.TabIndex = 44;
+            this.txtISRRetenido.Text = "0";
+            this.txtISRRetenido.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtDiferencia
+            // 
+            this.txtDiferencia.BackColor = System.Drawing.Color.White;
+            this.txtDiferencia.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiferencia.ForeColor = System.Drawing.Color.Black;
+            this.txtDiferencia.Location = new System.Drawing.Point(307, 471);
+            this.txtDiferencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDiferencia.Name = "txtDiferencia";
+            this.txtDiferencia.Size = new System.Drawing.Size(189, 30);
+            this.txtDiferencia.TabIndex = 43;
+            this.txtDiferencia.Text = "0";
+            this.txtDiferencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtPagoProvisional
+            // 
+            this.txtPagoProvisional.BackColor = System.Drawing.Color.White;
+            this.txtPagoProvisional.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoProvisional.ForeColor = System.Drawing.Color.Black;
+            this.txtPagoProvisional.Location = new System.Drawing.Point(307, 404);
+            this.txtPagoProvisional.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPagoProvisional.Name = "txtPagoProvisional";
+            this.txtPagoProvisional.Size = new System.Drawing.Size(189, 30);
+            this.txtPagoProvisional.TabIndex = 42;
+            this.txtPagoProvisional.Text = "0";
+            this.txtPagoProvisional.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtISRCausado
+            // 
+            this.txtISRCausado.BackColor = System.Drawing.Color.White;
+            this.txtISRCausado.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISRCausado.ForeColor = System.Drawing.Color.Black;
+            this.txtISRCausado.Location = new System.Drawing.Point(307, 337);
+            this.txtISRCausado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtISRCausado.Name = "txtISRCausado";
+            this.txtISRCausado.Size = new System.Drawing.Size(189, 30);
+            this.txtISRCausado.TabIndex = 41;
+            this.txtISRCausado.Text = "0";
+            this.txtISRCausado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtCuota
+            // 
+            this.txtCuota.BackColor = System.Drawing.Color.White;
+            this.txtCuota.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuota.ForeColor = System.Drawing.Color.Black;
+            this.txtCuota.Location = new System.Drawing.Point(307, 270);
+            this.txtCuota.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCuota.Name = "txtCuota";
+            this.txtCuota.Size = new System.Drawing.Size(189, 30);
+            this.txtCuota.TabIndex = 40;
+            this.txtCuota.Text = "0";
+            this.txtCuota.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtMarginal
+            // 
+            this.txtMarginal.BackColor = System.Drawing.Color.White;
+            this.txtMarginal.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarginal.ForeColor = System.Drawing.Color.Black;
+            this.txtMarginal.Location = new System.Drawing.Point(307, 203);
+            this.txtMarginal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMarginal.Name = "txtMarginal";
+            this.txtMarginal.Size = new System.Drawing.Size(189, 30);
+            this.txtMarginal.TabIndex = 39;
+            this.txtMarginal.Text = "0";
+            this.txtMarginal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtPorcentaje
+            // 
+            this.txtPorcentaje.BackColor = System.Drawing.Color.White;
+            this.txtPorcentaje.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPorcentaje.ForeColor = System.Drawing.Color.Black;
+            this.txtPorcentaje.Location = new System.Drawing.Point(307, 136);
+            this.txtPorcentaje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPorcentaje.Name = "txtPorcentaje";
+            this.txtPorcentaje.Size = new System.Drawing.Size(189, 30);
+            this.txtPorcentaje.TabIndex = 38;
+            this.txtPorcentaje.Text = "0";
+            this.txtPorcentaje.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtExedente
+            // 
+            this.txtExedente.BackColor = System.Drawing.Color.White;
+            this.txtExedente.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExedente.ForeColor = System.Drawing.Color.Black;
+            this.txtExedente.Location = new System.Drawing.Point(307, 69);
+            this.txtExedente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtExedente.Name = "txtExedente";
+            this.txtExedente.Size = new System.Drawing.Size(189, 30);
+            this.txtExedente.TabIndex = 37;
+            this.txtExedente.Text = "0";
+            this.txtExedente.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtLimiteInf
+            // 
+            this.txtLimiteInf.BackColor = System.Drawing.Color.White;
+            this.txtLimiteInf.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLimiteInf.ForeColor = System.Drawing.Color.Black;
+            this.txtLimiteInf.Location = new System.Drawing.Point(307, 2);
+            this.txtLimiteInf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLimiteInf.Name = "txtLimiteInf";
+            this.txtLimiteInf.Size = new System.Drawing.Size(189, 30);
+            this.txtLimiteInf.TabIndex = 36;
+            this.txtLimiteInf.Text = "0";
+            this.txtLimiteInf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(77, 603);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(150, 73);
+            this.label19.TabIndex = 15;
+            this.label19.Text = "I.S.R A CARRGO";
             // 
             // label10
             // 
@@ -381,296 +668,11 @@
             this.label18.TabIndex = 14;
             this.label18.Text = "I.S.R Retenido por Terceros";
             // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(77, 603);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(150, 73);
-            this.label19.TabIndex = 15;
-            this.label19.Text = "I.S.R A CARRGO";
-            // 
-            // txtIngAcumulado
-            // 
-            this.txtIngAcumulado.BackColor = System.Drawing.Color.White;
-            this.txtIngAcumulado.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIngAcumulado.ForeColor = System.Drawing.Color.Black;
-            this.txtIngAcumulado.Location = new System.Drawing.Point(307, 2);
-            this.txtIngAcumulado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtIngAcumulado.Name = "txtIngAcumulado";
-            this.txtIngAcumulado.Size = new System.Drawing.Size(189, 30);
-            this.txtIngAcumulado.TabIndex = 27;
-            this.txtIngAcumulado.Text = "0";
-            this.txtIngAcumulado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(307, 69);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 30);
-            this.textBox1.TabIndex = 28;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(307, 136);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 30);
-            this.textBox2.TabIndex = 29;
-            this.textBox2.Text = "0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(307, 203);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 30);
-            this.textBox3.TabIndex = 30;
-            this.textBox3.Text = "0";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(307, 270);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(189, 30);
-            this.textBox4.TabIndex = 31;
-            this.textBox4.Text = "0";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(307, 337);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 30);
-            this.textBox5.TabIndex = 32;
-            this.textBox5.Text = "0";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(307, 404);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(189, 30);
-            this.textBox6.TabIndex = 33;
-            this.textBox6.Text = "0";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(307, 471);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(189, 30);
-            this.textBox7.TabIndex = 34;
-            this.textBox7.Text = "0";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(307, 538);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(189, 30);
-            this.textBox8.TabIndex = 35;
-            this.textBox8.Text = "0";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(307, 2);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(189, 30);
-            this.textBox9.TabIndex = 36;
-            this.textBox9.Text = "0";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.Black;
-            this.textBox10.Location = new System.Drawing.Point(307, 69);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(189, 30);
-            this.textBox10.TabIndex = 37;
-            this.textBox10.Text = "0";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.Black;
-            this.textBox11.Location = new System.Drawing.Point(307, 136);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(189, 30);
-            this.textBox11.TabIndex = 38;
-            this.textBox11.Text = "0";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.White;
-            this.textBox12.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.Black;
-            this.textBox12.Location = new System.Drawing.Point(307, 203);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(189, 30);
-            this.textBox12.TabIndex = 39;
-            this.textBox12.Text = "0";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.Black;
-            this.textBox13.Location = new System.Drawing.Point(307, 270);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(189, 30);
-            this.textBox13.TabIndex = 40;
-            this.textBox13.Text = "0";
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox14
-            // 
-            this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.ForeColor = System.Drawing.Color.Black;
-            this.textBox14.Location = new System.Drawing.Point(307, 337);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(189, 30);
-            this.textBox14.TabIndex = 41;
-            this.textBox14.Text = "0";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox15
-            // 
-            this.textBox15.BackColor = System.Drawing.Color.White;
-            this.textBox15.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.ForeColor = System.Drawing.Color.Black;
-            this.textBox15.Location = new System.Drawing.Point(307, 404);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(189, 30);
-            this.textBox15.TabIndex = 42;
-            this.textBox15.Text = "0";
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox16
-            // 
-            this.textBox16.BackColor = System.Drawing.Color.White;
-            this.textBox16.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.ForeColor = System.Drawing.Color.Black;
-            this.textBox16.Location = new System.Drawing.Point(307, 471);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(189, 30);
-            this.textBox16.TabIndex = 43;
-            this.textBox16.Text = "0";
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.Color.White;
-            this.textBox17.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.ForeColor = System.Drawing.Color.Black;
-            this.textBox17.Location = new System.Drawing.Point(307, 538);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(189, 30);
-            this.textBox17.TabIndex = 44;
-            this.textBox17.Text = "0";
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.Color.White;
-            this.textBox18.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.ForeColor = System.Drawing.Color.Black;
-            this.textBox18.Location = new System.Drawing.Point(307, 605);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(189, 30);
-            this.textBox18.TabIndex = 45;
-            this.textBox18.Text = "0";
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // cbMes
-            // 
-            this.cbMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.cbMes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbMes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMes.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMes.ForeColor = System.Drawing.Color.White;
-            this.cbMes.FormattingEnabled = true;
-            this.cbMes.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.cbMes.Location = new System.Drawing.Point(382, 7);
-            this.cbMes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbMes.Name = "cbMes";
-            this.cbMes.Size = new System.Drawing.Size(500, 38);
-            this.cbMes.TabIndex = 8;
-            // 
             // resumenISR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1278, 753);
             this.Controls.Add(this.panel1);
@@ -712,24 +714,24 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtIngAcumulado;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtIngPeriodo;
+        private System.Windows.Forms.TextBox txtDedAcumuladas;
+        private System.Windows.Forms.TextBox txtDedPeriodo;
+        private System.Windows.Forms.TextBox txtTotalIng;
+        private System.Windows.Forms.TextBox txtTotalDed;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtBaseGravable;
+        private System.Windows.Forms.TextBox txtISRCARGO;
+        private System.Windows.Forms.TextBox txtISRRetenido;
+        private System.Windows.Forms.TextBox txtDiferencia;
+        private System.Windows.Forms.TextBox txtPagoProvisional;
+        private System.Windows.Forms.TextBox txtISRCausado;
+        private System.Windows.Forms.TextBox txtCuota;
+        private System.Windows.Forms.TextBox txtMarginal;
+        private System.Windows.Forms.TextBox txtPorcentaje;
+        private System.Windows.Forms.TextBox txtExedente;
+        private System.Windows.Forms.TextBox txtLimiteInf;
         private System.Windows.Forms.ComboBox cbMes;
     }
 }
