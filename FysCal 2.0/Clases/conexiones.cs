@@ -61,6 +61,7 @@ namespace FysCal_2._0.Clases
             {
                 new Formularios.Inicio().Show();
             }
+            con.Close();
         }
         //Obtener el id del cliente seleccionado
         public static DataTable obtenerCliente()
@@ -70,7 +71,7 @@ namespace FysCal_2._0.Clases
             MySqlCommand com = new MySqlCommand(string.Format("select nombre,id_cliente from clientes"), con);
             MySqlDataAdapter adap = new MySqlDataAdapter(com);
             adap.Fill(dt);
-
+            con.Close();
             return dt;
 
         }
@@ -90,6 +91,7 @@ namespace FysCal_2._0.Clases
             Formularios.Datos.rfcDatos = rfc;
             Formularios.Datos.domFiscalDatos = domicilioFiscal;
             Formularios.Datos.regFiscalDatos = regimenFiscal;
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla ingresos16
         public static void ingresos16(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -116,6 +118,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla ingresos0
         public static void ingresos0(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -141,6 +144,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla ingresosExentos
         public static void ingresosExentos(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -166,6 +170,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla ingresosNoObjeto
         public static void ingresosNoObjeto(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -191,6 +196,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla ingresosMes
         public static void ingresosMes(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -216,6 +222,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla ingresosretencionesIVA
         public static void retencionesIVA(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -241,6 +248,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla retencionesISR
         public static void retencionesISR(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -266,8 +274,9 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
-
+        //Obtener el id del cliente seleccionado
         public static void obtenerIdcliente(String pnombre)
         {
             MySqlConnection con = conexiones.conection();
@@ -275,6 +284,7 @@ namespace FysCal_2._0.Clases
             MySqlDataReader reader = com.ExecuteReader();
             reader.Read();
             Formularios.Control.idCliente = reader["id_cliente"].ToString();
+            con.Close();
         }
         //Obtener la informacion de la tabla ingresos16
         public static void InfoIngresos16()
@@ -315,6 +325,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.dic16 = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla ingresos0
         public static void InfoIngresos0()
@@ -356,6 +367,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.dic0 = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla ingresosExentos
         public static void InfoIngresosExcentos()
@@ -397,6 +409,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.dicExe = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla ingresosNoObjeto
         public static void InfoIngresosNoObjeto()
@@ -438,6 +451,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.dicNoo = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         /*Obtener la informacion de la tabla ingresosMes
         public static void InfoIngresosMes()
@@ -533,6 +547,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.dicRISR = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla retencionesIVA
         public static void InfoRetencionesIVA()
@@ -575,6 +590,7 @@ namespace FysCal_2._0.Clases
 
 
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla deducciones16
         public static void deducciones16(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -601,6 +617,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla deducciones0
         public static void deducciones0(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -627,6 +644,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla deduccionesExentas
         public static void deduccionesExentas(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -651,6 +669,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla deduccionesNoObjeto
         public static void deduccionesNoObjeto(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -675,6 +694,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla estimuloFiscal
         public static void estimuloFiscal(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -699,6 +719,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla deduccioneMes
         public static void deduccionesMes(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -725,6 +746,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla deducciones16
         public static void InfoDeducciones16()
@@ -766,6 +788,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.ddic16 = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla deducciones0
         public static void InfoDeducciones0()
@@ -807,6 +830,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.ddic0 = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla deduccionesExentas
         public static void InfoDeduccionesExe()
@@ -848,6 +872,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.ddicexe = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla deduccionesNoObjeto
         public static void InfoDeduccionesNoObjeto()
@@ -889,6 +914,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.ddicNoo = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla estimuloFiscal
         public static void InfoEstimuloFiscal()
@@ -931,6 +957,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.ddicest = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla deduccionesMes
         public static void InfoDeduccionesMes()
@@ -972,6 +999,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.ddicmes = reader["diciembre"].ToString();
 
             }
+            con.Close();
 
         }
         //Obtener la informacion de la tabla iva acreditable manual
@@ -1014,6 +1042,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.ddicivaAcr = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Obtener la informacion de la tabla Pérdidas
         public static void InfoPerdidas()
@@ -1052,11 +1081,8 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.doctPerdidas = reader["octubre"].ToString();
                 Formularios.Control.dnovPerdidas = reader["noviembre"].ToString();
                 Formularios.Control.ddicPerdidas = reader["diciembre"].ToString();
-
-
-
-
             }
+            con.Close();
         }
 
         //Obtener la informacion de la tabla PTU
@@ -1098,6 +1124,7 @@ namespace FysCal_2._0.Clases
                 Formularios.Control.ddicPtu = reader["diciembre"].ToString();
 
             }
+            con.Close();
         }
         //Insertar la columna de ingresos totales del mes
         public static void ingTotalesMes(String ppcliente, String ppEnero, String ppFebrero, String ppMarzo, String ppAbril, String ppMayo, String ppJunio, String ppJulio, String ppAgosto, String ppSep, String ppOct, String ppNovi, String ppDic)
@@ -1121,6 +1148,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con3.Close();
             }
+            con.Close();
 
         }
         //Insertar la columna de deducciones totales del mes
@@ -1145,6 +1173,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con3.Close();
             }
+            con.Close();
         }
         //Insertar la columna de deducciones acumuladas
         public static void dedAcumuladas(String ppcliente, String ppEnero, String ppFebrero, String ppMarzo, String ppAbril, String ppMayo, String ppJunio, String ppJulio, String ppAgosto, String ppSep, String ppOct, String ppNovi, String ppDic)
@@ -1168,6 +1197,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con3.Close();
             }
+            con.Close();
         }
         //Insertar la columna de ingresos acumulados
         public static void ingAcumulados(String ppcliente, String ppEnero, String ppFebrero, String ppMarzo, String ppAbril, String ppMayo, String ppJunio, String ppJulio, String ppAgosto, String ppSep, String ppOct, String ppNovi, String ppDic)
@@ -1191,6 +1221,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con3.Close();
             }
+            con.Close();
         }
         //CALCULO GENERAL
         public static void datosCalculoGeneralISR(String pMes)
@@ -1375,6 +1406,7 @@ namespace FysCal_2._0.Clases
                 Formularios.calculoGeneral.dedTotalPeriodo = dedMes;
                 con.Close();
             }
+            con.Close();
         }
         //CALCULO GENERAL IVA
         public static void datosCalculoGeneralIVA(String pMes)
@@ -1633,6 +1665,7 @@ namespace FysCal_2._0.Clases
                 Formularios.calculoGeneral.retiva = retencion;
                 con.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla deducciones IVA Acreditable Manual
         public static void ivaAcreditable(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -1659,6 +1692,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla deducciones PTU
         public static void Ptu(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -1685,6 +1719,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Insertar o actualizar datos de la tabla deducciones Péerdidas
         public static void Perdidas(String pcliente, String penero, String pfebrero, String pmarzo, String pabril, String pmayo, String pjunio, String pjulio, String pagosto,
@@ -1711,6 +1746,7 @@ namespace FysCal_2._0.Clases
                 comando.ExecuteNonQuery();
                 con1.Close();
             }
+            con.Close();
         }
         //Obtener el ISR Retenido
         public static List<string> ISRRet()
@@ -1724,6 +1760,7 @@ namespace FysCal_2._0.Clases
             {
                 isr.Add(reader[i].ToString());
             }
+            con.Close();
 
             return isr;
 
@@ -1734,15 +1771,15 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = conexiones.conection();
             MySqlCommand comando = new MySqlCommand(String.Format("insert into pagosprovisionalesisr(id_cliente, enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre ) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}' )",id_cliente, ppenero, ppfebrero, ppmarzo, ppabril, ppmayo, ppjunio, ppjulio, ppagosto, ppseptiembre, ppoctubre, ppnoviembre, ppdiciembre), con);
             comando.ExecuteNonQuery();
-
+            con.Close();
         }
         //Insertar el ISR Art 106 y diferencia
         public static void ISR106Dif(String id_cliente, String ppenero106, String ppfebrero106, String ppmarzo106, String ppabril106, String ppmayo106, String ppjunio106, String ppjulio106, String ppagosto106, String ppseptiembre106, String ppoctubre106, String ppnoviembre106, String ppdiciembre106, String ppenerodif, String ppfebrerodif, String ppmarzodif, String ppabrildif, String ppmayodif, String ppjuniodif, String ppjuliodif, String ppagostodif, String ppseptiembredif, String ppoctubredif, String ppnoviembredif, String ppdiciembredif)
         {
             MySqlConnection con = conexiones.conection();
-            MySqlCommand comando = new MySqlCommand(String.Format("insert into art106diferencia(id_cliente, enero106, febrero106, marzo106, abril106, mayo106, junio106, julio106, agosto106, septiembre106, octubre106, noviembre106, diciembre106, enerodif, febrerodif, marzodif, abrildif, mayodif, juniodif, juliodif, agostodif, septiembredif, octubredif, noviembredif, diciembredif ) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}',  '{13}', '{14}', '{15}', '{16}', '{17}', '{18}', '{19}', '{20}', '{21}', '{22}', '{23}', '{14}' )", id_cliente, ppenero106, ppfebrero106, ppmarzo106, ppabril106, ppmayo106, ppjunio106, ppjulio106, ppagosto106, ppseptiembre106, ppoctubre106, ppnoviembre106, ppdiciembre106, ppenerodif, ppfebrerodif, ppmarzodif, ppabrildif, ppmayodif, ppjuniodif, ppjuliodif, ppagostodif, ppseptiembredif, ppoctubredif, ppnoviembredif, ppdiciembredif), con);
+            MySqlCommand comando = new MySqlCommand(String.Format("insert into art106diferencia(id_cliente, enero106, febrero106, marzo106, abril106, mayo106, junio106, julio106, agosto106, septiembre106, octubre106, noviembre106, diciembre106, enerodif, febrerodif, marzodif, abrildif, mayodif, juniodif, juliodif, agostodif, septiembredif, octubredif, noviembredif, diciembredif ) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}',  '{13}', '{14}', '{15}', '{16}', '{17}', '{18}', '{19}', '{20}', '{21}', '{22}', '{23}', '{24}' )", id_cliente, ppenero106, ppfebrero106, ppmarzo106, ppabril106, ppmayo106, ppjunio106, ppjulio106, ppagosto106, ppseptiembre106, ppoctubre106, ppnoviembre106, ppdiciembre106, ppenerodif, ppfebrerodif, ppmarzodif, ppabrildif, ppmayodif, ppjuniodif, ppjuliodif, ppagostodif, ppseptiembredif, ppoctubredif, ppnoviembredif, ppdiciembredif), con);
             comando.ExecuteNonQuery();
-
+            con.Close();
         }
         //Obtener el ultimo id creado
         public static String max_id()
@@ -1752,6 +1789,7 @@ namespace FysCal_2._0.Clases
             MySqlDataReader reader = cmd.ExecuteReader();
             reader.Read();
             string id = reader[0].ToString();
+            con.Close();
             return id;     
             
         }
@@ -1769,8 +1807,10 @@ namespace FysCal_2._0.Clases
                 
                 pagoprov.Add(reader[i].ToString());
             }
+            
 
             return pagoprov;
+            con.Close();
 
         }
 
@@ -1780,6 +1820,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = conexiones.conection();
             MySqlCommand comando = new MySqlCommand(String.Format("UPDATE pagosprovisionalesisr SET "+mes+" = '{0}' where id_cliente='"+Formularios.Control.idCliente+"'", valor), con);
             comando.ExecuteNonQuery();
+            con.Close();
         }
 
         //actualizar la tabla de ISR Art 106 y Diferencia
@@ -1788,6 +1829,7 @@ namespace FysCal_2._0.Clases
             MySqlConnection con = conexiones.conection();
             MySqlCommand comando = new MySqlCommand(String.Format("UPDATE art106diferencia SET " + mes + "106 = '{0}'," + mes + "dif = '{1}'  where id_cliente='" + Formularios.Control.idCliente + "'", valor,valor1), con);
             comando.ExecuteNonQuery();
+            con.Close();
         }
         //Obtener ISR 106 y Diferencia
         public static List<string> obtener106Dif(String mes)
@@ -1800,8 +1842,46 @@ namespace FysCal_2._0.Clases
             dife106.Add(reader[0].ToString());
             dife106.Add(reader[1].ToString());
 
-
+            con.Close();
             return dife106;
+            
+
+        }
+        //insertar deducciones personales
+        
+        public static void dedPersonal(String id_cliente,String rfc, DateTime fecha, String tipo, String monto)
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand comando = new MySqlCommand(String.Format("insert into deduccionespersonales(id_cliente, rfc, fecha, tipo, monto) values ('{0}', '{1}', '{2}', '{3}', '{4}' )", id_cliente, rfc, fecha.ToString("yyyy-MM-dd"), tipo, monto), con);
+            comando.ExecuteNonQuery();
+            con.Close();
+
+        }
+        //obtenerRFC
+        public static String RFC()
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT rfc  from clientes where id_cliente = '"+Formularios.Control.idCliente+"' "), con);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            string rf = reader[0].ToString();
+            con.Close();
+            return rf;
+           
+
+        }
+        //obtener las deducciones personales
+        
+        public static DataTable getDedPersonales()
+        {
+            MySqlConnection con = conexiones.conection();
+            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT rfc, fecha, tipo, monto from deduccionespersonales where id_cliente='" + Formularios.Control.idCliente + "' "), con);
+            DataTable dedperso = new DataTable();
+            MySqlDataAdapter reader = new MySqlDataAdapter(cmd);        
+ 
+            reader.Fill(dedperso);
+            con.Close();
+            return dedperso;
 
         }
     }

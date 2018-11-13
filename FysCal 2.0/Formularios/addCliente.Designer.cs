@@ -34,7 +34,6 @@
             this.cbRegimen = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btnDatos = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtDomicilioFiscal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,7 +46,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnDatos = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -129,28 +130,12 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.btnGuardar);
             this.panel6.Controls.Add(this.btnDatos);
             this.panel6.Location = new System.Drawing.Point(439, 263);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(430, 254);
             this.panel6.TabIndex = 4;
-            // 
-            // btnDatos
-            // 
-            this.btnDatos.BackColor = System.Drawing.Color.White;
-            this.btnDatos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.btnDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDatos.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatos.ForeColor = System.Drawing.Color.Black;
-            this.btnDatos.Image = global::FysCal_2._0.Properties.Resources.Guardar;
-            this.btnDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDatos.Location = new System.Drawing.Point(105, 73);
-            this.btnDatos.Name = "btnDatos";
-            this.btnDatos.Size = new System.Drawing.Size(267, 39);
-            this.btnDatos.TabIndex = 9;
-            this.btnDatos.Text = "GUARDAR";
-            this.btnDatos.UseVisualStyleBackColor = false;
-            this.btnDatos.Click += new System.EventHandler(this.btnDatos_Click);
             // 
             // panel5
             // 
@@ -276,6 +261,23 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Nombre Completo";
             // 
+            // btnDatos
+            // 
+            this.btnDatos.BackColor = System.Drawing.Color.White;
+            this.btnDatos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.btnDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatos.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDatos.ForeColor = System.Drawing.Color.Black;
+            this.btnDatos.Image = global::FysCal_2._0.Properties.Resources.Guardar;
+            this.btnDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDatos.Location = new System.Drawing.Point(105, 73);
+            this.btnDatos.Name = "btnDatos";
+            this.btnDatos.Size = new System.Drawing.Size(267, 39);
+            this.btnDatos.TabIndex = 9;
+            this.btnDatos.Text = "GUARDAR";
+            this.btnDatos.UseVisualStyleBackColor = false;
+            this.btnDatos.Click += new System.EventHandler(this.btnDatos_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::FysCal_2._0.Properties.Resources.LOGO;
@@ -286,6 +288,23 @@
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar.Image = global::FysCal_2._0.Properties.Resources.volver;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(105, 190);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(267, 40);
+            this.btnGuardar.TabIndex = 15;
+            this.btnGuardar.Text = "REGRESAR";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // addCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -294,6 +313,7 @@
             this.ClientSize = new System.Drawing.Size(1503, 713);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "addCliente";
             this.Text = "addCliente";
             this.panel1.ResumeLayout(false);
@@ -336,5 +356,6 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.ComboBox cbRegimen;
         private System.Windows.Forms.Button btnDatos;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

@@ -90,12 +90,6 @@
     <Compile Include="Formularios\deduccionesPerso.Designer.cs">
       <DependentUpon>deduccionesPerso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\deduccionesPersonales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\deduccionesPersonales.Designer.cs">
-      <DependentUpon>deduccionesPersonales.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\errorAcceder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,9 +163,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\deduccionesPerso.resx">
       <DependentUpon>deduccionesPerso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\deduccionesPersonales.resx">
-      <DependentUpon>deduccionesPersonales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\errorAcceder.resx">
       <DependentUpon>errorAcceder.cs</DependentUpon>
@@ -267,6 +258,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calcGen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tecla-de-flecha-izquierda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

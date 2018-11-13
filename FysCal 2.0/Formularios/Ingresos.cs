@@ -909,7 +909,7 @@ namespace FysCal_2._0.Formularios
 
 
 
-            MessageBox.Show("Everything will be alright");
+            
 
             this.Hide();
         }

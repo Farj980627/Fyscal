@@ -35,14 +35,25 @@ namespace FysCal_2._0.Formularios
             denePtu, dfebPtu, dmarPtu, dabrPtu, dmayPtu, djunPtu, djulPtu, dagoPtu, dsepPtu, doctPtu, dnovPtu, ddicPtu, dtotPtu,
             denePerdidas, dfebPerdidas, dmarPerdidas, dabrPerdidas, dmayPerdidas, djunPerdidas, djulPerdidas, dagoPerdidas, dsepPerdidas, doctPerdidas, dnovPerdidas, ddicPerdidas, dtotPerdidas;
 
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            new Formularios.Inicio().Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            cargarForm(new deduccionesPerso());
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            cargarForm(new Formularios.resumenISR());
+            cargarForm(new Formularios.resumenIVA());
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            cargarForm(new Formularios.deduccionesPerso());
+            cargarForm(new Formularios.resumenISR());
         }
 
         private void btnCalcGeneral_Click(object sender, EventArgs e)

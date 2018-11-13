@@ -21,5 +21,11 @@ namespace FysCal_2._0.Formularios
         {
 
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+        }
     }
 }

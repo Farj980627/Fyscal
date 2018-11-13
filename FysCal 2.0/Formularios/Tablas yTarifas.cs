@@ -60,13 +60,7 @@ namespace FysCal_2._0.Formularios
 
             private void Tablas_yTarifas_Load(object sender, EventArgs e)
             {
-                /* foreach (Label inf in tableLayoutPanel2.Controls)
-              {
-                  if (inf is Label)
-                  {
-                      ((Label) inf).Text = "im a fucking label";
-                  }
-      */
+            cbMes.SelectedIndex = 0;
 
             }
 
@@ -80,7 +74,12 @@ namespace FysCal_2._0.Formularios
 
             }
 
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+           
+            this.Hide();
         }
+    }
 
 
     }

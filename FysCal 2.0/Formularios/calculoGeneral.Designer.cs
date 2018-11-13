@@ -31,8 +31,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.dtInicio = new System.Windows.Forms.DateTimePicker();
             this.label50 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtPago = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label22 = new System.Windows.Forms.Label();
@@ -41,12 +43,12 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtDetPagACargo = new System.Windows.Forms.TextBox();
+            this.txtpart = new System.Windows.Forms.TextBox();
+            this.txtrecargo = new System.Windows.Forms.TextBox();
+            this.txtSubsidio = new System.Windows.Forms.TextBox();
+            this.txtcomp = new System.Windows.Forms.TextBox();
+            this.txtISRCargoFinalFinalChido = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -81,6 +83,11 @@
             this.txtRetenido = new System.Windows.Forms.TextBox();
             this.txtISRCARGO = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.dtinicio1 = new System.Windows.Forms.DateTimePicker();
+            this.label53 = new System.Windows.Forms.Label();
+            this.dtpago1 = new System.Windows.Forms.DateTimePicker();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label41 = new System.Windows.Forms.Label();
@@ -139,6 +146,9 @@
             this.label49 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.cbMes = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -147,10 +157,12 @@
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -180,14 +192,37 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label51);
+            this.panel3.Controls.Add(this.dtInicio);
             this.panel3.Controls.Add(this.label50);
-            this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Location = new System.Drawing.Point(687, 316);
+            this.panel3.Controls.Add(this.dtPago);
+            this.panel3.Location = new System.Drawing.Point(686, 316);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(580, 309);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // label51
+            // 
+            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.White;
+            this.label51.Location = new System.Drawing.Point(62, 61);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(164, 22);
+            this.label51.TabIndex = 9;
+            this.label51.Text = "FECHA DE INICIO:";
+            // 
+            // dtInicio
+            // 
+            this.dtInicio.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtInicio.Location = new System.Drawing.Point(69, 95);
+            this.dtInicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtInicio.Name = "dtInicio";
+            this.dtInicio.Size = new System.Drawing.Size(380, 30);
+            this.dtInicio.TabIndex = 8;
             // 
             // label50
             // 
@@ -195,20 +230,21 @@
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.ForeColor = System.Drawing.Color.White;
-            this.label50.Location = new System.Drawing.Point(61, 27);
+            this.label50.Location = new System.Drawing.Point(63, 185);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(337, 22);
             this.label50.TabIndex = 7;
             this.label50.Text = "PAGO A EFECTUARSE ANTES DEL DIA:";
             // 
-            // dateTimePicker1
+            // dtPago
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(67, 62);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(380, 30);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dtPago.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtPago.Location = new System.Drawing.Point(69, 220);
+            this.dtPago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtPago.Name = "dtPago";
+            this.dtPago.Size = new System.Drawing.Size(380, 30);
+            this.dtPago.TabIndex = 0;
+            this.dtPago.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // panel2
             // 
@@ -231,12 +267,12 @@
             this.tableLayoutPanel2.Controls.Add(this.label19, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label20, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label21, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox5, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.textBox9, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.txtDetPagACargo, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtpart, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtrecargo, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtSubsidio, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtcomp, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.txtISRCargoFinalFinalChido, 1, 5);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 41);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -322,83 +358,85 @@
             this.label21.TabIndex = 10;
             this.label21.Text = "Compensasiones";
             // 
-            // textBox1
+            // txtDetPagACargo
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(291, 2);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 30);
-            this.textBox1.TabIndex = 27;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDetPagACargo.BackColor = System.Drawing.Color.White;
+            this.txtDetPagACargo.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetPagACargo.ForeColor = System.Drawing.Color.Black;
+            this.txtDetPagACargo.Location = new System.Drawing.Point(291, 2);
+            this.txtDetPagACargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDetPagACargo.Name = "txtDetPagACargo";
+            this.txtDetPagACargo.Size = new System.Drawing.Size(189, 30);
+            this.txtDetPagACargo.TabIndex = 27;
+            this.txtDetPagACargo.Text = "0";
+            this.txtDetPagACargo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox2
+            // txtpart
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(291, 40);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 30);
-            this.textBox2.TabIndex = 28;
-            this.textBox2.Text = "0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtpart.BackColor = System.Drawing.Color.White;
+            this.txtpart.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpart.ForeColor = System.Drawing.Color.Black;
+            this.txtpart.Location = new System.Drawing.Point(291, 40);
+            this.txtpart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtpart.Name = "txtpart";
+            this.txtpart.Size = new System.Drawing.Size(189, 30);
+            this.txtpart.TabIndex = 28;
+            this.txtpart.Text = "0";
+            this.txtpart.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox3
+            // txtrecargo
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(291, 78);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 30);
-            this.textBox3.TabIndex = 29;
-            this.textBox3.Text = "0";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtrecargo.BackColor = System.Drawing.Color.White;
+            this.txtrecargo.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrecargo.ForeColor = System.Drawing.Color.Black;
+            this.txtrecargo.Location = new System.Drawing.Point(291, 78);
+            this.txtrecargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtrecargo.Name = "txtrecargo";
+            this.txtrecargo.Size = new System.Drawing.Size(189, 30);
+            this.txtrecargo.TabIndex = 29;
+            this.txtrecargo.Text = "0";
+            this.txtrecargo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox5
+            // txtSubsidio
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(291, 116);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 30);
-            this.textBox5.TabIndex = 30;
-            this.textBox5.Text = "0";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSubsidio.BackColor = System.Drawing.Color.White;
+            this.txtSubsidio.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubsidio.ForeColor = System.Drawing.Color.Black;
+            this.txtSubsidio.Location = new System.Drawing.Point(291, 116);
+            this.txtSubsidio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSubsidio.Name = "txtSubsidio";
+            this.txtSubsidio.Size = new System.Drawing.Size(189, 30);
+            this.txtSubsidio.TabIndex = 30;
+            this.txtSubsidio.Text = "0";
+            this.txtSubsidio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSubsidio.TextChanged += new System.EventHandler(this.txtSubsidio_TextChanged);
             // 
-            // textBox6
+            // txtcomp
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(291, 154);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(189, 30);
-            this.textBox6.TabIndex = 31;
-            this.textBox6.Text = "0";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtcomp.BackColor = System.Drawing.Color.White;
+            this.txtcomp.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcomp.ForeColor = System.Drawing.Color.Black;
+            this.txtcomp.Location = new System.Drawing.Point(291, 154);
+            this.txtcomp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcomp.Name = "txtcomp";
+            this.txtcomp.Size = new System.Drawing.Size(189, 30);
+            this.txtcomp.TabIndex = 31;
+            this.txtcomp.Text = "0";
+            this.txtcomp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtcomp.TextChanged += new System.EventHandler(this.txtcomp_TextChanged);
             // 
-            // textBox9
+            // txtISRCargoFinalFinalChido
             // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(291, 192);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(189, 30);
-            this.textBox9.TabIndex = 32;
-            this.textBox9.Text = "0";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtISRCargoFinalFinalChido.BackColor = System.Drawing.Color.White;
+            this.txtISRCargoFinalFinalChido.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISRCargoFinalFinalChido.ForeColor = System.Drawing.Color.Black;
+            this.txtISRCargoFinalFinalChido.Location = new System.Drawing.Point(291, 192);
+            this.txtISRCargoFinalFinalChido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtISRCargoFinalFinalChido.Name = "txtISRCargoFinalFinalChido";
+            this.txtISRCargoFinalFinalChido.Size = new System.Drawing.Size(189, 30);
+            this.txtISRCargoFinalFinalChido.TabIndex = 32;
+            this.txtISRCargoFinalFinalChido.Text = "0";
+            this.txtISRCargoFinalFinalChido.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label16
             // 
@@ -871,6 +909,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.tabPage2.Controls.Add(this.panel6);
             this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Controls.Add(this.panel4);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -880,14 +920,68 @@
             this.tabPage2.Size = new System.Drawing.Size(1283, 637);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label52);
+            this.panel6.Controls.Add(this.dtinicio1);
+            this.panel6.Controls.Add(this.label53);
+            this.panel6.Controls.Add(this.dtpago1);
+            this.panel6.Location = new System.Drawing.Point(673, 307);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(580, 309);
+            this.panel6.TabIndex = 3;
+            // 
+            // label52
+            // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.White;
+            this.label52.Location = new System.Drawing.Point(62, 61);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(164, 22);
+            this.label52.TabIndex = 9;
+            this.label52.Text = "FECHA DE INICIO:";
+            // 
+            // dtinicio1
+            // 
+            this.dtinicio1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtinicio1.Location = new System.Drawing.Point(69, 95);
+            this.dtinicio1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtinicio1.Name = "dtinicio1";
+            this.dtinicio1.Size = new System.Drawing.Size(380, 30);
+            this.dtinicio1.TabIndex = 8;
+            // 
+            // label53
+            // 
+            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.White;
+            this.label53.Location = new System.Drawing.Point(63, 185);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(337, 22);
+            this.label53.TabIndex = 7;
+            this.label53.Text = "PAGO A EFECTUARSE ANTES DEL DIA:";
+            // 
+            // dtpago1
+            // 
+            this.dtpago1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpago1.Location = new System.Drawing.Point(69, 220);
+            this.dtpago1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpago1.Name = "dtpago1";
+            this.dtpago1.Size = new System.Drawing.Size(380, 30);
+            this.dtpago1.TabIndex = 0;
+            this.dtpago1.ValueChanged += new System.EventHandler(this.dtpago1_ValueChanged);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
             this.panel5.Controls.Add(this.tableLayoutPanel4);
             this.panel5.Controls.Add(this.label47);
-            this.panel5.Location = new System.Drawing.Point(685, 336);
+            this.panel5.Location = new System.Drawing.Point(673, 8);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(581, 279);
@@ -1007,6 +1101,7 @@
             this.txtOtrasCant.TabIndex = 28;
             this.txtOtrasCant.Text = "0";
             this.txtOtrasCant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOtrasCant.TextChanged += new System.EventHandler(this.txtOtrasCant_TextChanged);
             // 
             // txtCantCargo
             // 
@@ -1020,6 +1115,7 @@
             this.txtCantCargo.TabIndex = 29;
             this.txtCantCargo.Text = "0";
             this.txtCantCargo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCantCargo.TextChanged += new System.EventHandler(this.txtCantCargo_TextChanged);
             // 
             // txtParteAct
             // 
@@ -1046,6 +1142,7 @@
             this.txtRecargos.TabIndex = 31;
             this.txtRecargos.Text = "0";
             this.txtRecargos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecargos.TextChanged += new System.EventHandler(this.txtRecargos_TextChanged);
             // 
             // txtCompensasiones
             // 
@@ -1059,6 +1156,7 @@
             this.txtCompensasiones.TabIndex = 32;
             this.txtCompensasiones.Text = "0";
             this.txtCompensasiones.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCompensasiones.TextChanged += new System.EventHandler(this.txtCompensasiones_TextChanged);
             // 
             // txtIVAACARGO
             // 
@@ -1687,12 +1785,64 @@
             this.cbMes.TabIndex = 7;
             this.cbMes.SelectionChangeCommitted += new System.EventHandler(this.cbMes_SelectionChangeCommitted);
             // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.5F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.5F));
+            this.tableLayoutPanel5.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnGuardar, 0, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(12, 47);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(197, 36);
+            this.tableLayoutPanel5.TabIndex = 9;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar.Image = global::FysCal_2._0.Properties.Resources.tecla_de_flecha_izquierda;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(3, 3);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(91, 30);
+            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.Text = "ISR";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = global::FysCal_2._0.Properties.Resources.Next;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(100, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 30);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "IVA";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // calculoGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1315, 793);
+            this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.cbMes);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1712,6 +1862,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -1719,6 +1871,7 @@
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1820,12 +1973,12 @@
         private System.Windows.Forms.TextBox IVACargoMes;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox txtIVAAcreditable;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtDetPagACargo;
+        private System.Windows.Forms.TextBox txtpart;
+        private System.Windows.Forms.TextBox txtrecargo;
+        private System.Windows.Forms.TextBox txtSubsidio;
+        private System.Windows.Forms.TextBox txtcomp;
+        private System.Windows.Forms.TextBox txtISRCargoFinalFinalChido;
         private System.Windows.Forms.TextBox txtOtrasCant;
         private System.Windows.Forms.TextBox txtCantCargo;
         private System.Windows.Forms.TextBox txtParteAct;
@@ -1834,7 +1987,17 @@
         private System.Windows.Forms.TextBox txtIVAACARGO;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtPago;
         private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.DateTimePicker dtInicio;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.DateTimePicker dtinicio1;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.DateTimePicker dtpago1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button button1;
     }
 }

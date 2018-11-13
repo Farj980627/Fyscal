@@ -684,6 +684,8 @@
             this.label628 = new System.Windows.Forms.Label();
             this.label629 = new System.Windows.Forms.Label();
             this.cbMes = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -9402,12 +9404,39 @@
             this.cbMes.TabIndex = 13;
             this.cbMes.SelectedIndexChanged += new System.EventHandler(this.cbMes_SelectedIndexChanged);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(527, 125);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(609, 28);
+            this.panel1.TabIndex = 14;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar.Image = global::FysCal_2._0.Properties.Resources.volver;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(33, 690);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(220, 40);
+            this.btnGuardar.TabIndex = 15;
+            this.btnGuardar.Text = "REGRESAR";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // Tablas_yTarifas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1169, 705);
+            this.ClientSize = new System.Drawing.Size(1169, 742);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbMes);
             this.Controls.Add(this.label629);
             this.Controls.Add(this.label628);
@@ -10122,5 +10151,7 @@
         public System.Windows.Forms.Label inf3;
         public System.Windows.Forms.Label inf2;
         public System.Windows.Forms.Label inf1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

@@ -24,6 +24,7 @@ namespace FysCal_2._0.Formularios
             cliente = cbCliente.Text;
           
             new Formularios.Control().Show();
+            this.Hide();
 
            
         }
@@ -35,8 +36,8 @@ namespace FysCal_2._0.Formularios
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Formularios.addCliente().Show();
-            this.Hide();
+            new Formularios.addCliente().ShowDialog();
+            
         }
 
         private void Inicio_Load(object sender, EventArgs e)
@@ -52,7 +53,26 @@ namespace FysCal_2._0.Formularios
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            new Formularios.Tablas_yTarifas().Show();
+            new Formularios.Tablas_yTarifas().ShowDialog();
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Formularios.Inpc().ShowDialog();
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Formularios.Recargos().ShowDialog();
+            
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            new login().Show();
+            this.Hide();
         }
     }
 }

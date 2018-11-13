@@ -632,7 +632,7 @@ namespace FysCal_2._0.Formularios
             Clases.conexiones.Perdidas(Formularios.Control.idCliente, txtEnePerdidas.Text, txtFebPerdidas.Text, txtMarPerdidas.Text, txtAbrPerdidas.Text, txtMayPerdidas.Text, txtJunPerdidas.Text, txtJulPerdidas.Text,
                txtAgoPerdidas.Text, txtSepPerdidas.Text, txtOctPerdidas.Text, txtNovPerdidas.Text, txtDicPerdidas.Text, txtTotPerdidas.Text);
 
-            MessageBox.Show("Everything will be alright");
+            this.Hide();
         }
 
         private void txtEne16_TextChanged(object sender, EventArgs e)

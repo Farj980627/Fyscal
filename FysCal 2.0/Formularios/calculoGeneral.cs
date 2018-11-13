@@ -45,6 +45,149 @@ namespace FysCal_2._0.Formularios
         public static double[] cuotajul = new double[] { 0.00, 77.77, 2018.31, 4850.72, 6420.82, 8903.09, 27163.08, 50139.18, 123029.83, 640045.14 };
 
         public static double[] agosto = new double[] {0.01, 4628.17, 39281.45, 69033.61, 80248.57, 96079.53, 193778.49, 305421.53, 583100.01, 777466.65, 2332400.01 };
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            //recargos
+            int pagoY, pagoM, inicioY, inicioM, totalMeses, diafinal;
+            
+
+            pagoY = dtPago.Value.Year;
+            pagoM = dtPago.Value.Month;
+            inicioY = dtInicio.Value.Year;
+            inicioM = dtInicio.Value.Month;
+            diafinal = dtPago.Value.Day;
+            totalMeses = ((pagoY - inicioY)*12) + (pagoM - inicioM);
+            if (diafinal < 18)
+            {
+                totalMeses = totalMeses - 1;
+            }
+
+            double porce = totalMeses * 1.47;
+           
+            if (txtISRCARGO.Text == "0")
+            {
+                txtrecargo.Text = "0";
+            }
+            else
+            {
+                
+                txtrecargo.Text = ((double.Parse(txtDetPagACargo.Text) * porce) / 100).ToString();
+            }
+
+            //PAgo isr a carago
+            txtISRCargoFinalFinalChido.Text = ((double.Parse(txtDetPagACargo.Text) + double.Parse(txtpart.Text) + double.Parse(txtrecargo.Text)) - (double.Parse(txtSubsidio.Text) - double.Parse(txtcomp.Text))).ToString();
+            
+
+        }
+
+        private void txtcomp_TextChanged(object sender, EventArgs e)
+        {
+            //PAgo isr a carago
+            txtISRCargoFinalFinalChido.Text = ((double.Parse(txtDetPagACargo.Text) + double.Parse(txtpart.Text) + double.Parse(txtrecargo.Text)) - (double.Parse(txtSubsidio.Text) - double.Parse(txtcomp.Text))).ToString();
+
+        }
+
+        private void txtSubsidio_TextChanged(object sender, EventArgs e)
+        {
+            //PAgo isr a carago
+            txtISRCargoFinalFinalChido.Text = ((double.Parse(txtDetPagACargo.Text) + double.Parse(txtpart.Text) + double.Parse(txtrecargo.Text)) - (double.Parse(txtSubsidio.Text) - double.Parse(txtcomp.Text))).ToString();
+
+        }
+
+        private void dtpago1_ValueChanged(object sender, EventArgs e)
+        { //recargos
+            int pagoY, pagoM, inicioY, inicioM, totalMeses, diafinal;
+
+
+            pagoY = dtpago1.Value.Year;
+            pagoM = dtpago1.Value.Month;
+            inicioY = dtinicio1.Value.Year;
+            inicioM = dtinicio1.Value.Month;
+            diafinal = dtpago1.Value.Day;
+            totalMeses = ((pagoY - inicioY) * 12) + (pagoM - inicioM);
+            if (diafinal < 18)
+            {
+                totalMeses = totalMeses - 1;
+            }
+
+            double porce = totalMeses * 1.47;
+
+            if (IVACargoMes.Text == "0")
+            {
+                txtRecargos.Text = "0";
+            }
+            else
+            {
+                
+                txtRecargos.Text = ((double.Parse(txtCantCargo.Text) * porce) / 100).ToString();
+            }
+
+            //Pago iva a carago
+            txtIVAACARGO.Text = ((double.Parse(txtCantCargo.Text) + double.Parse(txtParteAct.Text) + double.Parse(txtRecargos.Text)) - (double.Parse(txtCompensasiones.Text))).ToString();
+
+        }
+
+        private void txtOtrasCant_TextChanged(object sender, EventArgs e)
+        {
+            txtCantCargo.Text = (double.Parse(IVACargoMes.Text) + double.Parse(txtOtrasCant.Text)).ToString();
+            txtIVAACARGO.Text = ((double.Parse(txtCantCargo.Text) + double.Parse(txtParteAct.Text) + double.Parse(txtRecargos.Text)) - (double.Parse(txtCompensasiones.Text))).ToString();
+        }
+
+        private void txtCompensasiones_TextChanged(object sender, EventArgs e)
+        {
+            txtIVAACARGO.Text = ((double.Parse(txtCantCargo.Text) + double.Parse(txtParteAct.Text) + double.Parse(txtRecargos.Text)) - (double.Parse(txtCompensasiones.Text))).ToString();
+        }
+
+        private void txtCantCargo_TextChanged(object sender, EventArgs e)
+        {
+            int pagoY, pagoM, inicioY, inicioM, totalMeses, diafinal;
+
+
+            pagoY = dtpago1.Value.Year;
+            pagoM = dtpago1.Value.Month;
+            inicioY = dtinicio1.Value.Year;
+            inicioM = dtinicio1.Value.Month;
+            diafinal = dtpago1.Value.Day;
+            totalMeses = ((pagoY - inicioY) * 12) + (pagoM - inicioM);
+            if (diafinal < 18)
+            {
+                totalMeses = totalMeses - 1;
+            }
+
+            double porce = totalMeses * 1.47;
+
+            if (IVACargoMes.Text == "0")
+            {
+                txtRecargos.Text = "0";
+            }
+            else
+            {
+
+                txtRecargos.Text = ((double.Parse(txtCantCargo.Text) * porce) / 100).ToString();
+            }
+
+            //Pago iva a carago
+            txtIVAACARGO.Text = ((double.Parse(txtCantCargo.Text) + double.Parse(txtParteAct.Text) + double.Parse(txtRecargos.Text)) - (double.Parse(txtCompensasiones.Text))).ToString();
+        }
+
+        private void txtRecargos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+            cbMes.SelectedIndex = -1;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1;
+            cbMes.SelectedIndex = -1;
+        }
+
         public static double[] cuotaago = new double[] { 0.00, 88.88, 2306.64, 5543.68, 7338.08, 10174.96, 31043.52, 57301.92, 140605.52, 202802.80, 731480.16 };
 
         public static double[] septiembre = new double[] { 0.01, 5206.69, 44191.63, 77662.81, 90279.64, 108089.47, 218000.80, 343599.22, 655987.51, 874649.98, 2623950.01 };
@@ -74,6 +217,8 @@ namespace FysCal_2._0.Formularios
 
         private void cbMes_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            txtrecargo.Text = "0";
+            txtISRCargoFinalFinalChido.Text = "0";
             //Calculo de el ISR
             if (tabControl1.SelectedIndex == 0)
             {
@@ -422,6 +567,13 @@ namespace FysCal_2._0.Formularios
 
                 //Envio de datos 106 and diferencia
                 Clases.conexiones.get106Dif(cbMes.Items[cbMes.SelectedIndex].ToString(), txtArt106.Text, txtDif.Text);
+
+                //DETALLES DE PAGO ---------> A CARGO
+                txtDetPagACargo.Text = txtISRCARGO.Text;
+
+                //Recargo
+               
+
             }
             //Calculo de el IVA
             else
@@ -489,7 +641,13 @@ namespace FysCal_2._0.Formularios
                 //Detalles del Pago
                 txtCantCargo.Text = (double.Parse(IVACargoMes.Text) + double.Parse(txtOtrasCant.Text)).ToString();
 
-              
+                //Cantidad a cargo
+                txtCantCargo.Text = (double.Parse(IVACargoMes.Text) + double.Parse(txtOtrasCant.Text)).ToString() ;
+
+                //Parte actualizada
+
+                //recargos
+
 
             }
 
